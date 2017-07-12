@@ -1,0 +1,126 @@
+The Perl Conference
+    > TPC
+    > "Tipsy"
+
+Venue security? Venue WIFI? Eh.
+
+Otherwise, great place, would go again.
+
+Day 1:
+    MetaCPAN, the tour
+        I'm becoming more of a CPAN guy (PAUSE ID: JACOBY) so making tooling around
+        it is good. 
+    Continuous Integration for CPAN
+        For deploying, we have CPANTesters, 
+            which tests against everything from old supercomputers to new toasters
+        For development, we have Travis-CI, which tests against Linux, and the 
+            infrastructure is pretty good (but they drag behind, so add new Perl5 
+            a month after release). MacOS is OSX in config, and a bit buggier.
+            For Windows, there's Appveyor, but Perl integration is less than mature 
+            (I need FreeBSD, which I'm told is available via GitLab, ) 
+    Dockerizing CPANTesters
+        More than fits in my head, so I can't explain. Will have to watch again.
+    Variables, Scopes and Namespaces
+        Joel thought it was too remedial for me, suggested I go to another talk, but...
+        I found a use for "Monkeypatching", which is
+            use LibToConnectToAPI ;
+            local *LibToConnectToAPI::get = sub { return { this_cool => 'object' } }
+            is( function_using_get() , 'object' , 'function munges right' );
+
+    ES6: Almost an acceptable Perl 5?
+        https://www.youtube.com/watch?v=OwCAFPKwAyE
+        "use strict;" 
+        var -> function-level scoped
+        let -> lexical scoped -> like 'my' -> GOOD
+        const -> constant (but const foo = { 'bar' : 1 } ; foo.bar = 27 ; still works)
+        ES6 adds class
+            class Foo extends Bar {
+                constructor (...) {...}
+                methodName (...) {...}
+            }
+        MST Suggestion:
+            use transpiler
+            read generated code
+            get better at base JS for when you have to use it
+        use lodash to get lots of Perlish stuff.
+            but remember map( array , function ), while Perl uses map { function } array
+        Dojo was mentioned (BoilerUp!)
+        ES6 isn't everywhere
+            babel! 
+        mobx ?
+        ...object ? Is this a mobx thing? a React thing? an ES6 thing?
+
+        function o2 () 
+            + puns
+                + o2 == oo == object orientation
+                + moving toward a subset of Moo 
+                + Bluefeet's previous attempt was 'o', and this is spiritual successor
+                + Sensible OO is "Oxygen" to programmers
+            + puns
+                + 4 puns in two characters
+                + "I am a terrible person, but I regret nothing"
+        fat arrows are lambdas
+        "the 'tests' are at the bottom of the file, because I couldn't work out
+            which are everyone's favorite testing frameworks this ... hour"
+        "I want to make a decision and stick with it. I know that's very unjavascriptish of me"
+        ES6 bends like Perl 5 
+
+        Is ES6 an acceptable Perl 5? ****ed if I know, but it's FUN!
+    Lightning Talks:
+        LATER
+    Keynote from SawyerX
+        Deprecations from 5.0 are finally being pulled out of the language
+        Just as '.' shouldn't be in PATH, '.' is now no longer in @INC
+
+Day 2:
+    Dancing in the Cloud
+        Dancer web framework on 
+        >   Docker containerized setups using 
+        >   Kubernetes and etcd as key-value store for configuration and  
+        Do you live in this world? I don't.
+    Test2
+        listening to the diffs between Test and Test2 give a hint on how 
+        to test, which is good
+    Adventures in Failure
+        different languages and systems error out in different ways
+    Keynote from Damian Conway - Three Little Words
+         "I ❤ Perl"
+
+    Aside - This and Stevan Little's Day 3 talk are about trying to get Object Oriented
+        Programming into Perl 5 without too much "damage"
+        "Moose brings in half of CPAN"
+        Damian's method contrasts with Stevan's 
+        Stevan's been trying for years
+        Moxie vs Dios
+
+Day 3:
+    Logs are magic: Git workflows and commit structure
+        Just watch it.
+    Amazon, Alexa and Perl 
+        A Software Stir talk hit the backend a lot, and how hard it is for them
+            "Alexa, have Domino's order me a Pizza"
+             ^wakeword   ^                   ^
+                         service provider    task 
+        most everything else ignored
+        But main Q I had ("How do I make it work with something *I* wrote?") was 
+            handwaived to "give it an API"
+        Here, it goes to Jason's home so that it can receive and turn on/off lights
+    MAKE New Friends
+        Conference-Driven Development 
+        Use Raspberry Pi, speech recogntion, text-to-speech to make an inexpensive
+            Scrum Master bot
+    Mojolicious, Vue.js, and PostgreSQL to make a chat app in 50 lines of code
+        Need to gain Mojo
+        Need to learn Vue
+    Hold My Beer 
+        See Damian Conway's Three Little Words
+    The Variable Crimes We Commit Against JavaScript
+        I could go into this one in many ways
+        More introduction to variables 
+        Lingers at points that MST speeds past
+        (MJD?)
+    Lightning Talks
+        We WILL see the SANE talk
+            https://www.youtube.com/watch?v=pJ60vVOKVr0
+
+A mongers group (Houston.pm?) is doing a TPC::NA Lightning Talk Jukebox. Worth doing?
