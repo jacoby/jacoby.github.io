@@ -21,10 +21,8 @@ use utf8 ;
 
 use IO::Interactive qw{interactive} ;
 use DateTime ;
-use JSON ;
 use Getopt::Long ;
 
-my $json     = JSON->new->canonical->pretty ;
 my $post_dir = '/home/jacoby/localdev/jacoby.github.io/_posts' ;
 my $options ;
 my $fmt = '%F %T %z' ;
@@ -34,13 +32,9 @@ GetOptions(
     ) ;
 my $now = DateTime->now()->set_time_zone( 'America/New_York' ) ;
 $options->{ date } = $now->strftime( $fmt ) ;
-
 my $categories = join ' ', sort $options->{ categories }->@* ;
-
 my $file = lc( join '-', $now->ymd(), split m{\s+}, $options->{ title } ) . '.markdown' ;
-
 my $path = join '/', $post_dir, $file ;
-
 unless ( -f $path ) {
     if ( open my $fh, '>', $path ) {
         say $fh <<"TEST";
@@ -52,9 +46,8 @@ categories: $categories
 ---
 
 TEST
-
         }
     }
-exit; 
+exit;
 {% endhighlight %}
 
