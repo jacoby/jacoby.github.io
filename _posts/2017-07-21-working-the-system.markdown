@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Working the system""
+title:  "Working the system"
 date:   "2017-07-21 13:47:47 -0400"
 categories: blogging code perl
 ---
