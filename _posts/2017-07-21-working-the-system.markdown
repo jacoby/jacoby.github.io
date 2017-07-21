@@ -55,8 +55,6 @@ TEST
 
         }
     }
-
-__DATA__
-
+exit; 
 {% endhighlight %}
 
