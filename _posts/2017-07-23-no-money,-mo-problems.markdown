@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "No Money, Mo Problems""
+title:  "No Money, Mo Problems"
 date:   "2017-07-23 17:03:32 -0400"
 categories: 
 ---
