@@ -13,13 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Committed to Memory
 email: jacoby.david@live.com
 description: > # this means to ignore newlines until "baseurl:"
     Dave writes code. Sometimes this means he learns something. 
     He'll probably write it up here.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacoby.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
 twitter_username: jacobydave
 github_username:  jacoby
 
@@ -28,6 +31,8 @@ markdown: kramdown
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
