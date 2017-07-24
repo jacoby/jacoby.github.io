@@ -13,7 +13,7 @@ github_username:  jacoby
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
+gems:
   - jekyll-feed
 
 
