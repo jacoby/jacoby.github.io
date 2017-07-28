@@ -3,7 +3,7 @@ layout: post
 title:  "What\'s Your Spam Got To Do With Me?"
 author: "Dave Jacoby"
 date:   "2017-07-28 10:46:41 -0400"
-categories: interdepartmental-politics 
+categories: email 
 ---
 Everybody hates spam.
 
