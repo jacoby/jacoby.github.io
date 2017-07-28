@@ -58,9 +58,9 @@ Except, of course, that's a track that I remember fondly, and the email communic
 
 As you might guess, I'm not entirely neutral on this, and the inciting incident is still unknown, at least to me. [Cathy O'Neil][2], author of [*Weapons of Math Destruction*][3] lists the key characteristics of a damaging system, the "WMD" of her title, as:
 
-1 **Opacity**
-2 **Damage**
-3 **Scalable**
+1. **Opacity**
+2. **Damage**
+3. **Scalable**
 
 The system is built to scale and scale quickly, the reasoning behind the reputation change and subsequent block was opaque in both concept and specific events, and certainly blocking our reports and monopolizing the day of several people counts as damage. I don't see the Turtle technique as good, in theory or in practice, but there are issues with the RTBL system.
 
