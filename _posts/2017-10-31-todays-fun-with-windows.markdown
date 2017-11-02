@@ -10,7 +10,7 @@ Right now, I have three computers on my desk; Two Windows computers and my Ubunt
 
 I have customized my prompt so that it looks like this right now:
 
-    `🔥 ✔ jacoby@oz 15:22 42°F 2 cups ~/local/dev/jacoby.github.io (master) `
+    🔥 ✔ jacoby@oz 15:22 42°F 2 cups ~/local/dev/jacoby.github.io (master) 
 
 **42°F** means it's cold. 5°C for the Metric fans among you.
 
