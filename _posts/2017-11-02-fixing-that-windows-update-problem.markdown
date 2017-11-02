@@ -14,6 +14,10 @@ So, after trying `sfc /scannow` and `DCIM` and reading [the Big Book of Windows 
 
 There was *lots* I didn't understand, but a certain string pointing to a Registry entry failing over and over again being the last line of the log certainly was a pointer, and so I searched and saw that it was a Windows Update blocker, and was shown the `regedit` entry to remove.
 
+    2017-11-01 14:28:42.6882292 1428  1776  DownloadManager Dynamic download data fetcher for ServiceId 8B24B027-1DEE-BABB-9A95-3517DFB9C552 does not exist.
+
+So we look for `8B24B027-1DEE-BABB-9A95-3517DFB9C552` and find [a Microsoft blog that says to try deleting a Registry key.](https://blogs.windows.com/windowsexperience/2017/03/17/announcing-windows-10-insider-preview-build-15061-pc/) with [specific instructions of how to get there and delete the Registry key](https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_install/pc-build-install-some-update-were-cancelled/22d428c1-7ce8-4d12-b7bf-2e21c08c0549?tm=1489615923416&auth=1).
+
 Opening `regedit` always scares me. It isn't full-on brain surgery, but it can constitute a breaking change on a flawed-but-functioning computer, so it never feels right. But I found it and rebooted and went home.
 
 (More information on this later, after the laptop's updates finish. Maybe.)
@@ -25,3 +29,7 @@ So, when I woke up, I finished some alien-fighting and closed it, and I saw "Reb
 This is not a choice you should make at 8am if you expect to have it done before you have to go to work.
 
 It's 10:20 right now, and my laptop's at 75%, and it wasn't raining when I walked from the parking garage to my lab. So, things are moving forward. Because who knows what set that Registry entry, I can't name the blocker that has frustrated me for several months, but it seems to be gone now.
+
+**Edited To Add** 
+
+The installation is up, I am running the right version on the laptop, and both behave about the same. They share issues, like artifacting weirdly when switching between VMs, but that's a problem for later.
