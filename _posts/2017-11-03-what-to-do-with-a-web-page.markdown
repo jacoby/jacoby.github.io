@@ -50,6 +50,6 @@ I'm mostly a backend guy who knows just enough front-end to make it work, and th
 
 ## So?
 
-[The Words of House Jacoby are "We Do Not Make Web Pages".](https://twitter.com/jacobydave/status/859430437504069632) I make tools, often using web technologies. I am skilled and interested in this purpose. I am utterly at a loss for what to do. 
+[The Words of House Jacoby are **"We Do Not Make Web Pages"**.](https://twitter.com/jacobydave/status/859430437504069632) I make tools, often using web technologies. I am skilled and interested in this purpose. I am utterly at a loss for what to do. 
 
 If you have questions, comments, suggestions and affirmations, do so as an issue to [my blog repo](https://github.com/jacoby/jacoby.github.io) or [find me on Twitter](https://twitter.com/jacobydave/).
