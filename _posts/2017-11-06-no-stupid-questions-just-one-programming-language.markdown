@@ -10,11 +10,11 @@ My wife and I were sitting in the living room, talking about something or other,
 
 It sounds like a simple question, at least, but it proves to be a complex one, because the answers are "yes, no, yes, no, yes".
 
-##YES
+## YES
 
 On any given machine, there is only one language, which is the binary representation, or **machine language**. In computers, *everything* is ultimately a series of on-off switches, and the code says whether that switch is meant to be on or off. 
 
-##NO
+## NO
 
 Thing is, it is very hard for people to think in terms of ones and zeroes, so there's a representation called **assembly** which takes every task the language is capable of and turns it into a (more) human-readable form. 
 
@@ -40,7 +40,7 @@ As you can see, we're still very much in the machine domain instead of the probl
 
 So, at this point, we have two languages to program computers: one that's impossible for humans to work with and one that's almost impossible for humans to work with.
 
-##YES
+## YES
 
 The above example is written for the assembly language of Intel's x86 chipset. Between MacOS and Windows and Linux, most desktop and server computers use this, but not all of them. There's also ARM, which is what your phone probably uses, and back when a lot of these decisions were made, each computer manufacturer had it's own architecture and assembly. This is good (for the manufacturer) because it allows them to say "Our computers have feature X which is worth all the money!" but it is bad (for the programmer) because that means that your program can only run on the computer it was written for.
 
@@ -56,7 +56,7 @@ So, reductively, if I can do a mathematic thing myself, I can do it 1) mechanica
 
 So, we can all just write in C and be fine.
 
-##NO
+## NO
 
 I could make this `(NO,NO,NO,NO,NO)`, but I think I'll pull it down to one. And be warned, there's LOTS of handwaving here.
 
@@ -78,7 +78,7 @@ As an undercurrent for all this, there's [**Moore's Law**](https://en.wikipedia.
 
 There are many reasons why you would want to use dynamic languages over compiled languages, but one of the key ones is that *"All problems in computer science can be solved by another level of indirection"*, and the dynamic languages have enough indirection that you get to think more in terms of the problem and less in terms of the machine. For example, if you want to write a program about you going to the grocery store, you'd rather be able to start with `walk_to_entryway();` rather than `lean(left); lift_leg(right); move_leg(right,forward);lean(forward);` in a loop. Both happen, but if you can keep the focus on the level of finding milk, eggs and flour, then going to checkout, rather than what your muscles are doing, it's easier to write out the process.
 
-##YES
+## YES
 
 Jeff Atwood proposed **Atwood's Law**, which sits somewhere between Moore's Law and Murphy's Law:
 
@@ -92,7 +92,7 @@ There's no real reason why you couldn't compile JavaScript to JVM or machine cod
 
 Additionally, JavaScript was developed with a lot of LISP in it, so you can write both C-style and LISP-style programs with it, or mix-and-match as you desire. 
 
-##In Conclusion
+## In Conclusion
 
 Ultimately, as long as there are different architectures involved in computing, there will be multiple languages, and sometimes those different architectures are there for a good reason. Those architectures and machine languages might only be handled by people trying to make higher-level languages compile to different architectures, but they will still be there.
 
