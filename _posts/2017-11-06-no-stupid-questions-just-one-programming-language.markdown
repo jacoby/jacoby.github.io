@@ -3,7 +3,7 @@ layout: post
 title:  "No Stupid Questions: Just One Programming Language?"
 author: "Dave Jacoby"
 date:   "2017-11-06 16:32:27 -0500"
-categories: nostupidquestioms
+categories: nostupidquestions
 ---
 
 My wife and I were sitting in the living room, talking about something or other, and she asks me if there could just be one programming language.
