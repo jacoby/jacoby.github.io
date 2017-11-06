@@ -7,9 +7,13 @@ categories:
 ---
 
 > John Jacob Jingleheimer Schmidt
+
 > His name is my name too!
+
 > Whenever we go out
+
 > The people always shout
+
 > "There goes John Jacob Jingleheimer Schmidt!"
 
 It's been stated that, if you're one in a million, that means there are at least 7,000 people out there just like you.
