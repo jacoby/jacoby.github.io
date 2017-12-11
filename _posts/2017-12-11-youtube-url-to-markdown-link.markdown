@@ -41,7 +41,7 @@ map { make_md( $_ ) } @ARGV ;
 
 sub make_md ( $string ) {
     return unless $string =~ m{^https?://www.youtube.com}mix ;
-    my ( $id ) = $string =~ m{v=([^\?]+)} ;
+    my ( $id ) = $string =~ m{v=([^\?\&]+)} ;
     my $link   = qq{https://www.youtube.com/watch?v=$id} ;
     my $thumb  = qq{https://img.youtube.com/vi/$id/0.jpg} ;
     my $title  = 'ALT TEXT' ;
