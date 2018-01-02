@@ -170,6 +170,10 @@ I copied variables out of `$config` to avoid some verbosity inside the loops. I'
 
 The syntax for `$svg->line()` and `$svg->circle()` are, I think, far more important than for loops. I leave adding stroke and fill values as an exercise to the reader.
 
+![The Graph in Lines](/images/lines.png)
+
+![The Graph in Dots](/images/dots.png)
+
 [The full code is available as a GitHub Gist.](https://gist.github.com/jacoby/adaf5cda20c60453489c1d518eb80075)
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
