@@ -8,6 +8,7 @@ categories: WTF
 
 I work in science. My lab does science for other people, generating large amounts of genomic data from small amounts of material. It sits in our space on the file server until we approach our quota, and when we do, we throw the older results onto the tape robot.
 
+
 *I* get data off the robot via `hsi`, but our users use [Globus](https://globus.org/). Developed at the University of Chicago, it's like a combination of Dropbox and the Filezilla FTP client. 
 
 So, one of my users downloaded some results, which came in the form of a tarball. `tar` stands for **tape archive**, and by the small letter count in the program name, you can tell it's been around a while. Long enough that archiving to tape is something most people think of as an old-school computing thing, something they've never done.
