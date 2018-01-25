@@ -96,6 +96,8 @@ While digging through this, it struck me that **Programming is like Parenting an
 
 I suppose the next step is to start with the tracks and plays themselves, building them up a step at a time until I get to that CSV-like level. In fact, I should, if only as a learning experience.
 
+And I think a count of the number of artists per year to whom I listened to one track or less would be interesting.
+
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
 
 
