@@ -30,7 +30,7 @@ This isn't like [VirtualBox](https://www.virtualbox.org/), where you have a full
 
 It isn't like [Docker](https://www.docker.com/what-docker), which combines containers (I don't understand enough to explain, but see as packages but more so) with chroot. [Bryan Cantrill gave a talk on Jails and Solaris Zones as precursers to Docker to Papers We Love in 2016](http://paperswelove.org/2016/video/bryan-cantrill-jails-and-solaris-zones/), so I'll link and handwave.
 
-It's a parallel way to the Windows kernel, one which allows you to install Linux `ELF` binaries via `apt` or `yum` in addition to installing Windows `PE` binaries via `msi` and `chocolatey`|`nuget`.
+It's a parallel way to the Windows kernel, one which allows you to install Linux `ELF` binaries via `apt` or `yum` in addition to installing Windows `PE` binaries via `msi` and `chocolatey` or `nuget`.
 
 Which is very weird. But kinda cool.
 
