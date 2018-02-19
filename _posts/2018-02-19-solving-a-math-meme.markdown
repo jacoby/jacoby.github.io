@@ -8,10 +8,10 @@ categories: math
 
 I found this in my Twitter feed, which I found interesting, because I normally see things of this form on Facebook.
 
-!(FOR REAL MATH NERDS ONLY! 
+![FOR REAL MATH NERDS ONLY! 
 SOLVE CAREFULLY! 
 230-220 x 1/2 =
-MOST PEOPLE WON'T BELIEVE IT, BUT THE ANSWER IS 5!)[/images/five.jpg]
+MOST PEOPLE WON'T BELIEVE IT, BUT THE ANSWER IS 5!](/images/five.jpg)
 
 ##The problem
 
