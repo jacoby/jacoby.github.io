@@ -71,11 +71,11 @@ This becomes more useful in later examples.
     230 - 220 * 1/2    
     230 220 2 / - # equivalent to times 0.5 but easier to type
 
-We need to find `*number* *number* *operator*`, so `230` gets pushed onto the stack, as does `220` and `2`. When we get `/`, it pops the two, divides, and pushes then answer, `110`, back onto the stack.
+We need to find `number number operator`, so `230` gets pushed onto the stack, as does `220` and `2`. When we get `/`, it pops the two, divides, and pushes then answer, `110`, back onto the stack.
 
 Then, the `-` operator comes, we pop `230` and `110`. Subtract them and we get `120`.  
 
-If we lived in the world of Reverse Polish Notation, we would never have to worry about PEMDAS again. The need for parens would go away, because left-to-right `*number* *number* *operator*` would be the only way to math.
+If we lived in the world of Reverse Polish Notation, we would never have to worry about PEMDAS again. The need for parens would go away, because left-to-right `number number operator` would be the only way to math.
 
 But, true or nay, there would be great uproar over introducing such a thing. I'm here advocating for it, and I don't know that I have used it in anger even once.
 
