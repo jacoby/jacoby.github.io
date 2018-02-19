@@ -13,7 +13,7 @@ SOLVE CAREFULLY!
 230-220 x 1/2 =
 MOST PEOPLE WON'T BELIEVE IT, BUT THE ANSWER IS 5!](/images/five.jpg)
 
-##The problem
+## The problem
 
     230 - 220 * 1/2 =
     ( 230 - 220 ) * 1/2 =
@@ -51,7 +51,7 @@ This is a mathematical pun, relying on common mistakes, unfamiliar notation and 
 
 And because this makes the user feel like Clumsy Pan Guy, I feel I must don an obnoxious sweater and say...
 
-##There has to be another way!
+## There has to be another way!
 
 There is. 
 
