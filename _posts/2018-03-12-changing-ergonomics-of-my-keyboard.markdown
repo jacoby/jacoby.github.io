@@ -16,7 +16,7 @@ I've been using a standing desk for nearly five years, and found that the shallo
 
 My first ergonomics-for-me attempt is for [my Logitech first-gen touchpad](https://www.thingiverse.com/thing:361237), which made it work much better for me, but wasn't enough to move me off my trackball. When Chuck put it on the printer, though, he thought it was a big enough chunk of plastic that it'd be better to print a couple smaller versions in order to ensure that the design fit the touchpad. It did, and when the big one was printed, it eventually occurred to me that I could try to use them as a keyboard stand.
 
-[Touchpad and wedges](/images/ergo/1_trackpad_and_1st_stands.jpg)
+![Touchpad and wedges](/images/ergo/1_trackpad_and_1st_stands.jpg)
 
 The problem is that the K350 has a palm rest, and that palm rest was beyond the length of the 3D-printed wedges, which created a pivot point. ([I will also point out that these are not wrist rests, and that using them as such is a bad idea](https://lifehacker.com/wrist-rests-are-for-your-palms-not-your-wrists-1672756283). Any time you see people learning piano in movies, you see the tutor saying "arch your wrist". Musicians have been using keyboards hundreds of years before typists have, so their lessons are probably well-tested.)
 
