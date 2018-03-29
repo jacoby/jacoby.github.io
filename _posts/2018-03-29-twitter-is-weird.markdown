@@ -16,7 +16,7 @@ I will explain this, because tracing the topic switches *is* my point, and I suc
 
 [My friend](https://twitter.com/fitzgepn) replied.
 
-> (I say, why not make both?)[https://twitter.com/fitzgepn/status/978978342912380929]
+> [I say, why not make both?](https://twitter.com/fitzgepn/status/978978342912380929)
 
 Which includes this [War Is Boring](https://medium.com/war-is-boring/) link detailing [the history of the boiling vessel that is a distinguishing feature of British armor](https://medium.com/war-is-boring/the-british-perfected-the-art-of-brewing-tea-inside-an-armored-vehicle-1cc012f3ee54). Here we switch from a critique of imperialism and people who don't know history to a dive into the specifics of military history. With, of course, a reference to an old taco commercial.
 
