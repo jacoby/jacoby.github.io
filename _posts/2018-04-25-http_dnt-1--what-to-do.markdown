@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTTP_DNT: "1" - What To Do?"
+title:  "HTTP_DNT: '1' - What To Do?"
 author: "Dave Jacoby"
 date:   "2018-04-24 16:11:53 -0400"
 categories:
