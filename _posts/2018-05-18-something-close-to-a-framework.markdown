@@ -448,7 +448,7 @@ sub api_operators ( $self, $pathinfo, $param, $method ) {
 			method   => $method,
 			param    => $param,
 			pathinfo => $pathinfo,
-			status   => 200,
+			status   => 200, # OK
 			} ;
 		}
 
@@ -457,11 +457,17 @@ sub api_operators ( $self, $pathinfo, $param, $method ) {
 		method   => $method,
 		param    => $param,
 		pathinfo => $pathinfo,
-		status   => 400,
+		status   => 400, # Bad Request
 		} ;
 
 	}
 
 ```
+
+So, in essence, if you're doing a GET command, here's the data, else error.
+
+The good thing about this is that I now only have to worry about the desired behavior of specific endpoints. The argument would be that `PUT` would modify an operator, that `POST` would create an operator, and `DELETE` would remove (or mark as unavailable) an operator. There's a great amount of complexity one could add to a function if it was warranted.
+
+I wrote this because I tweeted a portion to [@gizmomathboy](https://twitter.com/gizmomathboy/) recently an decided to write up some context.
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
