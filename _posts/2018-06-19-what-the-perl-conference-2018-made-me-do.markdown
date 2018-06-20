@@ -8,7 +8,7 @@ categories:
 
 [David Golden](https://twitter.com/xdg/) gave a talk on [Higher Order Perl](https://www.youtube.com/watch?v=USF4BHMFKbg&feature=youtu.be). Higher Order programming is writing functions that return functions, which allows things to go mad. (See previous writing for more on that.) This inspired me to put **Higher Order Perl** back on my reading list.
 
-[Pudge](https://twitter.com/pudgenet) was inspired to go back to Perl modules, adding to his module `[D'oh](https://metacpan.org/pod/D::oh)` the ability to decide the name of the value you want, simply by typing `use D'oh wq{why_is_this_sucking} ;` 
+[Pudge](https://twitter.com/pudgenet) was inspired to go back to Perl modules, adding to his module `[D::oh](https://metacpan.org/pod/D::oh)` the ability to decide the name of the value you want, simply by typing `use D'oh wq{why_is_this_sucking} ;` 
 
 Now, as I established previously, I stole the core from [perlbrew](https://perlbrew.pl/) which allows me to take a command, like `perlbrew exec` or `perlbrew help`, then look for `&exec` and `&help`, I do this with `$s = $self->can($command) ; $self->$s if defined $s`. 
 
