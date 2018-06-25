@@ -82,8 +82,6 @@ solve_sudoku( 0, 0, '' );
 
 ```perl
 # my preferences
-#!/usr/bin/perl
-
 use strict ;
 use warnings ;
 use feature qw{ say postderef signatures } ;
