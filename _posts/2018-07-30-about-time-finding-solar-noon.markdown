@@ -125,7 +125,7 @@ And the other hour? It's summer, so Daylight Saving Time. Sunrise, without it, w
 
 But I still have `America/Indianapolis` hard-coded, because while I get **America**, **Indiana**, **Tippecanoe County**, **Wabash Township** and **West Lafayette** from Google, I do not get **America/Indianapolis** or **EDT** or **GMT-4**.
 
-Shub-Internet tells me that [https://developers.google.com/maps/documentation/timezone/intro](Google has an API for that as well), but I have yet to create a key and work that. Exercise for the reader?
+Shub-Internet tells me that [Google has an API for that as well](https://developers.google.com/maps/documentation/timezone/intro), but I have yet to create a key and work that. Exercise for the reader?
 
 Anyway, this is the current state of my Solar Noon program, which was adapted from my current weather program. (I work in a sub-basement, so I can't just look out a window.) May you soon marvel at how unnatural your relationship to the sun actually is.
 
