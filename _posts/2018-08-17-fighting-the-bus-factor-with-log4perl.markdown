@@ -6,8 +6,8 @@ date: "2018-08-17 13:13:13 -0400"
 ? categories
 ---
 
-![ A Bus ](/image/bus.jpg)
-[By Littletung - Own work, CC BY-SA 3.0, ][https://en.wikipedia.org/wiki/Big_Blue_Bus)
+![ A Bus ](/images/bus.jpg)
+[By Littletung - Own work, CC BY-SA 3.0, ]https://en.wikipedia.org/wiki/Big_Blue_Bus)
 https://commons.wikimedia.org/w/index.php?curid=26397084
 
 Ever heard the phrase ["Bus Factor"?](https://en.wikipedia.org/wiki/Bus_factor) In a nutshell, it relates to what happens if someone in your organization got "hit by a bus". It doesn't have to be literal; changing jobs is sufficient.
@@ -16,7 +16,7 @@ A co-worker went to part-time here and part-time elsewhere in the organization. 
 
 I **do** understand Perl, and the wonderful power of Log4perl.
 
-[Log::Log4perl](https://metacpan.org/pod/Log::Log4perl) is Perl's take on Log4J, with a *lot* of options.
+[Log::Log4perl](https://metacpan.org/pod/Log::Log4perl) is Perl's take on Log4J, with a _lot_ of options.
 
 I wrote a quick thing that would log anything you put in `@ARGV`.
 
@@ -39,7 +39,7 @@ my $logger = Log::Log4perl::get_logger('log_me');
 $logger->warn($argv);
 ```
 
-Log::Log4perl isn't in Core, but it is *very* useful.
+Log::Log4perl isn't in Core, but it is _very_ useful.
 
 So, now, if I run `log_me.pl test`, I get
 
@@ -99,6 +99,6 @@ The `me` line gets to the right file name when symlinked (according to [this ans
 
 The point of this is triage: The program most often run is the program I should understand the most. Looks like `should_blast_be_queued.sh` is high up in the priority list so far.
 
-As is looking both ways at the intersection. 
+As is looking both ways at the intersection.
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
