@@ -6,8 +6,9 @@ date: "2018-08-17 13:13:13 -0400"
 ? categories
 ---
 
-[![ A Bus ](https://en.wikipedia.org/wiki/Big_Blue_Bus#/media/File:SMBBB3876.jpg)](https://en.wikipedia.org/wiki/Big_Blue_Bus#/media/File:SMBBB3876.jpg)
-By Littletung - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=26397084
+![ A Bus ](/image/bus.jpg)
+[By Littletung - Own work, CC BY-SA 3.0, ][https://en.wikipedia.org/wiki/Big_Blue_Bus)
+https://commons.wikimedia.org/w/index.php?curid=26397084
 
 Ever heard the phrase ["Bus Factor"?](https://en.wikipedia.org/wiki/Bus_factor) In a nutshell, it relates to what happens if someone in your organization got "hit by a bus". It doesn't have to be literal; changing jobs is sufficient.
 
