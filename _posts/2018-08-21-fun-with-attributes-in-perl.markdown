@@ -74,7 +74,7 @@ sub iterate : lvalue {
     else {
         $self->{iterate} = 0;
     }
-    # must return the variable for lvalue-ness
+
     $self->{iterate};
 }
 
