@@ -68,7 +68,6 @@ sub iterate : lvalue {
     # here we ensure iterate exists
     $self->{iterate} = 0 unless defined $self->{iterate};
 
-    # here we ensure that
     if ( looks_like_number( $self->{iterate} ) ) {
         $self->{iterate}++;
     }
