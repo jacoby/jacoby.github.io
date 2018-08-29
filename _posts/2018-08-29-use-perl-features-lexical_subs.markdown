@@ -94,7 +94,7 @@ But while I'm thinking about subs and scopes and access, let me bring in two wor
 
 The derivation of the _monkey_ part of _monkey-patching_, we think, is _guerilla_ > _gorilla_ > _monkey_. The _patching_ part is standard: changing software.
 
-`local` is an older thing that, most of the time is best replaced by `my`. The point where it isn't is when it _temporarily_ replaces existing variables. For example, when you `print @array`, it essentially does `print join $, , @array`, because '$,', AKA `$OUTPUT_FIELD_SEPARATOR`. You can't do `my $, = '-'`, because `$,` exists, but you can do `local $, = '-'`.
+`local` is an older thing that, most of the time is best replaced by `my`. The point where it isn't is when it _temporarily_ replaces existing variables. For example, when you `print @array`, it essentially does `print join $, , @array`, because `$,`, AKA `$OUTPUT_FIELD_SEPARATOR`. You can't do `my $, = '-'`, because `$,` exists, but you can do `local $, = '-'`.
 
 ```perl
 my @array = 1..4;
