@@ -81,7 +81,7 @@ sub mysub {
 
 But don't you find that verbose and ugly? I'd rather get as quickly as I can to the details that matter.
 
-###Note:
+*Note:*
 [@bokutin](https://twitter.com/bokutin) asked about `//=`. I admit that this is an operator I hardly use and never remember. The above non-signature sub would be better written as:
 
 ```perl
