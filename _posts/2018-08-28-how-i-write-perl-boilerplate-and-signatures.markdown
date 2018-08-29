@@ -72,7 +72,7 @@ You _could_ do a lot of that without signatures...
 ```perl
 sub mysub {
     my ( $foo, $bar, $blee, $quuz ) = @_;
-    croak 'too few arguments' unless defined $fool;
+    croak 'too few arguments' unless defined $foo;
     $bar  = defined $bar  ? $bar  : 1;
     $blee = defined $blee ? $blee : 'armada';
     $quuz = defined $quuz ? $quuz : 'fmep';
@@ -80,6 +80,21 @@ sub mysub {
 ```
 
 But don't you find that verbose and ugly? I'd rather get as quickly as I can to the details that matter.
+
+###Note:
+[@bokutin](https://twitter.com/bokutin) asked about `//=`. I admit that this is an operator I hardly use and never remember. The above non-signature sub would be better written as:
+
+```perl
+sub mysub {
+    my ( $foo, $bar, $blee, $quuz ) = @_;
+    croak 'too few arguments' unless defined $foo;
+    $bar  //= 1;
+    $blee //= 'armada';
+    $quuz //= 'fmep';
+}
+```
+
+I agree, that's better. I still like signatures.
 
 That is my standard Perl boilerplate. I have a number of go-to modules, which I'll get into in another blog post, but this is a code block I use for everything. If you have suggestions for different cool features to start using, like `lexical_subs`, I'd be glad to know how you use them.
 
