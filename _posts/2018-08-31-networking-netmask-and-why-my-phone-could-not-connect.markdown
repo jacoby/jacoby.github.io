@@ -62,11 +62,11 @@ A new host, let us say an Android phone, connects to the network. DHCP sends tha
 
 We have 256 addresses from 0 to 255, and we take away three for the network, gateway and broadcast, leaving 253. Meanwhile, we get more people and more devices per person. Laptops, phones, tablets, and more come on, taking up all of those 253 addresses. So, we say we have room to grow, and add **10.10.11.0-255** to the **10.10.10.0-255** we already had, and the DHCP lease, the time where the DHCP server gives this IP address to this MAC address (the actual unique address of a network device), is up, so this Android phone gets a new address. **10.10.11.100**.
 
-> **00001010 00001010 0000101*0* 00000001** - 10.10.10.1 **Gateway** 
+> 00001010 00001010 0000101**0** 00000001 - 10.10.10.1 - **Gateway** 
 > 
-> **00001010 00001010 0000101*1* 01100100** - 10.10.11.100 **Host** 
+> 00001010 00001010 0000101**1** 01100100 - 10.10.11.100 - **Host** 
 > 
-> **11111111 11111111 1111111*1* 00000000** - 255.255.255.0 **Netmask**
+> 11111111 11111111 1111111**1** 00000000 - 255.255.255.0 - **Netmask**
 
 When the netmask digit is one, the digits between two addresses should be the same, else they're not in the same network.
 
