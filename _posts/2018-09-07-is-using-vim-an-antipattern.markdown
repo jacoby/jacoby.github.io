@@ -8,7 +8,7 @@ date: "2018-09-07 10:14:32 -0400"
 
 !["OH, NED!", she exclaims. "YOU **ARE** A **VI MAN** AFTER ALL!"](/images/vi_man.png)
 
-This line of thinking started with a [https://dev.to/](Dev.To) post entitled [https://dev.to/maestromac/vim-wont-make-you-a-more-productive-developer-h9f]("Vim won't make you a more productive developer"). Read the article for a full argument on this position, but in a nutshell, if you don't already know it, there are already powerful editors that work with how you already know how to work, like VS Code and that it is likely a better use of your time to learn to learn other things.
+This line of thinking started with a [https://dev.to/](Dev.To) post entitled ["Vim won't make you a more productive developer"](https://dev.to/maestromac/vim-wont-make-you-a-more-productive-developer-h9f. Read the article for a full argument on this position, but in a nutshell, if you don't already know it, there are already powerful editors that work with how you already know how to work, like VS Code and that it is likely a better use of your time to learn to learn other things.
 
 I started being a vi man back in 1995, taking early CS courses. There was a lot to get in your head — New to Unix? New to C? New to Programming? Welcome to the Deep End! — and I spent nany a long night on Sparc 5s, exhausting myself as I put things like `ESC` and `:wq` and `:q!` and `se nu` into my hands and head.
 
