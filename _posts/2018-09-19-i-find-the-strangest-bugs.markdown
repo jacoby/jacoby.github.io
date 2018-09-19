@@ -24,7 +24,7 @@ This **does not** happen in `/home/jacoby/` or `/home/jacoby/mnt/djacoby`, just 
 
 (`/home/jacoby/mnt/djacoby/` is a symlink to `/mount/djacoby`, because `find` doesn't jump symlinks but it _does_ follow mount points.)
 
-My suspicion is based on knowing that Code is an [Electron](https://electronjs.org/) app, build with HTML and JavaScript and running in Chrome. I think it is reading `2551.e1280822` as **2551 to the power of 1280822**, which is so big that JS gives up and says "Infinity", and I have no idea if it's because it's so deep into that path or what.
+My suspicion is based on knowing that Code is an [Electron](https://electronjs.org/) app, build with HTML and JavaScript and running in Chrome. I think it is reading `2551.e1280822` as **2551 time 10 to the power of 1280822**, which is so big that JS gives up and says "Infinity", and I have no idea if it's because it's so deep into that path or what.
 
 My next questions: What triggers Code to treat filenames as huge numbers? Is this such an obscure and specific problem that nobody else will find it? Should I report this as a bug?
 
