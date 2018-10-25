@@ -68,6 +68,6 @@ The problem is something I consider a big anti-pattern, **Positional Parameters*
 
 The other option is **Named Parameters**, where we might start with `stringify(obj)` or `stringify(value:obj)`, to lean more on JS formatting, which might allow us `stringify(value:obj,space:2)` so we need no replacer if we don't want it.
 
-As a 
+If I was writing this now, I would want to reverse the order of the positional parameters, because, hey, I want readable JSON a lot more than I want filtered JSON. But because it already exists as is, that would break things.
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
