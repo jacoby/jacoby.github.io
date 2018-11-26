@@ -15,7 +15,7 @@ Because I was loathe to spend too much time throwing stuff into production durin
 * `//hostname/?query_string=foo`
 * `//hostname/reading/path/info`
 * `<form method="POST" action="//hostname/">`
-* `curl -n -X POST //hostname/ -d '{"this":"is json"} #AJAX calls also work like this'
+* `curl -n -X POST //hostname/ -d '{"this":"is json"} #AJAX calls also work like this`
 
 The last _looks_ like the second-to-last, but the behavior is different.
 
