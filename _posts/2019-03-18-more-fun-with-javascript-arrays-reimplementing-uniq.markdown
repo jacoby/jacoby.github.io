@@ -150,7 +150,7 @@ $shrews->@* = grep
 
 Here we use an internal hash to save the values, and instead of running `keys` on that, we iterate `$x->{value}` and if it equals 1, we let it pass.
 
-Could we use an `indexOf` method to make a more Javascripty `grep` function? Certainly, because [`https://metacpan.org/pod/List::MoreUtils`(https://metacpan.org/pod/List::MoreUtils) has `first_index`, and also `uniq`, and is not in Core, so it's a lot of added complexity for no added ease of use.
+Could we use an `indexOf` method to make a more Javascripty `grep` function? Certainly, because [`https://metacpan.org/pod/List::MoreUtils`](https://metacpan.org/pod/List::MoreUtils) has `first_index`, and also `uniq`, and is not in Core, so it's a lot of added complexity for no added ease of use.
 
 Side note on `sort` in JS: `let shrews = hedgehogs.sort()` has an interesting side effect, in that `.sort()` acts on `hedgehogs`, not on the output being passed to `shrews`. So:
 
