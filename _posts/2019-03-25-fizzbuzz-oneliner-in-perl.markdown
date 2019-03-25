@@ -75,7 +75,7 @@ and replace it with
 print $i % 3 ? '':'fizz';
 ```
 
-[This is not a Perlims; it exists in many languages.](https://en.wikipedia.org/wiki/%3F:)
+[This is not a Perlism; it exists in many languages.](https://en.wikipedia.org/wiki/%3F:)
 
 > **Quick Note:** Here, we are playing with truth. Within conditionals, `false` means `0` and `true` means `not 0`. With `%3`, we can get the values `0`, `1`, and `2`, and both `1` and `2` count as `true`. That's another free week of CS 101, and a little bit of Boolean for PHIL 131 - Introduction to Logic.
 
