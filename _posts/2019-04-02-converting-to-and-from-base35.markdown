@@ -33,7 +33,7 @@ Which, since I wrote it, I can quote here:
 >
 >So, going to base35 gets you almost to the end of the alphabet before flipping over to 10.
 
-So, Let's start with some housekeeping. If I wanted all the digits, I'd go 
+So, let's start with some housekeeping. If I wanted all the digits, I'd go 
 
 ```perl
 my @hedgehogs = 0..9;
@@ -148,6 +148,8 @@ So, within the loop:
 (With the mention of iterators, I should mention I could've iterated `$c` when I assigned the multiplier to `$f`, but I didn't. This isn't golf; this is okay.)
 
 And here we find that `PERL` in Base35 is **1089991**.
+
+And clearly, it would be reasonably easy to write `to_base($number,$base)` and `from_base($string,$base)` by just changing out hard-coded values, but we run out of letters after base36.
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
 
