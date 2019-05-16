@@ -16,7 +16,7 @@ This solves **Challenge #1** in this week's [Perl Weekly Challenge](https://perl
 
 The solution, or at least the test, is in the Wikipedia page, but here it is.
 
-> ** 6 = 1 + 2 + 3 **
+> **6 = 1 + 2 + 3**
 
 The sum of all a number's factors not including the number itself must equal the number. So, let's check _all the numbers!_
 
