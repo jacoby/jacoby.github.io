@@ -43,7 +43,7 @@ _But_, if we're going to that, we can do another, hipper thing.
 # note 1: $n++ increases $n AFTER returning, so first return would be 0
 sub iter1 () { state $n = 0; return $n++ }
 
-# note 2: $n++ increases $n BEFORE returning, so first return would be 1
+# note 2: ++$n increases $n BEFORE returning, so first return would be 1
 sub iter2 () { state $n = 0; return ++$n }
 
 say join ':', iter1(),iter2(); # 0:1
