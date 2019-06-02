@@ -61,8 +61,8 @@ Consider this implementation.
 
 ```perl
 my %dispatch_table = {
-    foo => &foo,
-    bar => &bar,
+    foo => \&foo,
+    bar => \&bar,
 };
 
 sub foo { return "FOO" }
@@ -74,8 +74,8 @@ I'm not 100% sure this is exactly a DRY violation, but you have to handle the ma
 
 ```perl
 my %dispatch_table = {
-    foo => &bar,
-    bar => &foo,
+    foo => \&bar,
+    bar => \&foo,
 };
 ```
 
@@ -100,10 +100,10 @@ davecode.code = {};
 davecode.code.foo = function () { console.log("FOO") };
 davecode.code.bar = function () { alert("BAR") };
 
-\\ using it as an object-ish
+// using it as an object-ish
 davecode.code.foo();
 
-\\ using it as a dispatch table
+// using it more like a dispatch table
 davecode.code["foo"]();
 ```
 
@@ -322,5 +322,7 @@ Unknown command: `hlep`. Did you mean `help`?
 `perlbrew` _knows_ that `help` is a possible command, probably the one you meant. How do we do that with `cli.pl`?
 
 This has a terribly clever solution. I _believe_ it can only happen within the `CLI` package within `cli.pl`, not in any of the module code. At least without some work. I think I will blog that as a follow-up.
+
+(_Attn:_ Thanks to [Joel Berger](https://twitter.com/joelaberger/) for noting points for correction, and for a [Moo](https://metacpan.org/pod/Moo)-based take that I'll look further into.)
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
