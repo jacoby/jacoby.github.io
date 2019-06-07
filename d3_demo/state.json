@@ -1,0 +1,61 @@
+{
+   "links" : [
+      {
+         "source" : 0,
+         "target" : 4,
+         "value" : 1
+      },
+      {
+         "source" : 1,
+         "target" : 2,
+         "value" : 1
+      },
+      {
+         "source" : 5,
+         "target" : 4,
+         "value" : 1
+      },
+      {
+         "source" : 2,
+         "target" : 3,
+         "value" : 1
+      },
+      {
+         "source" : 5,
+         "target" : 1,
+         "value" : 1
+      },
+      {
+         "source" : 4,
+         "target" : 1,
+         "value" : 1
+      }
+   ],
+   "nodes" : [
+      {
+         "group" : 1,
+         "name" : "researcher_draft"
+      },
+      {
+         "group" : 1,
+         "name" : "financials_approved"
+      },
+      {
+         "group" : 1,
+         "name" : "processing"
+      },
+      {
+         "group" : 1,
+         "name" : "completed"
+      },
+      {
+         "group" : 1,
+         "name" : "researcher_in_agreement"
+      },
+      {
+         "group" : 1,
+         "name" : "proposed"
+      }
+   ]
+}
+
