@@ -116,4 +116,14 @@ We could've gone with `join '/', map { $p2[0][$_] } 0 .. $c - 1`, and that's the
 
 Anyway, Happy Coding!
 
+**Addition:** 
+
+Looked into [brian d foy's writing on `postderef`](https://www.effectiveperlprogramming.com/2014/09/use-postfix-dereferencing/) and saw this, which works.
+
+```perl
+            say join '/', $p2[0]->@[ 0 .. $c - 1 ];
+```
+
+Still violates Least Astonishment, says I, but I know what to do now.
+
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
