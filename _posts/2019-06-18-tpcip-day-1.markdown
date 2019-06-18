@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "TPCiP Day 1"
+author: "Dave Jacoby"
+date:   "2019-06-18 07:29:02 -0400"
+categories: ""
+---
+
+What to say, what to say?
+
+Well, I made a mistake. I read the new [Perl Weekly Challenge](https://perlweeklychallenge.org/blog/perl-weekly-challenge-013/), noticed that Dave Rolsky has made part one _very_ easy for us, and dived in, and didn't give the fullest attention to [Sawyer X's Pumpking address](https://www.youtube.com/watch?v=4wKyNYs7eZw) and the Keynote, [A Neuroscientist's Guide to Effectiveness](https://t.co/jlg4SHo1b2). [Link to Conference video](https://www.youtube.com/watch?v=nj3IoW_rboE)
+
+Those solutions will likely be blogged later, and I certain rewatch both. Maybe I won't blog that, though.
+
+## Building a Bridge to a Legacy Application ([@mscottford](https://twitter.com/mscottford))
+
+[Link to Conference video](https://www.youtube.com/watch?v=7RlH3IiulDk)
+
+This is a story about reverse-engineering an old Windows application to see how you can interact with it. It's always fun to see how 
+
+## Interfaces in Perl5 ([@kfly8](https://twitter.com/kfly8))
+
+[Link to Conference video](https://www.youtube.com/watch?v=K25OxILcbNE)
+
+This talk is from the organizer of YAPC::Tokyo, and his first time to present to the US. The topic is [`Function::Interface`](https://metacpan.org/release/Function-Interface), and the point is to wrangle the wildly-dynamic nature of Perl, which we have abused for fun and profit for decades, ensuring (in a Java-ish way) that the type the caller sends is the type the function requires, and that the type the caller expects is the type the function returns.
+
+I can imagine that being a big thing for large systems with many developers, but at this moment, my tech crew has shrunk to the limit, so I know what I'm passing and what I'm receiving. It's an interesting idea, but, as he said, it's in development and not nearly production ready. [Find it on GitHub.](https://github.com/kfly8/p5-Function-Interface)
+
+## Organized Development with Tmux ([@preaction](https://twitter.com/preaction))
+
+[Link to Conference video](https://www.youtube.com/yapcna)
+
+It was interesting to see the magic involved with `tmux`. I still need to pull back and see what we get from it that we don't get from `screen`. Except for one case, I see it as trying to economize an infinite resource -- you can have as many term as you want.
+
+The case that _almost_ makes sense to me is when I might want to look back at a long-running task when I 1) want to move from desktop and laptop to tablet to phone, and/or 2) I don't trust the connection to the host. But I work on a well-networked university and can rely on the connection quality, and I have yet to care about the session after I leave. Well-presented talk, but I keep going to these things hoping to be convinced, and it's still not how I work.
+
+## Perl Begat Perl (Uri)
+
+[Link to Conference video](https://www.youtube.com/watch?v=eMW1hCpP2Is)
+
+This is about `eval( STRING )`. `eval( STRING )` is evil. There are two things I pulled from this talk.
+
+The first thing is perhaps the biggest [WAT](https://www.destroyallsoftware.com/talks/wat) I've seen in Perl.
+
+![eval 'system("sleep 5");'](https://jacoby.github.io/images/wat.jpg)
+
+The levels of wrong here. First, `sleep 5` is valid Perl, so you don't need to shell out for it. and then either the `system` or the `eval` wil do it for you.
+
+"Why you do that, I don't know", as Nicolas said. He also said "I can make it worse."
+
+<pre>eval q`system("sleep 5");`</pre>
+
+So, there's that.
+
+The second thing is about the `e` in `s///e`. 
+
+`e` is for _evaluate_, and `s/(foo)/print $1/eg` prints `foo` every time it finds `foo` in whatever it's working on. OK, but did you know that `/e` stacks? 
+
+```perl
+my $str1;
+my $str = <<'END';
+my x is $x my x is $x
+END
+
+print $str;
+$str1 = $str;
+$str1 =~ s/(\$\w+)/$1/g;
+print $str1;
+
+$str1 = $str;
+$str1 =~ s/(\$\w+)/$1/eeg;
+print $str1;
+
+$str1 = $str;
+$str1 =~ s/(\$\w+)/$1/eeeg;
+print $str1;
+
+## Annotated output
+## The original
+# my x is $x my x is $x
+
+## /e, meaning $x gets parsed as a name and outputted
+# my x is $x my x is $x
+
+## /ee, where "$x" becomes $x and gets parsed
+# my x is say "ZED" my x is say "ZED"
+
+## /eee, where "$x" becomes $x and gets evaluated, returning 1
+## but saying ZED
+# ZED
+# ZED
+# my x is 1 my x is 1
+```
+
+This is ... um .. cool that you can do it, but ... do you want to? Ruth suggests this _might_ not be caught by Perl Critic, but, is that a _good_ thing?
+
+If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
+
+
