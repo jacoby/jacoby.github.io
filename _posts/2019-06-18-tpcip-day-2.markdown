@@ -1,0 +1,39 @@
+---
+layout: post
+title: "TPCiP Day 2"
+author: "Dave Jacoby"
+date: "2019-06-18 15:17:45 -0400"
+categories: ""
+---
+
+The track I was on (all the same room) was far less about "cool new things you can do with code" and much more about yourself as a developer.
+
+> Note the obsessive use of abbreviations and avoidance of capital letters; this is a system invented by **people to whom repetitive stress disorder is what black lung is to miners.**
+>
+> [Neal Stephenson, _In The Beginning Was The Command Line_](https://www.nealstephenson.com/in-the-beginning-was-the-command-line.html), emphasis from genehack
+
+## Confessions of a Space Cadet ([@genehack](https://twitter.com/genehack/))
+
+[Link](https://www.youtube.com/user/yapcna/videos)
+
+If I get the details wrong, I am sure genehack will yell at me, but he started to have issues with repetitive stress disorder, and decided to handle it himself by going through different keyboard styles, and by setting things on the keyboard, from Dvorak and other alternative keyboard layouts, to drastically different keyboard styles like [keyboard.io](https://shop.keyboard.io/) (who make _very, very_ pretty keyboards, which are open-sourced and easily hackable) to different mappings and such, like "you must use the shift with the opposite hand of the letter" and "reuse the shift and control characters to give you right- and left-hand brackets and braces".
+
+## Perl Out Loud ([@yomilly](https://twitter.com/yomilly/))
+
+[Link](https://www.youtube.com/user/yapcna/videos)
+
+If I get the details wrong, I am sure yomilly will yell at me, but she started to have issues with repetitive stress disorder, and the keyboard switching and the setup changes and the stretching and the yoga and the anti-inflamatorys just weren't working, so she found [Talon](https://talonvoice.com/), which allows her to program without having to use her hands.
+
+She even switched slides using her Talon system. It's Mac-only (for now; Windows and Linux are on the roadmap), and I live a very Apple-less life, so I'm not sure when I can dive in, but I like the way this is moving.
+
+## I Never Metaphor I Didn't Like: How Cognitive Linguistics Can Help You Be A (More) Bad-ass Developer ([@perigrin](https://twitter.com/perigrin/))
+
+[Link](https://www.youtube.com/user/yapcna/videos)
+
+If I get the details wrong, I am sure perigrin will yell at me, but this was fun. At core, we use metaphor to abstract understanding, so that, by "x is like y", we can begin to understand and work with a topic previously unfamiliar to us. There was also a lively conversation about how metaphors work, how managers need metaphors because they don't fully understand what programmers are doing (and that's good, because they're managing, not programming), and how there are no universally-accepted metaphors, although there are some primary metaphors that are _fairly_ universal.
+
+![Primary Metaphors](https://jacoby.github.io/images/metaphors.jpg)
+
+And a whole bunch more!
+
+If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
