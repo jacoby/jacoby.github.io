@@ -14,13 +14,13 @@ The track I was on (all the same room) was far less about "cool new things you c
 
 ## Confessions of a Space Cadet ([@genehack](https://twitter.com/genehack/))
 
-[Link](https://www.youtube.com/user/yapcna/videos)
+[Link](https://youtu.be/1voFAri6RG0)
 
 If I get the details wrong, I am sure genehack will yell at me, but he started to have issues with repetitive stress disorder, and decided to handle it himself by going through different keyboard styles, and by setting things on the keyboard, from Dvorak and other alternative keyboard layouts, to drastically different keyboard styles like [keyboard.io](https://shop.keyboard.io/) (who make _very, very_ pretty keyboards, which are open-sourced and easily hackable) to different mappings and such, like "you must use the shift with the opposite hand of the letter" and "reuse the shift and control characters to give you right- and left-hand brackets and braces".
 
 ## Perl Out Loud ([@yomilly](https://twitter.com/yomilly/))
 
-[Link](https://www.youtube.com/user/yapcna/videos)
+[Link](https://youtu.be/Mz3JeYfBTcY)
 
 If I get the details wrong, I am sure yomilly will yell at me, but she started to have issues with repetitive stress disorder, and the keyboard switching and the setup changes and the stretching and the yoga and the anti-inflamatorys just weren't working, so she found [Talon](https://talonvoice.com/), which allows her to program without having to use her hands.
 
