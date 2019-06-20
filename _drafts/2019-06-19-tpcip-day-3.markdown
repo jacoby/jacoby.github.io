@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "TPCiP Day 3"
+author: "Dave Jacoby"
+date:   "2019-06-19 15:37:19 -0400"
+categories: ""
+---
+
+This is the last day.
+ 
+## Readin' Rust
+
+([link](https://www.youtube.com/user/yapcna/videos))
+
+[Spazm](https://twitter.com/spazm) talked about [Rust](https://www.rust-lang.org/). At The Perl Conference. _There's More Than One Way To Do It_, and that includes doing it in other languages.
+
+Spazm enjoys Rust. Spazm enjoys life. Spazm tweeted that he could not live tweet his own talk, so I tried. I don't know enough Rust to really follow along AND handle the live tweeting, so I didn't do as well as I might.
+
+But Spazm enjoys speaking and is enjoyable as a speaker.
+
+Some of the tweets and responses.
+
+> ["I've found that I really like types. It's weird." -- @spazm  #rustlang #TPCiP](https://twitter.com/JacobyDave/status/1141333845939302411?s=19)
+
+The one thing I recall is that null is a value but none is a type.
+
+> "What's the difference between null and none?"
+> 
+> "I actually know that one. null is a value, none is a type." 
+> 
+> --@spazm #rustlang #TPCiP ([Link](https://twitter.com/JacobyDave/status/1141337683287056387))
+
+...
+
+> [So being a type, we can have, for example, an array of 100 nothings?](https://twitter.com/JacobyDave/status/1141368617801531392)
+
+> Yes.  
+> Let sweet = [None; 5];
+> 
+> Option is really an enum type over None and Some(T).  So None > is an empty Enum.  Not sure if it is actually a NST (non sized > type) ?
+> 
+> https://t.co/aHqZrLGd2s
+
+I didn't leave with great confidence that I could jump into Rust _that day_, but I am convinced that there's some _there_ there. I mean, if Spazm is _that_ excited about it...
+
+## CompleteShell
+
+([link](https://www.youtube.com/watch?v=11IkcJV_keo))
+
+```bash
+$ perlbrew hlep
+Unknown command: `hlep`. Did you mean `help`?
+```
+
+It uses the Levenshtein Distance between the available commands to figure out that `hlep` is closest to the perlbrew command `help`. [I've covered the Levenshtein distance before]( https://varlogrant.blogspot.com/2016/11/graphs-are-not-that-scary.html), but you know what I like better than suggesting better answers?
+
+Using tab-completion to get it right in the first place.
+
+This talk is all about doing just that, on any shell. [shell completions](https://github.com/perlpunk/shell-completions) gives you the ability to set the values so `git hTAB` completes to `git help`.
+
+It's early. I'm sitting with Pudge as he tries to make it work, and he says it's not all there yet. But it really is a very good idea.
+
+## Overloading Perl OPs using XS
+
+([link](https://www.youtube.com/watch?v=2YMWDjkVJ2g))
+
+This is an add-on to this talk on [XS](https://www.youtube.com/watch?v=4rrcICCfxco) that Nico gave in Salt Lake City.
+
+[XS](https://perldoc.perl.org/perlxs.html) is an interface between Perl and C, so that you can implement the things that you want to be fast in the fastest possible portable way. This talk "will show how it's possible to mock PerlOps using XS and provide a convenient Pure Perl hook for each of the file check -X."
+
+Honestly, I was told I was to be moderator because the previous moderator is now forbidden from moderating, and then there was a big of Inkscape work that I was asked to do (because Nico, the other person who handles those graphics, was actually speaking) and I barely saw anything.
+
+But he knows his stuff and is very nice and, please, watch his talk.
+
+If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
+
+
