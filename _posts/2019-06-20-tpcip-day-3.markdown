@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: "TPCiP Day 3"
@@ -10,7 +11,7 @@ This is the last day.
 
 ## Readin' Rust
 
-([link](https://www.youtube.com/user/yapcna/videos))
+([link](https://www.youtube.com/watch?v=kX6kEg83Dqk))
 
 [Spazm](https://twitter.com/spazm) talked about [Rust](https://www.rust-lang.org/). At The Perl Conference. _There's More Than One Way To Do It_, and that includes doing it in other languages.
 

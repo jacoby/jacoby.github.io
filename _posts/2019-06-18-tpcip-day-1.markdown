@@ -28,7 +28,7 @@ I can imagine that being a big thing for large systems with many developers, but
 
 ## Organized Development with Tmux ([@preaction](https://twitter.com/preaction))
 
-[Link to Conference video](https://www.youtube.com/yapcna)
+[Link to Conference video](https://www.youtube.com/watch?v=o7Dg1kmjhfQ)
 
 It was interesting to see the magic involved with `tmux`. I still need to pull back and see what we get from it that we don't get from `screen`. Except for one case, I see it as trying to economize an infinite resource -- you can have as many term as you want.
 
