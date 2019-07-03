@@ -6,7 +6,13 @@ date:   "2019-07-03 11:14:53 -0400"
 categories: ""
 ---
 
+There are thoughts that computer professionals ask that other people don't, and as long as we only ask these things of ourselves and other computer professionals, we won't be thought of as _too_ weird.
+
+In this case, the thought that came to me as I packed up to go to my local coworking space, was "How many MAC addresses are on me right now?"
+
 ## What's A MAC Address?
+
+_MAC_ stands for _Media Access Control_ is is how computers identify each other over the network. Instead of diving into the magic of ARP...
 
 **Metaphor Time!**
 
@@ -36,6 +42,8 @@ Bluetooth keyboard: Bluetooth. Duh. 1 MAC.
 
 Laptop: Bluetooth and WiFi. 2 MACs.
 
+USB-to-Wired-Ethernet dongle. 1 MAC.
+
 Logitech Unifyng dongle: Unifying is like Bluetooth but different. We'll say 1 MAC.
 
 Logitech presentation remote: I _know_ that these things have unique dongles, use non-IR protocols so line-of-sight isn't required, and for this to be true, it must use some sort of pre-Unifying networking protocol, so I have to assume 2 MACs, for the dongle and device, although I cannot prove it.
@@ -44,9 +52,9 @@ Raspberry Pi Zero: I put it together as a conference nametag. It's a full comput
 
 Android Phone: Here we get a new one. It has Bluetooth (I'm listening to _Purple Rain_ on the above-mentioned headphones over Bluetooth), and WiFi, but it can also talk to my cellular provider's data network. I have to say 3, but there's a digression from what I've seen.
 
-Should I count [MEID/IMEI](https://en.wikipedia.org/wiki/Mobile_equipment_identifier)? 
+Should I count [MEID/IMEI](https://en.wikipedia.org/wiki/Mobile_equipment_identifier)?
 
-So, 15 uniquely-identifying numbers that my devices throw around.
+So, 16 uniquely-identifying numbers that my devices throw around.
 
 ## Digression
 
@@ -62,9 +70,15 @@ This can be good: Your phone checks for cells, and those are logged and can be u
 
 So, I might get to dock one.
 
-## What's The Point?
+## And Why Should I Care?
 
+* **Maybe you shouldn't.** As I pointed out when I started this, this is just geeky weirdness that will make your eyes glaze over.
 
+* **TCP/IP.** We can skip the Bluetooth and Logitech MACs for a moment to point out that there are five MACs -- tablet WiFi, phone WiFi, laptop WiFi, wired networking dongle and phone cellular -- that also need an IP address. More than one, as they're all mobile and moved between home, office, coffee shop and coworking space. With IPv4 networking, there are 4,294,967,296 available addresses. We wallpaper over this a lot with NAT, but the big solution is to move to IPv6, which we, by and large, haven't done. This is computing's current impending-disaster-we're-ignoring-for-now. Or at least one of them.
+
+* **Tracking.** This is the most 
+
+As Leslie Carhart wrote, ["Knowing your personal threat model is important!"](https://twitter.com/hacks4pancakes/status/986336829262782465)
 
 If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
 
