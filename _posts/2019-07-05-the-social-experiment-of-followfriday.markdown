@@ -2,7 +2,7 @@
 layout: post
 title: "The Social Experiment of #FollowFriday"
 author: "Dave Jacoby"
-date: "2019-05-31 13:44:18 -0400"
+date: "2019-07-05 17:25:15 -0400"
 categories: ""
 ---
 
@@ -24,17 +24,17 @@ It became a challenge among friends -- mostly but not exclusively those who I kn
 
 And now, starting 8am Eastern, a heavily GIFy stream of tweets gloating about their position or complaining about their demotion occur. It isn't for everyone, but _I_ think it's terribly funny.
 
-It is entirely *my* likes, stored in *my* database, so *I* choose who are my top, but I don't. I don't intentionally think I want my friend Patrick to make the top. This means there are times when someone I don't otherwise know show up high on my list.
+It is entirely _my_ likes, stored in _my_ database, so _I_ choose who are my top, but I don't. I don't intentionally think I want my friend Patrick to make the top. This means there are times when someone I don't otherwise know show up high on my list.
 
-* [Vernon Reid of Living Color](https://twitter.com/vurnt22) planning to make _Purple Rain_ a regular go-to-theater event like _Rocky Horror Picture Show_ was
+- [Vernon Reid of Living Color](https://twitter.com/vurnt22) planning to make _Purple Rain_ a regular go-to-theater event like _Rocky Horror Picture Show_ was
 
-* [Emily Shae](https://twitter.com/yomilly) talking about using voice to program when struck hard with RSI
+- [Emily Shae](https://twitter.com/yomilly) talking about using voice to program when struck hard with RSI
 
-* [Ali Spittel](https://twitter.com/ASpittel) on her enthusiasm with teaching programming and starting at [Dev.to](https://dev.to/)
+- [Ali Spittel](https://twitter.com/ASpittel) on her enthusiasm with teaching programming and starting at [Dev.to](https://dev.to/)
 
-* [Sarah Jeong](https://twitter.com/sarahjeong) on many occasions, but probably top for attending and live-tweeting Oracle vs Google
+- [Sarah Jeong](https://twitter.com/sarahjeong) on many occasions, but probably top for attending and live-tweeting Oracle vs Google
 
-* [VM (Vicky) Brasseur](https://twitter.com/vmbrasseur) for giving a fantastic keynote to The Perl Conference last year and has consistently great things to say about being working with and for Open Source software
+- [VM (Vicky) Brasseur](https://twitter.com/vmbrasseur) for giving a fantastic keynote to The Perl Conference last year and has consistently great things to say about being working with and for Open Source software
 
 My interests are wildly diverse, and therefore there's changes week-to-week, but mostly it's a number of people who I know and like. My friends.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How Many MAC Addresses Are On Me Right Now?"
+title:  "MAC and Me: How Many MAC Addresses Are On Me Right Now?"
 author: "Dave Jacoby"
 date:   "2019-07-03 11:14:53 -0400"
 categories: ""
@@ -32,23 +32,23 @@ In a less metaphorical sense, I've heard stories of high-availability servers ha
 
 ## The Count
 
-Headphones: Bluetooth. 1 MAC.
+Headphones: Bluetooth. **1 MAC**.
 
-FitBit: Bluetooth. 1 MAC.
+FitBit: Bluetooth. **1 MAC**.
 
-Android Tablet: Bluetooth and WiFi. 2 MACs.
+Android Tablet: Bluetooth and WiFi. **2 MACs**.
 
-Bluetooth keyboard: Bluetooth. Duh. 1 MAC.
+Bluetooth keyboard: Bluetooth. Duh. **1 MAC**.
 
-Laptop: Bluetooth and WiFi. 2 MACs.
+Laptop: Bluetooth and WiFi. **2 MACs**.
 
-USB-to-Wired-Ethernet dongle. 1 MAC.
+USB-to-Wired-Ethernet dongle. **1 MAC**.
 
-Logitech Unifyng dongle: Unifying is like Bluetooth but different. We'll say 1 MAC.
+Logitech Unifyng dongle: Unifying is like Bluetooth but different. We'll say **1 MAC**.
 
-Logitech presentation remote: I _know_ that these things have unique dongles, use non-IR protocols so line-of-sight isn't required, and for this to be true, it must use some sort of pre-Unifying networking protocol, so I have to assume 2 MACs, for the dongle and device, although I cannot prove it.
+Logitech presentation remote: I _know_ that these things have unique dongles, use non-IR protocols so line-of-sight isn't required, and for this to be true, it must use some sort of pre-Unifying networking protocol, so I have to assume **2 MACs**, for the dongle and device, although I cannot prove it.
 
-Raspberry Pi Zero: I put it together as a conference nametag. It's a full computer, more powerful than many I used professionally in my life, and I used it to run an e-ink display. Anyway, it is in my backpack, and has onboard WiFi and Bluetooth. 2 MACs.
+Raspberry Pi Zero: I put it together as a conference nametag. It's a full computer, more powerful than many I used professionally in my life, and I used it to run an e-ink display. Anyway, it is in my backpack, and has onboard WiFi and Bluetooth. **2 MACs**.
 
 Android Phone: Here we get a new one. It has Bluetooth (I'm listening to _Purple Rain_ on the above-mentioned headphones over Bluetooth), and WiFi, but it can also talk to my cellular provider's data network. I have to say 3, but there's a digression from what I've seen.
 
