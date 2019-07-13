@@ -14,7 +14,7 @@ First, the concept: If you have `1,2,3`, they could be put together in six ways:
 
 > **Infomercial Voice: There _has_ to be a better way!**
 
-Perl 5 is [Algorithm::Permute](https://metacpan.org/pod/Algorithm::Permute) for a solid, full-featured way to do it, but the reason I write this stuff is to learn and be a better programmer, so how do I do permutations?
+Perl 5 has [Algorithm::Permute](https://metacpan.org/pod/Algorithm::Permute) for a solid, full-featured way to do it, but the reason I write this stuff is to learn and be a better programmer, so how do I do permutations?
 
 I found out from [Stack Overflow](https://stackoverflow.com/a/55568922/).
 
