@@ -43,6 +43,8 @@ I mean, adding `return` and sigils and replacing `and` with `&&` and you're most
 
 This is my code as uploaded, but looking back, using [Memoize](https://metacpan.org/pod/Memoize) so repeated lookups are handled would be a quick thing to make this very recursive code faster.
 
+**ADDENDUM:** I used Memoize and [Benchmark](https://metacpan.org/pod/Benchmark) to test, and using a memoized function made it, for `a(2,5)`, 15x faster. I mean, it went from 45 millionths of a second to 3 millionth of a second, but speed is speed, and as we get to higher values and deeper recursion, it adds up.
+
 ## Challenge 2
 
 > Create a script to parse URL and print the components of URL. According to Wiki page, the URL syntax is as below:
