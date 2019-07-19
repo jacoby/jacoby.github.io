@@ -45,7 +45,7 @@ This is my code as uploaded, but looking back, using [Memoize](https://metacpan.
 
 **ADDENDUM:** I used Memoize and [Benchmark](https://metacpan.org/pod/Benchmark) to test, and using a memoized function made it, for `a(2,5)`, 15x faster. I mean, it went from 45 millionths of a second to 3 millionth of a second, but speed is speed, and as we get to higher values and deeper recursion, it adds up.
 
-**Addendum 2:** "It adds up" does not say enough. This is creazy recursive,and all the times you hit `return $n + 1 if $m == 0` means you can get `$n` to `a(0,5440808)`, which is where my code died. I _think_ that's a big recursive stack problem, but I'm not sure. I've seen others mention bigint, and I'm not sure I won't have to go there.
+**ADDENDUM 2:** "It adds up" does not say enough. This is creazy recursive,and all the times you hit `return $n + 1 if $m == 0` means you can get `$n` to `a(0,5440808)`, which is where my code died. I _think_ that's a big recursive stack problem, but I'm not sure. I've seen others mention bigint, and I'm not sure I won't have to go there.
 
 ## Challenge 2
 
