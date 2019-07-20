@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "My Shame"
+author: "Dave Jacoby"
+date:   "2019-07-18 10:47:45 -0400"
+categories: ""
+---
+
+[![My Shame](https://jacoby.github.io/images/my_shame.png)](https://twitter.com/JacobyDave/status/1151577935117279232/)
+
+I tweeted this, saying "my shame".
+
+In the beginning there was **`format_all_that_data`**. It was an internal function that took a big data structure and turned it into HTML.
+
+Using Perl's `CGI.pm` to create the HTML. I knew this was a bad idea a decade before, but it was the lab style, and it took a while before I understood Template Toolkit (and other templating engines) as the way of the future.
+
+I needed to make changes, but I had to work in production (a situation I still have yet to escape) and wanted to keep the old one working, so I called it **`format_all_that_data_new`**, and when it was done, I changed the places I knew used `format_all_that_data` to `format_all_that_data_new` and made it so that `format_all_that_data` returned an empty string. That way, if output was expected but not forthcoming, someone would tell me.
+
+And then I was asked to do a few small changes. One change would be fine; do it, test it, release it, forget it. But there were more changes, which is enough to dive onto templating and fixing a lot of other stuff in that program. And again, I am developing in production, so I create **`format_all_that_data_tt`**, which uses [Template Toolkit](http://www.template-toolkit.org/) to do the HTML _correctly_.
+
+And, once I have it, I want to switch over, but I want to minimize the changes, so I move `format_all_that_data_new` to **`format_all_that_data_old`**, so that it and all the knowledge I stuck into it and fear to remove are there but not gone.
+
+So I rewrote **`format_all_that_data_new`** to, in it's entirety: 
+```perl
+sub format_all_that_data_new($data) { format_all_that_data_tt($data) }
+```
+
+I keep dead code because I fear, and add cruft to route around it. 
+
+This is my shame.
+
+#### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
+
+
