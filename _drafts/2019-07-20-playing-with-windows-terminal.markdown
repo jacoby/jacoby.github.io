@@ -18,9 +18,13 @@ I'm starting with the WSL prompt, because, as a Linux guy, I've done much mroe w
 
 ![WSL Terminal Tab](https://jacoby.github.io/images/wt_wsl.png)
 
-I point out a few things here. The coffee cup emoji (☕) indicating 
+I point out a few things here. The coffee cup emoji (☕) indicating the cups I've consumed that day. Also, the computer emoji (💻) indicating that I don't have packages to add, and the battery (🔋), which doesn't mean much because the term is on my desktop, but would indicate battery charge level. Also, I try to use [Taskwarrior]() and the check (✔) signifies that I have no tasks outstanding. And all of it shows up in the new Windows Terminal, which was not always true.
 
-💻 0% 🔋 ✔ jacoby@Lion 15:24 79°F ☕ ☕ ☕     ~                                                $ a <= b      
+I'll also mention that I'm using [Fira Code](https://github.com/tonsky/FiraCode), a font that supports ligatures, and it shows `<=` as one character, not two.
+
+You can't see it from the screen capture, but the cyberpunk image is a GIF.
+
+![Cyberpunk.gif](https://jacoby.github.io/images/cyberpunk.gif)
 
 ![PowerShell Terminal Tab](https://jacoby.github.io/images/wt_ps.png)
 
