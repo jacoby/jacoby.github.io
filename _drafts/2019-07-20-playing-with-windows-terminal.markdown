@@ -22,9 +22,13 @@ I point out a few things here. The coffee cup emoji (☕) indicating the cups I'
 
 I'll also mention that I'm using [Fira Code](https://github.com/tonsky/FiraCode), a font that supports ligatures, and it shows `<=` as one character, not two.
 
-You can't see it from the screen capture, but the cyberpunk image is a GIF.
+You can't see it from the screen capture, but the cyberpunk image is an animated GIF, that is animated behind the text.
 
 ![Cyberpunk.gif](https://jacoby.github.io/images/cyberpunk.gif)
+
+I consider this a big thing, because I wrote a tool to set your Windows background image, and that only accepts JPEG.
+
+This configuration is specific to the kind of term you're opinging, so if you want a PowerShell terminal, it looks different.
 
 ![PowerShell Terminal Tab](https://jacoby.github.io/images/wt_ps.png)
 
@@ -100,7 +104,7 @@ _Campbell_ is the out-of-the-box scheme, but you can change that and you can cha
 
 This is the profile for PowerShell, and I have customized it some. `background` is _background color_, and you jump to `backgroundImage` to set an image.
 
-![Insert Image Here]()
+![Dotty Me](https://jacoby.github.io/images/dotty-me.jpg)
 
 But, of course, you want to see the text _over_ your image, so `backgroundImageOpacity` is a float between 0 and 1 setting how much is there.
 
@@ -112,7 +116,7 @@ There's a lot of Windows short-hand stuff here. `ms-appdata:///roaming/` means `
 
 ### Globals
 
-````json
+```json
     "globals": {
       "alwaysShowTabs": true,
       "defaultProfile": "{7c51c86f-d763-44fc-b952-e04d5922f631}",
@@ -132,9 +136,10 @@ There's a lot of Windows short-hand stuff here. `ms-appdata:///roaming/` means `
       "requestedTheme": "system",
       "showTabsInTitlebar": true,
       "showTerminalTitleInTitlebar": true
-    }```
+    }
+```
 
-_Most_ of these seem to not do much, especially everything with `Tab` in the key. `defaultProfile` is what decides which of your choices come up when you open a tab or create a window, and that is set by that profile's `guid`.
+_Most_ of these seem to not do much, especially everything with `Tab` in the key. `defaultProfile` is what decides which of your choices come up when you open a tab or create a window, and that is set by that profile's `guid`, and these GUIDs seem unique to the project, so your `Ubuntu-18.04` GUID just might be mine.
 
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
 ````
