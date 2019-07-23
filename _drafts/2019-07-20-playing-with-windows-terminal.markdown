@@ -6,7 +6,23 @@ date: "2019-07-20 19:04:00 -0400"
 categories: ""
 ---
 
+I have been a WSL user for some time, and also someone keen on hacking my Bash prompt, which has lead me to find that Windows Terminal has lagged for some time on Gnome Terminal for Unicode support, which means that, for example, if you want icons to tell you that you've had several cups of coffee, your laptop battery is low, or your Git repo's status is that of smiling poo, they just wouldn't show up well on Windows.
+
+There were places that were okay. They worked fine with th e Cygwin terminal and the Git Bash that was derived from it, and I recall that PuTTY handled things well (but now that you can SSH from PowerShell _and_ CMD prompts, I never open it anymore), but the built-in terminals were basically unchanged from NT and maybe before.
+
+Rich Turner would know, because he wrote the ... well, blog series ... on [the history of terminals in Windows](https://devblogs.microsoft.com/commandline/windows-command-line-backgrounder/), which lead to the release of the new [Windows Terminal](https://github.com/microsoft/terminal). You can download it from the [MS Store](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701) now, and unlike some other favorite toys, you don't have to be Fast Track Windows Insider. So let me show you around!
+
 ## Pretty
+
+I'm starting with the WSL prompt, because, as a Linux guy, I've done much mroe work with my Bash prompt customization. So far, that is.
+
+![WSL Terminal Tab](https://jacoby.github.io/images/wt_wsl.png)
+
+I point out a few things here. The coffee cup emoji (☕) indicating 
+
+💻 0% 🔋 ✔ jacoby@Lion 15:24 79°F ☕ ☕ ☕     ~                                                $ a <= b      
+
+![PowerShell Terminal Tab](https://jacoby.github.io/images/wt_ps.png)
 
 ## Configuration
 
@@ -19,6 +35,8 @@ Shortened, the configuration file looks like this.
   "schemes": []
 }
 ```
+
+### (Color) Schemes
 
 Back to front, _schemes_ are _color schemes_, and look like this:
 
@@ -50,6 +68,8 @@ As you can see, it's taking the names of default colors, plus foreground, backgr
 
 _Campbell_ is the out-of-the-box scheme, but you can change that and you can change these, in...
 
+### Profiles
+
 ```json
 {
   "acrylicOpacity": 0.5,
@@ -80,31 +100,37 @@ This is the profile for PowerShell, and I have customized it some. `background` 
 
 But, of course, you want to see the text _over_ your image, so `backgroundImageOpacity` is a float between 0 and 1 setting how much is there.
 
-Valid `cursorShape` values are  bar, emptyBox, filledBox, underScore, and vintage.  [Thanks, Donovan Brown!](http://donovanbrown.com/post/Cursor-shapes-for-new-Windows-Terminal/).
+Valid `cursorShape` values are bar, emptyBox, filledBox, underScore, and vintage. [Thanks, Donovan Brown!](http://donovanbrown.com/post/Cursor-shapes-for-new-Windows-Terminal/).
 
 Evidently, _Acrylic_ is a way to make a terminal translucent; the background is viewable through, but not in focus. This is where `useAcrylic` and `acrylicOpacity` fit in, but I have yet to make them work.
 
 There's a lot of Windows short-hand stuff here. `ms-appdata:///roaming/` means `C:\Users\you\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState`. `%USERPROFILE%` is a long and complex way of writing `~` and the `startingDirectory` field it sets doesn't do much for starting `wsl`, so the hack is to make your `commandLine` ask for `"wsl.exe ~ -d Ubuntu-18.04"`. And then there's the unique identifier, or `guid`. This is used primarily to indicate which choice comes up when you open WT, in ...
 
-```json
+### Globals
+
+````json
     "globals": {
-        "alwaysShowTabs": true,
-        "defaultProfile": "{7c51c86f-d763-44fc-b952-e04d5922f631}",
-        "initialCols": 120,
-        "initialRows": 30,
-        "keybindings": [{
-                "command": "closeTab",
-                "keys": [
-                    "ctrl+w"
-                ]
-            }
-        ],
-        "requestedTheme": "system",
-        "showTabsInTitlebar": true,
-        "showTerminalTitleInTitlebar": true
-    }
-```
+      "alwaysShowTabs": true,
+      "defaultProfile": "{7c51c86f-d763-44fc-b952-e04d5922f631}",
+      "initialCols": 120,
+      "initialRows": 30,
+      "keybindings": [{
+        "command": "closeTab",
+        "keys": [
+          "ctrl+w"
+        ]
+      }, {
+        "command": "OTHERS",
+        "keys": [
+          "plenty"
+        ]
+      }],
+      "requestedTheme": "system",
+      "showTabsInTitlebar": true,
+      "showTerminalTitleInTitlebar": true
+    }```
 
 _Most_ of these seem to not do much, especially everything with `Tab` in the key. `defaultProfile` is what decides which of your choices come up when you open a tab or create a window, and that is set by that profile's `guid`.
 
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
+````
