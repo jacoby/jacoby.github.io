@@ -14,7 +14,7 @@ Rich Turner would know, because he wrote the ... well, blog series ... on [the h
 
 ## Pretty
 
-I'm starting with the WSL prompt, because, as a Linux guy, I've done much mroe work with my Bash prompt customization. So far, that is.
+I'm starting with the WSL prompt, because, as a Linux guy, I've done much more work with my Bash prompt customization. So far, that is.
 
 ![WSL Terminal Tab](https://jacoby.github.io/images/wt_wsl.png)
 
@@ -34,7 +34,7 @@ This configuration is specific to the kind of term you're opinging, so if you wa
 
 ## Configuration
 
-Shortened, the configuration file looks like this.
+Shortened, the configuration file in `C:\Users\you\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState\profiles.json` looks like this:
 
 ```json
 {
@@ -43,6 +43,8 @@ Shortened, the configuration file looks like this.
   "schemes": []
 }
 ```
+
+And is available with `ctrl-,` or under _Settings_.
 
 ### (Color) Schemes
 
@@ -106,7 +108,7 @@ This is the profile for PowerShell, and I have customized it some. `background` 
 
 ![Dotty Me](https://jacoby.github.io/images/dotty-me.jpg)
 
-But, of course, you want to see the text _over_ your image, so `backgroundImageOpacity` is a float between 0 and 1 setting how much is there.
+But, of course, you want to see the text _over_ your image, so `backgroundImageOpacity` is a float between 0 and 1 setting how much is there, which allows you to read text over it.
 
 Valid `cursorShape` values are bar, emptyBox, filledBox, underScore, and vintage. [Thanks, Donovan Brown!](http://donovanbrown.com/post/Cursor-shapes-for-new-Windows-Terminal/).
 
@@ -141,5 +143,20 @@ There's a lot of Windows short-hand stuff here. `ms-appdata:///roaming/` means `
 
 _Most_ of these seem to not do much, especially everything with `Tab` in the key. `defaultProfile` is what decides which of your choices come up when you open a tab or create a window, and that is set by that profile's `guid`, and these GUIDs seem unique to the project, so your `Ubuntu-18.04` GUID just might be mine.
 
+## Issues
+
+Personally, I would love for the big array of `keybindings` to be at the top level, not stuck in the middle of the globals, but I'm not in position to change that.
+
+On Linux, I use a transparent terminal set to about 30%, so you can see the Desktop (including other windows) through the terminal. It is _mostly_ a "this is so cool" thing, but on occasion it has proved helpful. I would love the transparent/translucent backgrounds that Acrylic promises, but I have yet to make them work. I'm not generally the big fan of terminal-specific backgrounds, but I am enjoying them while I wait.
+
+I would love to have some way to, when opening a term, be able to choose `WSL Ubuntu` or `WSL Fedora` or `PowerShell ISE (As Admin)`, rather than creating a tab for it once it's open, and the Admin powers part is not started to be solved yet, as far as I can tell.
+
+You'll notice the **LONG** tab which shows the location of the PowerShell executable, and that, instead, my Ubuntu tab says `jacoby@Lion: ~`, this is because I have tamed my `$PS1` so it contains the string `\[\033]0;\u@\h: \w\007\]`, which tells the computer that every time the prompt is written to set `\u@\h: \w`, or `username@hostname: current_working_directory`, as the terminal title, which, in this case, is tab title. Such magic must exist with PowerShell, but I have yet to dive deeply and understand such things. The default is so ugly, I'm going to have to.
+
+The lack of emoji and Unicode characters has been my big annoyance with Windows for a while, and this release really fixes that. I'll have to spend some time changing settings and my workflow to make this _really_ fit my use, but I'm very happy with the new terminal and can hardly wait for improvements.
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
-````
+
+```
+
+```
