@@ -10,7 +10,7 @@ categories: ""
 
 > Write a script to accept a string from command line and split it on change of character. For example, if the string is **“ABBCDEEF”**, then it should split like **“A”, “BB”, “C”, “D”, “EE”, “F”**.
 
-A thing I note: _accept a string from the command line_. I _could_ enterpret that as saying that all of ARGV is a string, but I'm going to have this work on every entry in ARGV, interpreting this as _one or more strings from the command line_.
+A thing I note: _accept a string from the command line_. I _could_ interpret that as saying that all of ARGV is a string, but I'm going to have this work on every entry in ARGV, interpreting this as _one or more strings from the command line_.
 
 For first pass, I used case-folding and made **A** and **a** equivalent (as well as a lot of unicode characters that get hung up on `uc` or `lc`), but I decided that I was reading too far into the question.
 
