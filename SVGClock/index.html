@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Clock</title>
+  <style>
+    * {
+      margin:0;
+      padding:0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-color: #222;
+      color: #999;
+      overflow: hidden;
+    }
+
+    svg {
+      background-color: #222;
+      max-height: 98vh;
+      max-width: 98vw;
+    }
+
+    .loop {
+      stroke: #666;
+      stroke-width: 20;
+      fill-opacity: 0;
+    }
+
+    #cen,
+    #day,
+    #hor,
+    #min,
+    #sec {
+      stroke: #666;
+      stroke-width: 10;
+    }
+
+    #cen {
+      fill: lightblue
+    }
+
+    #day {
+      fill: yellowgreen
+    }
+
+    #hor {
+      fill: yellow
+    }
+
+    #min {
+      fill: orange
+    }
+
+    #sec {
+      fill: red
+    }
+  </style>
+</head>
+
+<body>
+  <svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" id="neck">
+    <circle class="loop" id="d_loop" r="100" cx="450" cy="450" />
+    <circle class="loop" id="h_loop" r="200" cx="450" cy="450" />
+    <circle class="loop" id="m_loop" r="300" cx="450" cy="450" />
+    <circle class="loop" id="s_loop" r="400" cx="450" cy="450" />
+
+    <circle class="dot" id="sec" r="30" cx="450" cy="450" />
+    <circle class="dot" id="min" r="30" cx="450" cy="450" />
+    <circle class="dot" id="hor" r="30" cx="450" cy="450" />
+    <circle class="dot" id="day" r="30" cx="450" cy="450" />
+    <circle class="dot" id="cen" r="30" cx="450" cy="450" />
+
+  </svg>
+  <!-- <script src="./circles.js"></script> -->
+  <script>
+    function draw() {
+      let date = new Date;
+      let d = date.getDay();
+      let h = date.getHours();
+      let m = date.getMinutes();
+      let s = date.getSeconds();
+      let l = date.getMilliseconds();
+
+      let ss = s + (l / 1000);
+      let mm = m + (ss / 60);
+      let hh = h + (mm / 60);
+      let dd = d + (hh / 24);
+
+      draw_second(ss);
+      draw_minute(mm);
+      draw_hour(hh);
+      draw_day(dd);
+      requestAnimationFrame(draw);
+    }
+
+    function draw_second(seconds) {
+      let deg = seconds * 6;
+      let deg2 = (deg - 90) % 360;
+      let sec = document.getElementById("sec");
+      let xy = circleCoords(400, deg2);
+      let x = 450 + xy.x;
+      let y = 450 + xy.y;
+      sec.setAttribute("cx", x);
+      sec.setAttribute("cy", y);
+      // console.log('Sec', seconds, deg, deg2);
+    }
+
+    function draw_minute(minutes) {
+      let deg = minutes * 6;
+      let deg2 = (deg - 90) % 360;
+      let min = document.getElementById("min");
+      let xy = circleCoords(300, deg2);
+      let x = 450 + xy.x;
+      let y = 450 + xy.y;
+      min.setAttribute("cx", x);
+      min.setAttribute("cy", y);
+      // console.log('Min', minutes, deg, deg2);
+    }
+
+    function draw_hour(hours) {
+      let deg = hours * 15;
+      let deg2 = (deg - 90) % 360;
+      let hor = document.getElementById("hor");
+      let xy = circleCoords(200, deg2);
+      let x = 450 + xy.x;
+      let y = 450 + xy.y;
+      hor.setAttribute("cx", x);
+      hor.setAttribute("cy", y);
+      // console.log('Hour', hours, deg, deg2);
+    }
+
+    function draw_day(days) {
+      let deg = days * 51.42;
+      let deg2 = (deg + 270) % 360;
+      let day = document.getElementById("day");
+      let xy = circleCoords(100, deg2);
+      let x = 450 + xy.x;
+      let y = 450 + xy.y;
+      day.setAttribute("cx", x);
+      day.setAttribute("cy", y);
+      // console.log('Day', deg, deg2, x, y, );
+    }
+
+    function circleCoords(radius, degFromTop) {
+      const rads = degToRad(degFromTop);
+      return {
+        x: radius * Math.cos(rads),
+        y: radius * Math.sin(rads)
+      };
+    }
+
+    function degToRad(deg) {
+      return (deg / 360) * (Math.PI * 2);
+    }
+
+    requestAnimationFrame(draw);
+
+    // draw();
+    // setInterval(draw, 1000/24);
+  </script>
+</body>
+
+</html>
