@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="neck" viewBox="0 0 900 900">
+    <style>
+        .loop { 
+            stroke: #666; 
+            stroke-width: 20; 
+            fill-opacity: 0; 
+            } 
+        #cen, #day, #hor, #min, #sec { 
+            stroke: #666; 
+            stroke-width: 10; 
+            } 
+        #cen { fill: lightblue; } 
+        #day { fill: yellowgreen; } 
+        #hor { fill: yellow; } 
+        #min { fill: orange; } 
+        #sec { fill: red; }
+    </style>
+
+    <circle id="d_loop" cx="450" cy="450" r="100" class="loop"/>
+    <circle id="h_loop" cx="450" cy="450" r="200" class="loop"/>
+    <circle id="m_loop" cx="450" cy="450" r="300" class="loop"/>
+    <circle id="s_loop" cx="450" cy="450" r="400" class="loop"/>
+
+    <circle id="sec" cx="450" cy="050" r="30" class="dot"/>
+    <circle id="min" cx="450" cy="150" r="30" class="dot"/>
+    <circle id="hor" cx="450" cy="250" r="30" class="dot"/>
+    <circle id="day" cx="450" cy="350" r="30" class="dot"/>
+    <circle id="cen" cx="450" cy="450" r="30" class="dot"/>
+</svg>
