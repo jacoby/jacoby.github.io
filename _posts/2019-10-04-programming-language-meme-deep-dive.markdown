@@ -6,7 +6,7 @@ date: "2019-10-04 16:32:24 -0400"
 categories: ""
 ---
 
-[@cotufa82 tweeted:](https://twitter.com/cotufa82/status/1179601883448655874
+## [@cotufa82 tweeted:](https://twitter.com/cotufa82/status/1179601883448655874)
 
 > 1. First language: Basic / Java
 > 2. Had difficulties: Java
@@ -109,5 +109,7 @@ If I was interested in deep systems programming, or employed at it, I would've g
 And the Church-Turing Theory says that any Turing-complete language can do what any other Turing-complete language can do, so, in a way, it kinda doesn't matter what language you start with. But text manipulation will still be easier in Perl and Python, startup time will be faster with compiled C, etc. etc.
 
 And with all that, even though many consider Javascript harmful, it is a compiler that comes with any browser and works of text, so you can use Notebook and Internet Explorer to get started, without having to install anything. I couldn't live with those tools long, to be sure, but you can begin to know what you can do and what you want to do with just Javascript and HTML.
+
+So, what about you? What are your answers?
 
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
