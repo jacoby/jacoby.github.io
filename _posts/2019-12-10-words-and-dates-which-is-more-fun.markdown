@@ -6,6 +6,8 @@ date:   "2019-12-10 17:58:38 -0500"
 categories: ""
 ---
 
+Here's me writing about [Perl Weekly Challenge 38](https://perlweeklychallenge.org/blog/perl-weekly-challenge-038/). 
+
 The first challenge is working with a seven-digit date format, such that `2230120` becomes `1923-01-20`. I won't go too far into it, because the basic steps are:
 
 * Determine what date the string represents by breaking it into pieces
@@ -282,7 +284,7 @@ b c c e n q w
 
 Come to think of it, listing all the most-valuable found words, not just one, might've been a thing. 
 
-Anyway, this one is has been quite enjoyable.
+Anyway, this one is has been quite enjoyable. I think it's clear, from lines of blog text alone, I found the word challenge more fun than the date challenge, but both were great.
 
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
 
