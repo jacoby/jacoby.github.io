@@ -153,9 +153,7 @@ sub words {
 
 ```
 
-````text
- 11:23 41°F    _  /mnt/c/Users/jacob
-$ ./3d.pl                                                                                    antre 1 0,1,3,2,8
+```text
 anole 2 0,1,7,9,8
 aware 3 0,6,0,2,8
 rants 4 2,0,1,3,5
@@ -210,7 +208,8 @@ ovolo 52 15,14,15,9,7
 avert 53 16,14,8,2,3
 dadas 54 17,16,17,11,5
 dolts 55 17,15,9,3,5
-dover 56 17,15,14,8,2```
+dover 56 17,15,14,8,2
+```
 
 So, I got to 56. "Relatively common?" For many, sure. I'm there for `dover`, `volts`, and such, but `adapa`? `antre`? And I see the wordlist I have doesn't include `wonts`.
 
