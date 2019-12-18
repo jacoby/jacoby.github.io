@@ -211,7 +211,7 @@ dolts 55 17,15,9,3,5
 dover 56 17,15,14,8,2
 ```
 
-So, I got to 56. "Relatively common?" For many, sure. I'm there for `dover`, `volts`, and such, but `adapa`? `antre`? And I see the wordlist I have doesn't include `wonts`.
+So, I got to 56. "Relatively common?" For many, sure. I'm there for `dover`, `volts`, and such, but `adapa`?  And I see the wordlist I have doesn't include `wonts`.
 
 Anyway, I've coded my way past _Genius_ level and solved the thing. I've proven my worth vs other Captains, so I'll wait here for my Avengers membership card.
 
