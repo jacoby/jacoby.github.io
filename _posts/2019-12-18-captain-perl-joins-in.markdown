@@ -84,13 +84,6 @@ push @arr, { id => 15, l => 'o', n => [ 9, 13, 17, 14 ] } ;
 push @arr, { id => 16, l => 'a', n => [ 17, 10, 14 ] } ;
 push @arr, { id => 17, l => 'd', n => [ 16, 11, 15 ] } ;
 
-my $map = <<'end';
-
-
-
-
-end
-
 my $words = words() ;
 
 for my $i ( 0 .. 17 ) {
