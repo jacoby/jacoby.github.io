@@ -18,7 +18,7 @@ categories: ""
 >
 > `XI`
 
-The hard part of this is handling Roman numerals. Unless, of course, you use the pre-existing library to hande this, such as [Roman](https://metacpan.org/pod/Roman).
+The hard part of this is handling Roman numerals. Unless, of course, you use the pre-existing library to handle this, such as [Roman](https://metacpan.org/pod/Roman).
 
 Roman provides three important functions:
 
