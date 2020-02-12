@@ -10,7 +10,7 @@ categories: web
 
 ## Origins
 
-It started a little over a year ago, when I learned about the HTML5 Audio API at a local tech event. The presenter went into using the keys of a laptop as a musical keyboard, but my take was to make the tones associated with old-school telephony, the dialtone and DTMF tones, including the `A`, `B`, `C`, and `D` tones that came with the lineman's handest. 
+It started a little over a year ago, when I learned about the HTML5 Audio API at a local tech event. The presenter went into using the keys of a laptop as a musical keyboard, but my take was to make the tones associated with old-school telephony, the dialtone and DTMF tones, including the `A`, `B`, `C`, and `D` tones that came with the lineman's handset. 
 
 The next thing that came to mind was the `dit dit dit deeeet` you'd hear at the end of a timer.
 
