@@ -48,7 +48,7 @@ It _did_ keep track of start attempts, and there's a limit to the number of time
 
 [There's also books you purchased disappearing from your device.](https://www.nytimes.com/2009/07/18/technology/companies/18amazon.html) Even more ironic when it's _1984_ that's deleted.
 
-And, of course, [the increasing death toll from autonomous vehicles.](https://en.wikipedia.org/wiki/List_of_self-driving_car_fatalities) _(I really thing I'll have to keep an eye on that one.)_
+And, of course, [the increasing death toll from autonomous vehicles.](https://en.wikipedia.org/wiki/List_of_self-driving_car_fatalities) _(I really think I'll have to keep an eye on that one.)_
 
 In the movie version of _I, Robot_, Will Smith preferred driving himself, because he knew from experience that, even when not controlled by an evil hive-mind, robots didn't necessarily have the correct priorities and were thus dangerous. (He preferred Converse Chuck Taylor high-tops because of product placement.)
 
