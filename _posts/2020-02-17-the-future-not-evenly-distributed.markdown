@@ -42,7 +42,7 @@ This is a different case; I think the number of people who have nostalgic or arc
 
 ### This may not be directly on-topic
 
-[Kari Paul](https://twitter.com/kari_paul/) is a technology reporter for the Guardian, who rented a car from GIG Car Share, which uses a cellular connection to control and monitor the fleet, and took it into rural California, where cellular service was spotty. Spotty enough that the car couldn't phone home, so it just stopped and wouldn't start.
+[Kari Paul](https://twitter.com/kari_paul/) is a technology reporter for the Guardian, who rented a car from GIG Car Share, which uses a cellular connection to control and monitor the fleet, and took it into rural California, where cellular service was spotty. Spotty enough that the car couldn't phone home, so [it just stopped and wouldn't start](https://twitter.com/kari_paul/status/1229214223227478016).
 
 It _did_ keep track of start attempts, and there's a limit to the number of times you can start a GIG car, so when she towed the car to a place with service, without help from GIG, it indicated that she might not be able to start it again if she turns it off.
 
