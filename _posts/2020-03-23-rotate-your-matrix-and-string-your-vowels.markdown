@@ -10,14 +10,14 @@ categories: ""
 
 > Write a script to rotate the followin matrix by given 90/180/270 degrees clockwise.
 >
-> `[ 1, 2, 3 ]`\
-> `[ 4, 5, 6 ]`\
+> `[ 1, 2, 3 ]`<br>
+> `[ 4, 5, 6 ]`<br>
 > `[ 7, 8, 9 ]`
 >
 > For example, if you rotate by 90 degrees then expected result should be like below
 >
-> `[ 7, 4, 1 ]`\
-> `[ 8, 5, 2 ]`\
+> `[ 7, 4, 1 ]`<br>
+> `[ 8, 5, 2 ]`<br>
 > `[ 9, 6, 3 ]`
 
 So, you need functions for `rotate_90`, `rotate_180` and `rotate_270`, and the thing that you might not think of is that `rotate_180` can simply call `rotate_90` twice, but I felt bound to code the other functions, but using that to check my work.
