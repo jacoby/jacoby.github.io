@@ -116,16 +116,16 @@ sub rotate_270($array) {
 >
 > For example, if the given integer N = 2 then script should print the following strings:
 >
-> **ae**\
-> **ai**\
-> **ei**\
-> **ia**\
-> **io**\
-> **iu**\
-> **ie**\
-> **oa**\
-> **ou**\
-> **uo**\
+> **ae**<br>
+> **ai**<br>
+> **ei**<br>
+> **ia**<br>
+> **io**<br>
+> **iu**<br>
+> **ie**<br>
+> **oa**<br>
+> **ou**<br>
+> **uo**<br>
 > **ue**
 
 To me, this struck me as an obviously-recursive problem.
