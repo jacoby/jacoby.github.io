@@ -6,13 +6,15 @@ date: "2020-03-30 18:31:54 -0400"
 categories: ""
 ---
 
+[Perl Weekly Challenge #54](https://perlweeklychallenge.org/blog/perl-weekly-challenge-054/)
+
 ### TASK #1 - kth Permutation Sequence
 
 > Write a script to accept two integers **n (>=1)** and **k (>=1)**. It should print the kth permutation of n integers. For more information, please follow the wiki page.
 >
 > For example, **n=3** and **k=4**, the possible permutation sequences are listed below:
 >
-> `123` <br> > `132` <br> > `213` <br> > `231` <br> > `312` <br> > `321`
+> `123` <br> `132` <br> `213` <br> `231` <br> `312` <br> `321`
 >
 > The script should print the **4th** permutation sequence **231**.
 
@@ -126,6 +128,5 @@ sub collatz ( $n ) {
     return wantarray ? @sec : \@sec;
 }
 ```
-
 
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo](https://github.com/jacoby/jacoby.github.io).
