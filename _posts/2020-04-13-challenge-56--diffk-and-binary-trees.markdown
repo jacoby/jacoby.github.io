@@ -18,7 +18,7 @@ Responding to [Perl Weekly Challenge #56](https://perlweeklychallenge.org/blog/p
 >
 > Example:
 >
-> `@N = (2, 7, 9)` <br> > `$k = 2`
+> `@N = (2, 7, 9)` <br>  `$k = 2`
 >
 > Output : `2,1`
 
