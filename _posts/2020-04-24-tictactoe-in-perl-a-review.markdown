@@ -6,8 +6,6 @@ date:   "2020-04-24 19:05:05 -0400"
 categories: ""
 ---
 
-## Tic Tac Toe
-
 I know some people that are really involved in the Fedora Project, so occasionally on the Socials Media, I see bits and pieces from that part of the technosphere.
 
 [A man named Gregory Bartholomew wrote a demo of "PERL" with Tic-Tac-Toe](https://fedoramagazine.org/demonstrating-perl-with-tic-tac-toe-part-1/),and ... I'm torn. 
