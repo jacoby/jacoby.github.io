@@ -6,6 +6,8 @@ date: "2020-05-06 17:02:01 -0400"
 categories: ""
 ---
 
+{seo}
+
 [In my first pass on Challenge 59](https://jacoby.github.io/2020/05/04/challenge-59-lists-and-binary-xor.html), I wrote that you can treat Perl's arrays like linked lists. I do believe that to be true, Perl's arrays are resizable, for example, while C's are not.
 
 But I grant that there was a whole lot of stolen base in the code sample I talked about, and when I solved it initially, I didn't feel I had time to more fully engage with the specifics, but later I did.
