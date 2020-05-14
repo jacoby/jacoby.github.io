@@ -40,7 +40,7 @@ The Gumpian all-I-have-to-say-about-that bit is that if you go from `A` to `Z`, 
 
 Now I don't have to blog about the Challenge.
 
-I'm also considering a small, cheap computer. I see lots of small, cheap computers in [Woot](hhttps://www.woot.com/category/computers/desktops). Some of the things I would want to do with it are toy things I don't need to leave my home network. Some of the things involve me testing my connection to the world, because I think the congestion of my neighbors is making my network useless some evenings, and unless I have something running `[speedtest-cli](https://github.com/sivel/speedtest-cli)` locally, I can't find that out. So, for some things, I could throw up a DigitalOcean Droplet, but not for all I'd want it to do.
+I'm also considering a small, cheap computer. I see lots of small, cheap computers in [Woot](hhttps://www.woot.com/category/computers/desktops). Some of the things I would want to do with it are toy things I don't need to leave my home network. Some of the things involve me testing my connection to the world, because I think the congestion of my neighbors is making my network useless some evenings, and unless I have something running [`speedtest-cli`](https://github.com/sivel/speedtest-cli) locally, I can't find that out. So, for some things, I could throw up a DigitalOcean Droplet, but not for all I'd want it to do.
 
 And I could use a one-board-computer thing like a Raspberry Pi for this, but I kinda don't want to have to hang USB drives off a Pi to make a thing that's useful and looks like Medusa's head.
 
