@@ -26,6 +26,12 @@ We used to use **master** and **slave** to refer to hard drives. [We stopped aro
 
 I have seen two responses to this. The first is, more or less, _**master** doesn't require **servant** or **slave**_. We're not looking to rename **Masters' Degree** at this time. And, it might be compelling to you. In the specific conversation I had, the other person mentioned Tae Kwon Do teachers as **master**; when I took karate several lifetimes ago, we said **sensei**, which connotes **teacher** but is literally **elder**, or **person born before another**. This is not, to my mind, particularly compelling, but it might be for you.
 
+**EDITED TO ADD:**
+
+> _Since Git was built as an open-source alternative to Bitkeeper, I think it is safe to say that the origin of git master is rooted in master/slave terminology. Any attempts to now say master refers to a `master` recording, or a master craftsman is a [**false etymology**](https://en.wikipedia.org/wiki/False_etymology)._
+>
+> [Brendan O'Leary](https://boleary.dev/blog/2020-06-10-i-was-wrong-about-git-master.html)
+
 The other response was _Sure, I get the reasons and I agree, but there's gobs of documentation, gobs of projects and gobs of code built to assume the important branch is named **master**, and to change it, for every person and project and service who uses Git, would be a self-inflicted problem of Y2K proportion._
 
 I have to assume that there will be problems.
@@ -36,7 +42,7 @@ For a repo that is toy code for my Arduino or my dot files, moving from `master`
 
 Doing the same for the repo for this blog would mean knowing, for sure, that Jekyll and GitHub Pages are happy using **main** instead of **master**, and breaking that would mean I can't blog anymore, so I would have to test and read docs and be _sure_.
 
-I am maintainer of a fairly well-used Perl modules, and while nothing stops me from changing it to **main**, and nothing in the build and deployment process cares about branch name, but that gets to be a history thing and plays-well-with-others thing, and I would have to think hard before doing so. 
+I am maintainer of a fairly well-used Perl modules, and while nothing stops me from changing it to **main**, and nothing in the build and deployment process cares about branch name, but that gets to be a history thing and plays-well-with-others thing, and I would have to think hard before doing so.
 
 And, of course, there's work, and the repo that holds the money-making code. Making that not work is a lifestyle-affecting decision for everyone in the organization, and making that change is not a thing that I should do alone, even if I had elevated permissions sufficient to do so. But, I can say to my boss and coworkers that this is something we should consider.
 
