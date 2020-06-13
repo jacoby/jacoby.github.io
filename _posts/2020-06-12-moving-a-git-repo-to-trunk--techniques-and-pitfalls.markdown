@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Moving a Git repo to "trunk" - Techniques and Pitfalls"
+title:  "Moving a Git repo to 'trunk' - Techniques and Pitfalls"
 author: "Dave Jacoby"
 date:   "2020-06-12 18:29:58 -0400"
 categories: ""
