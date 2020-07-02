@@ -10,9 +10,9 @@ From a post in **The Perl Community**, a Facebook Group:
 
 > Doubt 2: in perl:
 >
-> s:\.(bat|pl)$::io;
+> `s:\.(bat|pl)$::io;`
 >
-> s:^.*[\\/]::o;
+> `s:^.*[\\/]::o;`
 >
 > what s the above code does especially what is the use of ::io and ::o, here \$ means ends with .bat or pl right . simply it starts with 's:' wr the output of the cmd will store pls explain. Sorry if it is not valuable question as a beginner i dont have much knowledge on perl and like this so many doubts are , if u people dont mind i would like to clarify all the doubts in this forum.
 
