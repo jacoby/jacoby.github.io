@@ -20,9 +20,9 @@ OK, I'm not **in** the forum here, but regular expressions are good and fine thi
 
 `s` means _substitution_, and is usually written like `s/ / /` or `s{ }{ }`, and the pattern matched in the left-hand section is replaced by what is in the right. Perl allows many things to be separators — _too many?_ — but here, they're using `:`. Don't do that. I'll rewrite with curly braces, or `{}`.
 
-> s{\.(bat|pl)\$}{}io;
+> `s{\.(bat|pl)\$}{}io;`
 >
-> s{^.*[\\/]}{}o;
+> `s{^.*[\\/]}{}o;`
 
 For both, the end with `{}`, which means that whatever matches is replaced with nothing, not even a space. Below we match the letter `e` in the string and remove it.
 
