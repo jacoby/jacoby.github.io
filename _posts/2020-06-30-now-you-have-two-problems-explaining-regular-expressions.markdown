@@ -87,7 +87,7 @@ Yeah, it improves the speed, but inconsistently. I used to use `/o` all the time
 
 The other modifier, `/i`, is _case insensitive_. `m{e}i` will match both `e` and `E`.
 
-> s{\.(bat|pl)$}{}io;
+> `s{\.(bat|pl)$}{}io;`
 
 The important part is `{\.(bat|pl)$}`, and we'll break that up.
 
@@ -107,7 +107,7 @@ Anyway...
 
 The other regex, which is, again:
 
-> s:^.*[\\/]::o;
+> `s:^.*[\\/]::o;`
 
 It starts with the carot, `^`, which matches the start of the string. This is followed by `.*`. `.` is the wildcard, and `*` indicates zero-or-more instances of anything, followed by a character class, indicated by square brackets, containing a normal slash — `/` —  and a backslash — `\` — but since we use the backslash to escape special characters, we have to escape the backslash _with_ a blackslash, so `[\\/]`.
 
