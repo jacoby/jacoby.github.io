@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "What\'s Your Spam Got To Do With Me?"
+title: "What's Your Spam Got To Do With Me?"
 author: "Dave Jacoby"
-date:   "2017-07-28 10:46:41 -0400"
-categories: email 
+date: "2017-07-28 10:46:41 -0400"
+categories: email
 ---
 
 Everybody hates spam.
