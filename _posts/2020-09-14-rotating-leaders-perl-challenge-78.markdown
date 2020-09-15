@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rotating Leaders: Perl Challenge 76"
+title: "Rotating Leaders: Perl Challenge 78"
 author: "Dave Jacoby"
 date: "2020-09-14 20:14:09 -0400"
 categories: ""
