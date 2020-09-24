@@ -43,7 +43,7 @@ I'll switch over and add on should ` time ./ch-1.pl -n 1000000007` prove to be h
 
 ...
 
-Checking back. I've written all of the next one, and there's no sign that my challenge 1 test will return. I think I just chose a stupid big **\$N**.
+Checking back. I've written all of the next one, and there's no sign that my challenge 1 test will return. I think I just chose a stupid big **\$N**. As such, I'll proceed as if this is good. 
 
 ### The Code
 
@@ -79,6 +79,17 @@ sub count_set_bits( $n ) {
     return $t;
 }
 ```
+
+```text
+$ time ./ch-1.pl -n 1000000007
+846928146
+
+real    189m44.515s
+user    189m42.880s
+sys     0m1.484s
+```
+
+So it takes three hours to get to a billion and 7. I honestly don't know if that's to be expected or I lack clever.
 
 ### TASK #2 › Trapped Rain Water
 
