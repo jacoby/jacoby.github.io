@@ -34,7 +34,7 @@ It has a reputation; the hardest music. Listening to it is a challenge, somethin
 
 ### Post- _Trout Mask Replica_
 
-There are a number of post-_TMR_ albums, but I mostly, for this post, want to talk about [_Clear Spot_](https://open.spotify.com/album/3m2ltFkbJ34zxghz9vlY6p).
+There are a number of post-\ _TMR_ albums, but I mostly, for this post, want to talk about [_Clear Spot_](https://open.spotify.com/album/3m2ltFkbJ34zxghz9vlY6p).
 
 _Clear Spot_ was produced by Ted Templeman. _I_, a rock kid from the 1980s, know Ted Templeman because he produced Van Halen from _Van Halen_ to _1984_, but he did more than that. [He produced](https://www.allmusic.com/artist/ted-templeman-mn0000029458/credits) Nicolette Larson, the Doobie Brothers, Michael McDonald, Little Feat, Carly Simon, Van Morrison. [He made albums under the name "The Templeman Twins"](https://www.covermesongs.com/2013/04/cover-classics-trill-it-like-it-was-by-the-templeton-twins.html) where he covered contemporary songs like it was still the 1920s. He was the living embodiment of what "Hollywood" Steve Huey named _Yacht Rock_.
 
