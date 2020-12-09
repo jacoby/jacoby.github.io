@@ -14,11 +14,11 @@ It just showed up in his Discover Weekly list, and he was surprised at how norma
 
 Musically, I group Captain Beefheart's work into three categories:
 
-- Pre-_Trout Mask Replica_
+- Pre- _Trout Mask Replica_
 - _Trout Mask Replica_
-- Post-_Trout Mask Replica_
+- Post- _Trout Mask Replica_
 
-### Pre-_Trout Mask Replica_
+### Pre- _Trout Mask Replica_
 
 There's more than [_Safe as Milk_](https://open.spotify.com/album/0DFhGsFKG7G58cke33GlAh) but that's the one I can talk about, and y'know? It's mid-60s Psychedelia. It's Southern California rockers trying to align with the British Invasion. There is ["Dropout Boogie"](https://open.spotify.com/track/6SmeNEJwqIi27x1ZGMf6G7), a great song that was the 60s version of "mashup"'d with ["Apache" from the Shadows](https://open.spotify.com/track/0sZy1HE2aGBQABHfVRQ4jB) to become ["Apache Drop Out"](https://open.spotify.com/track/3tTr3Dv9ZBGswGRx5uG3ir). That's the standout track, but it's all pretty good. Pretty normal for that time and place.
 
@@ -32,7 +32,7 @@ My personal favorite is "Orange Claw Hammer", which takes the form of a sea shan
 
 It has a reputation; the hardest music. Listening to it is a challenge, something you endure rather than enjoy. The audio equivalent to habanero peppers. There's something to that, but there's pleasures to be found in it, beyond the polyrhythms and non-sequiturs. Even if the recording process and the band dynamics at the time were Mansonesque.
 
-### Post-_Trout Mask Replica_
+### Post- _Trout Mask Replica_
 
 There are a number of post-_TMR_ albums, but I mostly, for this post, want to talk about [_Clear Spot_](https://open.spotify.com/album/3m2ltFkbJ34zxghz9vlY6p).
 
