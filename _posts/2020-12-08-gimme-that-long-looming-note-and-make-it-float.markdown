@@ -22,19 +22,19 @@ Musically, I group Captain Beefheart's work into three categories:
 
 There's more than [_Safe as Milk_](https://open.spotify.com/album/0DFhGsFKG7G58cke33GlAh) but that's the one I can talk about, and y'know? It's mid-60s Psychedelia. It's Southern California rockers trying to align with the British Invasion. There is ["Dropout Boogie"](https://open.spotify.com/track/6SmeNEJwqIi27x1ZGMf6G7), a great song that was the 60s version of "mashup"'d with ["Apache" from the Shadows](https://open.spotify.com/track/0sZy1HE2aGBQABHfVRQ4jB) to become ["Apache Drop Out"](https://open.spotify.com/track/3tTr3Dv9ZBGswGRx5uG3ir). That's the standout track, but it's all pretty good. Pretty normal for that time and place.
 
-There's also ["Diddy Wah Diddy"](https://open.spotify.com/track/7tWQKJnPrHVxB6MnoBivgb). I love it, I really do, but [will someone _please_ tell me what "Diddy Wah Diddy" means?](https://open.spotify.com/track/2IOWJHuYyOQFME7eKFfFNY).
+There's also ["Diddy Wah Diddy"](https://open.spotify.com/track/7tWQKJnPrHVxB6MnoBivgb). I love it, I really do, but [will someone _please_ tell me what "Diddy Wah Diddy" means?](https://open.spotify.com/track/2IOWJHuYyOQFME7eKFfFNY)
 
 ### _Trout Mask Replica_
 
 This is just about the weirdest album ever released on a major label. [Vox did a very good but poorly-titled video on the wonder of this album](https://www.youtube.com/watch?v=58nPEe-TU-w), and there while you can find it on YouTube, it isn't on Spotify. I believe it's because it was recorded for Frank Zappa's imprint, and the rights to that corner of the Captain's discography are confused.
 
-My personal favorite is "Orange Claw Hammer", which takes the form of a sea shanty and sounds, to me, like a classic _Treasure Island_ pirate trying to connect with his daughter (maybe he only believes it's his daughter) after being "shanghai'd by a high-hat beaver mustache man And his pirate friend" several decades before.
+My personal favorite is "Orange Claw Hammer", which takes the form of a sea shanty and sounds, to me, like a classic _Treasure Island_ pirate trying to connect with his daughter (maybe he only believes it's his daughter) after being "shanghai'd by a high-hat beaver-mustache man and his pirate friend" several decades before.
 
 It has a reputation; the hardest music. Listening to it is a challenge, something you endure rather than enjoy. The audio equivalent to habanero peppers. There's something to that, but there's pleasures to be found in it, beyond the polyrhythms and non-sequiturs. Even if the recording process and the band dynamics at the time were Mansonesque.
 
 ### Post- _Trout Mask Replica_
 
-There are a number of post-\ _TMR_ albums, but I mostly, for this post, want to talk about [_Clear Spot_](https://open.spotify.com/album/3m2ltFkbJ34zxghz9vlY6p).
+There are a number of post- _TMR_ albums, but I mostly, for this post, want to talk about [_Clear Spot_](https://open.spotify.com/album/3m2ltFkbJ34zxghz9vlY6p).
 
 _Clear Spot_ was produced by Ted Templeman. _I_, a rock kid from the 1980s, know Ted Templeman because he produced Van Halen from _Van Halen_ to _1984_, but he did more than that. [He produced](https://www.allmusic.com/artist/ted-templeman-mn0000029458/credits) Nicolette Larson, the Doobie Brothers, Michael McDonald, Little Feat, Carly Simon, Van Morrison. [He made albums under the name "The Templeman Twins"](https://www.covermesongs.com/2013/04/cover-classics-trill-it-like-it-was-by-the-templeton-twins.html) where he covered contemporary songs like it was still the 1920s. He was the living embodiment of what "Hollywood" Steve Huey named _Yacht Rock_.
 
