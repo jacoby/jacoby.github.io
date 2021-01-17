@@ -69,4 +69,8 @@ __PACKAGE__->meta->make_immutable;
 
 I've heard that `Moo` is a smaller `Moose`, so I tried cutting the `se` and running it, and there's a problem with the `ArrayRef`, which I didn't care enough to hunt down.
 
+I guess, right now I'm somewhere between _"there's not enough difference here move from what I already do"_ and _"there's enough new hotness here that I need to get it into my head"_, and finding it a lot easier to search `"perl" "moose" "*keyword*"` than to dig through MetaCPAN for the answers to the questiosn I come up with.
+
+Anyway, this is the promised MOose solution.
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
