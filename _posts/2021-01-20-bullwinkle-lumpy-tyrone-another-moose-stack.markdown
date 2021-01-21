@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Bullwinkle, Lumpy, Tyrone}: Another Moose Stack"
+title: "[Bullwinkle, Lumpy, Tyrone]: Another Moose Stack"
 author: "Dave Jacoby"
 date: "2021-01-20 16:35:07 -0500"
 categories: ""
