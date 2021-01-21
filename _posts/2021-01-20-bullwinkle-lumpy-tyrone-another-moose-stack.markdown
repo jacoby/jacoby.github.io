@@ -56,6 +56,7 @@ A quick addition:
 use feature qw{ say signatures } ;
 no warnings qw{ experimental } ;
 package Stack;
+use Moose;
 
 # package goes here
 
@@ -74,6 +75,7 @@ And this code was poping warnings wherever in `Stack` I used signatures. As I un
 #! perl
 
 package Stack;
+use Moose;
 use feature qw{ say signatures } ;
 no warnings qw{ experimental } ;
 
