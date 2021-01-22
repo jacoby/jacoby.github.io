@@ -101,7 +101,7 @@ use const PI = 3 ; # I'm in Indiana B)
 Now, let us consider an array reference.
 
 ```perl
-use const ARRAY = {} ;
+use const ARRAY = [] ;
 ```
 
 What should this give us?
