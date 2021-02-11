@@ -22,8 +22,6 @@ I don't expect issues with Perl Weekly Challenge numbers for a few years. The di
 
 Just one of those things that I feel lead to share each time a rollover happens near me.
 
-in other languages.
-
 ### TASK #1 › Pattern Match
 
 > Submitted by: Mohammad S Anwar  
