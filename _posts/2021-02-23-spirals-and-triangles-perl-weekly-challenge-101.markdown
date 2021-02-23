@@ -13,7 +13,7 @@ categories: ""
 >
 > Your task is to pack that array into an `MxN` matrix spirally counterclockwise, as tightly as possible.
 >
-> ‘Tightly’ means the absolute value |M-N| of the difference has to be as small as possible.
+> ‘Tightly’ means the absolute value `|M-N|` of the difference has to be as small as possible.
 
 So, that "Tightly" thing, to me, means that it has to evenly, without gaps. The tightest you can wrap `1...7`, I beiieve, would be `1 2 3 4 5 6 7`.
 
