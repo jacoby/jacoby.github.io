@@ -205,7 +205,8 @@ sub translate_element ( $stem ) {
 >
 > After looking at a few modules to read info regarding the media, a quick bit of coding gave you a file list. The file list is in a simple CSV format, each line containing two fields: the first the number of milliseconds in length, the latter the media’s title (this example is of several episodes available from [MercuryTheatre.info](MercuryTheatre.info)):
 
-```1709363,"Les Miserables Episode 1: The Bishop (broadcast date: 1937-07-23)"
+```text
+1709363,"Les Miserables Episode 1: The Bishop (broadcast date: 1937-07-23)"
     1723781,"Les Miserables Episode 2: Javert (broadcast date: 1937-07-30)"
     1723781,"Les Miserables Episode 3: The Trial (broadcast date: 1937-08-06)"
     1678356,"Les Miserables Episode 4: Cosette (broadcast date: 1937-08-13)"
