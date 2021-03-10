@@ -217,9 +217,9 @@ sub translate_element ( $stem ) {
 
 > For this script, you can assume to be provided the following information:
 >
->      * the value of $^T ($BASETIME) of the streamer script,
->      * the value of time(), and
->      * a CSV file containing the media to play consisting of the length in milliseconds and an identifier for the media (title, filename, or other).
+> * the value of $^T ($BASETIME) of the streamer script,
+> * the value of time(), and
+> * a CSV file containing the media to play consisting of the length in milliseconds and an identifier for the media (title, filename, or other).
 >
 > Write a program to output which file is currently playing. For purposes of this script, you may assume gapless playback, and format the output as you see fit.
 >
