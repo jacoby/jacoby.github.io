@@ -79,7 +79,7 @@ say join "\n\t", scalar @self_desc, @self_desc;
 > Submitted by: Mohammad S Anwar  
 > Write a script to list methods of a package/class.
 
-I'm not the happiest with this one. The package is not independent, because if I did `use lib '.';use Calc;`, the output would include `input`.
+I'm not the happiest with this one. The package is not independent, because if I did `use lib '.';use Calc;`, the output would include `import`.
 
 This _was_ the easiest solution: Look within `Calc`'s symbol table. If I was to be bold, I could've looked through the program's full symbol table. This is a method I took from [APP::perlbrew](https://metacpan.org/source/GUGOD/App-perlbrew-0.91/lib%2FApp%2Fperlbrew.pm), and borrowed to allow me to create my own expandable commands. It's also where I learned about [LevenshteinDistance](https://en.wikipedia.org/wiki/Levenshtein_distance). 
 
