@@ -162,7 +162,7 @@ First pass, I ended up with
 which of course simplifies to 
 
 ```text
-    [ A, B ], [       ]
+    [ A, B ]
     [ A    ], [ B     ]
 ```
 
