@@ -6,6 +6,8 @@ date: "2021-04-21 15:29:54 -0400"
 categories: ""
 ---
 
+I finally got to [Perl Weekly Challenge 109](https://perlweeklychallenge.org/blog/perl-weekly-challenge-109/). Enjoy!
+
 ### TASK #1 › Chowla Numbers
 
 > Submitted by: Mohammad S Anwar  
