@@ -122,4 +122,22 @@ sub solve_triangle ( $n ) {
 }
 ```
 
+### ETA
+
+```text
+$ time ./ch-2.pl -n 10 > /dev/null && echo && time ./ch-2b.pl -n 10 > /dev/null
+
+real    0m13.316s
+user    0m12.844s
+sys     0m0.328s
+
+^[[A^[[A^[[A^[[A^[[A^C
+real    258m5.345s
+user    255m7.313s
+sys     0m17.313s
+```
+
+For `N=10`, the `Node` solution took not much time at all, and I gave up on the Permute option after four hours. So, it's an interesting solution, but I think it's clear it's a not-smart one. Using your own permutation, with memoization one way or another, it might not suck nearly as bad.
+
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
