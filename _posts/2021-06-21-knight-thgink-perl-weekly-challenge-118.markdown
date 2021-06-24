@@ -293,4 +293,36 @@ Because I want to upload this and my test is still running, here's what I have s
 
 I'm seeing my computer wants an upgrade and reboot, so I might not let this run to completion, but if I do, I will update this blog post.
 
+### Edited To Add
+
+```text
+...
+
+00 21 02 23 04 25 06 27 46 65 44 63 42 61 40 32 11 30 51 70 62 41 20 01 22 03 24 43 64 72 60 52 71
+  a b c d e f g h
+8 . . . . . * . * 8
+7 * . * * * * * * 7
+6 . . . . X . * . 6
+5 . * . * * * * * 5
+4 . . X . . * . * 4
+3 * X . * * * * * 3
+2 X X . . . . * * 2
+1 . X . * * * * * 1
+  a b c d e f g h
+
+98
+        00 21 02 23 04 25 06 27 46 65 44 63 42 61 40 32 11 30 51 70 62 41 20 01 22 03 24 43 64 72 60 52 71
+
+
+^W^C
+real    2769m16.995s
+user    2720m14.906s
+sys     3m52.047s
+
+```
+
+I let it run for just under two days and got nothing better than 98. (that's the character length of the solution string.) 32 jumps, 33 squares.
+
+I'm thinking that 1) adding preference toward treasure squares and 2) starting from a square and moving back from that might be better solutions. Or, keep a depth tracker and when you go deeper than the previously-established best, it just doesn't go. As is, I think I would just exit after getting to the first solution.
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
