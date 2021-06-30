@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One Simple Change: Weekly Challenge #111 Redux"
+title: "One Simple Change: Weekly Challenge #118 Redux"
 author: "Dave Jacoby"
 date: "2021-06-29 17:36:27 -0400"
 categories: ""
