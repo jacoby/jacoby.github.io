@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Doing Curves on a Clock </title>
+  <style>
+    body {
+      background-color: black;
+      text-align: right;
+    }
+    canvas {
+      margin: 0;
+      background-color: black;
+      /* box-shadow: 0 0 1vw white; */
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="clock" width="1000" height="1000"></canvas>
+  <script type="application/x-javascript">
+    var geek_clock = {};
+    geek_clock.functions = {};
+    geek_clock.values = {};
+    geek_clock.values.interval = 1;
+    geek_clock.values.clock_height = 900;
+    geek_clock.values.clock_width = 900;
+    geek_clock.values.window_height = 1000;
+    geek_clock.values.window_width = 1000;
+
+    geek_clock.functions.init = function (obj) {
+      for (k in obj) {
+        geek_clock.values[k] = obj[k];
+      }
+      geek_clock.values.clock = document.getElementById("clock");
+      geek_clock.values.ctx = geek_clock.values.clock.getContext("2d");
+    };
+
+    geek_clock.functions.xPos = function (length, time) {
+      time = time * 6;
+      return (length * Math.sin(geek_clock.functions.deg2rad(time)));
+    };
+    geek_clock.functions.yPos = function (length, time) {
+      time = time * 6;
+      return (length * Math.cos(geek_clock.functions.deg2rad(time)));
+    };
+    geek_clock.functions.deg2rad = function (degrees) {
+      return (degrees / 1800) * Math.PI;
+    };
+
+    geek_clock.functions.draw = function () {
+      var today = new Date();
+      var tHour = today.getHours();
+      var tMin = today.getMinutes();
+      var tSec = today.getSeconds();
+      var tMSec = today.getMilliseconds();
+      var dHour = (tHour + tMin / 60 + tSec / 3600);
+      var dMin = (tSec / 60) + tMin;
+      var dSec = (tMSec / 1000) + tSec;
+      var c = geek_clock.functions.get_center();
+      var h = geek_clock.functions.get_hour_pos(dHour);
+      var m = geek_clock.functions.get_minute_pos(dMin);
+      var s = geek_clock.functions.get_second_pos(dSec);
+      var l = geek_clock.functions.get_long_second_pos(dSec);
+
+      geek_clock.functions.draw_canvas();
+      geek_clock.functions.draw_face(c);
+      // geek_clock.functions.draw_hour_hand(   dHour  ) ;
+      // geek_clock.functions.draw_minute_hand( dMin  ) ;
+      // geek_clock.functions.draw_second_hand( dSec  ) ;
+      // geek_clock.functions.draw_lines_between(c, h, m, s, l);
+      // geek_clock.functions.draw_hands(c, h, m, s, l);
+      // geek_clock.functions.draw_position_dots(c, h, m, s, l);
+      geek_clock.functions.draw_arcs(c, h, m, s, l);
+    };
+
+    geek_clock.functions.get_center = function () {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      return [cX, cY];
+    };
+
+    geek_clock.functions.get_hour_pos = function (dHour) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var hLen = clock_height * 0.40;
+      var clockH = dHour;
+      clockH = clockH.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(hLen, clockH * 25));
+      mY = cY - (geek_clock.functions.yPos(hLen, clockH * 25));
+      return [mX, mY];
+    };
+
+    geek_clock.functions.get_minute_pos = function (dMin) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var mLen = clock_height * 0.45;
+      var clockM = dMin;
+      clockM = clockM.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(mLen, clockM * 10));
+      mY = cY - (geek_clock.functions.yPos(mLen, clockM * 10));
+      return [mX, mY];
+    };
+
+    geek_clock.functions.get_second_pos = function (dSec) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var sLen = clock_height * 0.50;
+      var clockS = dSec;
+      clockS = clockS.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(sLen, clockS * 10));
+      mY = cY - (geek_clock.functions.yPos(sLen, clockS * 10));
+      return [mX, mY];
+    };
+
+    geek_clock.functions.get_long_second_pos = function (dSec) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var sLen = clock_height * 0.9;
+      var clockS = dSec;
+      clockS = clockS.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(sLen, clockS * 10));
+      mY = cY - (geek_clock.functions.yPos(sLen, clockS * 10));
+      return [mX, mY];
+    };
+
+    geek_clock.functions.draw_canvas = function () {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      ctx.clearRect(0, 0, height, width);
+    };
+
+    geek_clock.functions.draw_face = function (c) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      for (i = 0; i < 24; i++) {
+        var j = i * 25;
+        var k = 3;
+        k = i % 02 == 0 ? 5 : k;
+        k = i % 06 == 0 ? 8 : k;
+        k = i % 12 == 0 ? 13 : k;
+        k = i % 24 == 0 ? 21 : k;
+        var aX = height / 2 + (geek_clock.functions.xPos((clock_height / 2) - 5, j));
+        var aY = width / 2 - (geek_clock.functions.yPos((clock_width / 2) - 5, j));
+        ctx.beginPath()
+        ctx.arc(aX, aY, k, 0, Math.PI * 2, true);
+        ctx.strokeStyle = "rgb(200,200,200)";
+        ctx.stroke();
+        ctx.fillStyle = "rgb(200,200,200)";
+        ctx.fill();
+      }
+    };
+
+    geek_clock.functions.draw_lines_between = function (c, h, m, s, l) {
+      var ctx = geek_clock.values.ctx;
+      ctx.beginPath();
+      ctx.moveTo(c[0], c[1]);
+      ctx.lineTo(h[0], h[1]);
+      ctx.lineTo(m[0], m[1]);
+      ctx.lineTo(c[0], c[1]);
+      ctx.lineTo(s[0], s[1]);
+      ctx.lineTo(m[0], m[1]);
+      ctx.lineTo(c[0], c[1]);
+      ctx.lineTo(s[0], s[1]);
+      ctx.lineTo(h[0], h[1]);
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = " rgb(255,0,0)";
+      ctx.stroke();
+    };
+
+    geek_clock.functions.draw_position_dots = function (c, h, m, s, l) {
+      var ctx = geek_clock.values.ctx;
+      // red dots for points we watch
+      ctx.beginPath();
+      ctx.moveTo(c[0], c[1]);
+      ctx.arc(c[0], c[1], 5, 0, Math.PI * 2, true);
+      ctx.moveTo(h[0], h[1]);
+      ctx.arc(h[0], h[1], 5, 0, Math.PI * 2, true);
+      ctx.moveTo(m[0], m[1]);
+      ctx.arc(m[0], m[1], 5, 0, Math.PI * 2, true);
+      ctx.moveTo(s[0], s[1]);
+      ctx.arc(s[0], s[1], 5, 0, Math.PI * 2, true);
+      ctx.moveTo(l[0], l[1]);
+      ctx.arc(l[0], l[1], 5, 0, Math.PI * 2, true);
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = "rgb( 255,0,0)";
+      // ctx.fillStyle = "rgba(255,0,0,0.5)";
+      ctx.fillStyle = "rgb(255,0,0)";
+      ctx.stroke();
+      ctx.fill();
+    };
+
+    geek_clock.functions.draw_hands = function (c, h, m, s, l) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      ctx.lineWidth = 3;
+
+      // second hand
+      ctx.beginPath();
+      ctx.moveTo(c[0], c[1]);
+      ctx.lineTo(s[0], s[1]);
+      ctx.strokeStyle = "rgb( 128,128,128)";
+      ctx.stroke();
+
+      // minute hand
+      ctx.beginPath();
+      ctx.moveTo(c[0], c[1]);
+      ctx.lineTo(m[0], m[1]);
+      ctx.strokeStyle = "rgb( 128,128,128)";
+      ctx.stroke();
+
+      // hour hand
+      ctx.beginPath();
+      ctx.moveTo(c[0], c[1]);
+      ctx.lineTo(h[0], h[1]);
+      ctx.strokeStyle = "rgb( 128,128,128)";
+      ctx.stroke();
+    };
+
+    geek_clock.functions.draw_arcs = function (c, h, m, s, l) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var c = [cX, cY];
+      ctx.lineWidth = 3;
+
+      ctx.beginPath();
+      ctx.moveTo(h[0], h[1]);
+      ctx.bezierCurveTo(
+        c[0], c[1],
+        s[0], s[1],
+        m[0], m[1]
+      );
+      ctx.quadraticCurveTo(s[0], s[1], h[0], h[1]);
+      ctx.strokeStyle = "rgb( 255,255,255)";
+      ctx.stroke();
+      ctx.fillStyle = "rgba(255,255,255,0.7 )";
+      ctx.fill();
+
+      // ctx.beginPath() ;
+      // ctx.moveTo(h[0],h[1]) ;
+      // ctx.quadraticCurveTo( c[0] , c[1] , m[0] , m[1] );
+      // ctx.bezierCurveTo(    
+      //   c[0],c[1],
+      //   l[0],l[1],
+      //   h[0],h[1]
+      //   );
+      // ctx.strokeStyle = " rgb(155,255,255)"; ctx.stroke() ;
+      // ctx.fillStyle   = "rgba(155,255,255,0.2 )"; ctx.fill() ;
+    }
+
+    geek_clock.functions.init({
+      window_height: 1000,
+      window_width: 1000,
+      clock_height: 900,
+      clock_width: 900,
+      interval: 100 / 3,
+      end: 10
+    })
+
+    setTimeout(function () {
+      setInterval(function () {
+        geek_clock.functions.draw()
+      }, geek_clock.values.interval);
+    }, 500);
+
+    geek_clock.functions.draw_hour_hand = function (dHour) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var hLen = clock_height * 0.33;
+      var clockH = dHour;
+      clockH = clockH.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(hLen, clockH * 25));
+      mY = cY - (geek_clock.functions.yPos(hLen, clockH * 25));
+      ctx.strokeStyle = "rgb(000,000,000)";
+      ctx.beginPath();
+      ctx.moveTo(cX, cY);
+      ctx.lineTo(mX, mY);
+      ctx.stroke();
+    };
+
+    geek_clock.functions.draw_minute_hand = function (dMin) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var mLen = clock_height * 0.50;
+      var clockM = dMin;
+      clockM = clockM.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(mLen, clockM * 10));
+      mY = cY - (geek_clock.functions.yPos(mLen, clockM * 10));
+      ctx.strokeStyle = "rgb(000,000,000)";
+      ctx.beginPath();
+      ctx.moveTo(cX, cY);
+      ctx.lineTo(mX, mY);
+      ctx.stroke();
+    };
+
+    geek_clock.functions.draw_second_hand = function (dSec) {
+      var ctx = geek_clock.values.ctx;
+      var height = geek_clock.values.window_height;
+      var width = geek_clock.values.window_width;
+      var clock_height = geek_clock.values.clock_height;
+      var clock_width = geek_clock.values.clock_width;
+      var cX = height / 2;
+      var cY = width / 2;
+      var sLen = clock_height * 0.50;
+      var clockS = dSec;
+      clockS = clockS.toFixed(3);
+      mX = cX + (geek_clock.functions.xPos(sLen, clockS * 10));
+      mY = cY - (geek_clock.functions.yPos(sLen, clockS * 10));
+      ctx.strokeStyle = "rgb(255,000,000)";
+      ctx.beginPath();
+      ctx.moveTo(cX, cY);
+      ctx.lineTo(mX, mY);
+      ctx.stroke();
+    };
+    make_square();
+    window.onresize = make_square;
+
+    function make_square() {
+      let height = window.innerHeight;
+      let width = window.innerWidth;
+      let min_hw = Math.min(width, height) * 0.9;
+      console.log([height, width, min_hw].join(' '));
+      let square = document.getElementById("clock");
+      square.style.height = min_hw + "px";
+      square.style.width = min_hw + "px";
+    }
+  </script>
+
+
+</body>
+
+</html>
