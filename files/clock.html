@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Clock</title>
+    <link rel="stylesheet" href="./pos.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: dimgray;
+        color: lightgray;
+        font-size: 42vw;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+      }
+      :scratch {
+        color: lightgray;
+        font-size: 32vw;
+        /* text-shadow: 
+          5px 15px 4px red, 
+          -25px -5px 4px blue, 
+          0 0 0.2em black, 
+          0 0 0.2em black, 
+          0 0 0.2em black, 
+          0 0 0.2em black; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="time"><span id="hours"></span>:<span id="minutes"></span></div>
+    <p id="scratch">TEST</p>
+  </body>
+  <script>
+    var c = 0;
+    function test_time() {
+      c++;
+      let c2 = c % 60;
+      let d = 6 * c2;
+      let r = deg2rad(d);
+      let x = xPos(10, r);
+      let y = yPos(10, r);
+      x = x.toFixed(2);
+      y = y.toFixed(2);
+      let c3 = 90 - d;
+      let r2 = deg2rad(c3);
+      let x2 = xPos(5, r2);
+      let y2 = yPos(5, r2);
+      x2 = x2.toFixed(2);
+      y2 = y2.toFixed(2);
+      let t = document.getElementById("scratch");
+      let ypx = x + "vw";
+      let xpx = y + "vw";
+      let blur = "5px";
+      let color = "gray";
+      let ts = [xpx, ypx, blur, color].join(" ");
+      let ypx2 = x2 + "vw";
+      let xpx2 = y2 + "vw";
+      let blur2 = "5px";
+      let color2 = "black";
+      let ts2 = [xpx2, ypx2, blur2, color2].join(" ");
+      t.style.textShadow = [ts, ts2].join(",");
+    }
+    function deg2rad(degrees) {
+      return (degrees / 180) * Math.PI;
+    }
+    function xPos(length, rad) {
+      time = time * 6;
+      return length * Math.sin(rad);
+    }
+    function yPos(length, rad) {
+      time = time * 6;
+      return length * Math.cos(rad);
+    }
+    function display_time() {
+      let t = document.getElementById("time");
+      let d = new Date();
+      d.toLocaleString("en-US", { timeZone: "America/New_York" });
+      let h = d.getSeconds();
+      let hclass = "hour_" + h;
+      // console.log([h, hclass].join(", "));
+      t.classList.value = "";
+      t.classList.add(hclass);
+      let hour = d.getHours();
+      hour = hour % 12;
+      if (hour === 0) {
+        hour = 12;
+      }
+      let minutes = d.getMinutes();
+      minutes = minutes.toString().padStart(2, "0");
+      document.getElementById("hours").innerHTML = hour;
+      document.getElementById("minutes").innerHTML = minutes;
+    }
+    display_time();
+    setInterval(display_time, 1000);
+    test_time();
+    setInterval(test_time, 100);
+  </script>
+</html>
