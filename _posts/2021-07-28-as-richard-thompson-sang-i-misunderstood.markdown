@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "As Richard Thompson sang, I "Misunderstood""
+title:  "As Richard Thompson sang, 'I Misunderstood'"
 author: "Dave Jacoby"
 date:   "2021-07-28 15:08:21 -0400"
 categories: ""
