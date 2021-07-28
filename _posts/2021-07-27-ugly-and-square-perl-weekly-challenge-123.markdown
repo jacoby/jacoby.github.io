@@ -15,6 +15,8 @@ categories: ""
 >
 > Ugly numbers are those number whose prime factors are 2, 3 or 5. For example, the first 10 Ugly Numbers are 1, 2, 3, 4, 5, 6, 8, 9, 10, 12.
 
+**_ETA:_ I got this wrong. [Corrected in another blog post.](https://jacoby.github.io/2021/07/27/as-richard-thompson-sang-i-misunderstood.html)**
+
 I thought about Recursion, _because I know my brand_, but really, no. This is perfectly doable in an iterative way. I do it with an infinite while, but I could've done `for ( my $i = 1; $i <= $n ; ) { ... }` and iterate within the loop only when we find another Ugly Number, or something like that.
 
 #### Show Me The Code
