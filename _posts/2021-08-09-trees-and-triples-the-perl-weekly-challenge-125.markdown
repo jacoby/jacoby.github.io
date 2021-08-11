@@ -159,6 +159,8 @@ I grabbed my Node code, which allows me to build the tree. I use a hash of nodes
 
 If you're on a leaf, you're either at the start or at an end. I test if there are options to move to left, right or parent, and add them to a list. Just as a matter of variable juggling, it's easier to see "Are there any other nodes to travel to?" and handle that yes/no, than to do that if you're at a node and the path is longer than 2. At least, I think so.
 
+**ETA:** _Diameter_ is specifically the count of edges, which is one less than the count of nodes on the path, so _Og én, til tre nissen!_
+
 #### Show Me The Code!
 
 ```perl
@@ -211,7 +213,7 @@ my $done;
     grep { scalar $_->@* == $max }
     sort { scalar $b->@* <=> scalar $a->@* } @diameters;
 
-say join "\n", map { join " ", ( scalar $_->@* ), ':', $_->@* }
+say join "\n", map { join " ", ( -1 + scalar $_->@* ), ':', $_->@* }
 
     @diameters;
 
