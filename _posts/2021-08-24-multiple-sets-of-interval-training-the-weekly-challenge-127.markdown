@@ -125,11 +125,6 @@ use warnings;
 use feature qw{ say postderef signatures };
 no warnings qw{ experimental };
 
-use JSON;
-use List::Util qw{ min max };
-
-my $json = JSON->new->canonical;
-
 my @examples;
 
 push @examples, [ [ 1, 4 ], [ 3, 5 ], [ 6, 8 ], [ 12, 13 ], [ 3, 20 ] ];
