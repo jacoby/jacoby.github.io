@@ -11,7 +11,7 @@ categories: ""
 
 (Or, 2<sup>7</sup>)
 
-###TASK #1 › Maximum Sub-Matrix
+### TASK #1 › Maximum Sub-Matrix
 
 > Submitted by: Mohammad S Anwar  
 > You are given m x n binary matrix having 0 or 1.
