@@ -6,7 +6,7 @@ date: "2021-09-08 19:12:51 -0400"
 categories: "perl,OOP,Corinne"
 ---
 
-[https://metacpan.org/author/PEVANS](Paul Evans) talked about [Object::Pad](https://metacpan.org/pod/Object::Pad) to [Purdue Perl Mongers](https://purdue.pl/), which made me think about Object Orientation.
+[Paul Evans](https://metacpan.org/author/PEVANS) talked about [Object::Pad](https://metacpan.org/pod/Object::Pad) to [Purdue Perl Mongers](https://purdue.pl/), which made me think about Object Orientation.
 
 Historically, the module I'm responsible for that's run most often is a hackish double-wrapper around the DBI module so I can easily deal with MySQL and/or MariaDB without too much boilerplate, but the module I'm responsible for that I'm most likely to pull out as a programmer is my Node code that I use for [Weekly Challenge](https://theweeklychallenge.org/) tasks. It looks like this (repackaged to be stand-alone and not pasted into the task code):
 
