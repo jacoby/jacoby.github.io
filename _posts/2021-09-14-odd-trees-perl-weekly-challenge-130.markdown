@@ -81,9 +81,8 @@ OUTPUT: 4
 >
 > > A binary search tree is a rooted binary tree, whose internal nodes each store a key (and optionally, an associated value), and each has two distinguished sub-trees, commonly denoted left and right. The tree additionally satisfies the binary search property: the key in each node is greater than or equal to any key stored in the left sub-tree, and less than or equal to any key stored in the right sub-tree. The leaves (final nodes) of the tree contain no key and have no structure to distinguish them from one another.
 
-#### Show Me The Code!
 
-I pull out the [Node](https://www.google.com/search?q=site%3Ajacoby.github.io+Node) code. In other places, I have it separated into a module (and [redone with Object::Pad!](https://jacoby.github.io/perl,oop,corinne/2021/09/08/a-first-pass-at-objectpad.html)), but for the challenge, I _like_ having it all in one file, so those wanting to try it just need to run it.
+I pull out the [Node](https://www.google.com/search?q=site%3Ajacoby.github.io+Node) code. In other places, I have it separated into a module (and [redone with Object::Pad!](https://jacoby.github.io/perl,oop,corinne/2021/09/08/a-first-pass-at-objectpad.html)), but for the challenge, I _like_ having it all in on file, so those wanting to try it just need to run it.
 
 This time, I added two methods, which I call `bst` and `is_bst`, because I lack forethought. The convention is that methods that are internal and shouldn't be used outside the object is `_name`, or in this case, `_is_bst`, because what I need to make this recursive.
 
