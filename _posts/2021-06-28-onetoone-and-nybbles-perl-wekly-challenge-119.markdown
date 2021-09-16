@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One-to-One and Nybbles: (Perl) Wekly Challenge #119"
+title: "One-to-One and Nybbles: (Perl) Weekly Challenge #119"
 author: "Dave Jacoby"
 date: "2021-06-28 16:00:02 -0400"
 categories: ""
