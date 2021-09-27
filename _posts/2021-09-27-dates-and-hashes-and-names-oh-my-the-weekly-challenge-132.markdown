@@ -6,6 +6,8 @@ date: "2021-09-27 17:50:50 -0400"
 categories: ""
 ---
 
+[Weekly Challenge 12*11!](https://theweeklychallenge.org/blog/perl-weekly-challenge-132/)
+
 ### TASK #1 › Mirror Dates
 
 > Submitted by: Mark Anderson  
