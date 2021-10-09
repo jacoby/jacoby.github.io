@@ -10,7 +10,7 @@ Because reasons, I decided to write a thing based on my [Word Ladder](https://ja
 
 For those who don't want to follow links, it uses Dijkstra's Algorithm to find the Shortest Path between words that are one difference apart, like
 
-> ** COLD > CORD > CARD > WARD > WARM**
+> **COLD > CORD > CARD > WARD > WARM**
 
 That's something that we learn from the Levenshtein Distance. So, we start with all the words that are one letter away from **COLD**, such as **COLT** or **COED** or **BOLD**. Then, we do that same process for each of these words, but we don't duplicate. **BOLT** is one off from both **BOLD** and **COLT**, but whichever word we process first gets the link.
 
