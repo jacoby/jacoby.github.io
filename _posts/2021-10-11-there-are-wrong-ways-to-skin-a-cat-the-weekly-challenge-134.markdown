@@ -6,6 +6,10 @@ date: "2021-10-11 17:28:13 -0400"
 categories: ""
 ---
 
+[https://theweeklychallenge.org/blog/perl-weekly-challenge-134/](The Weekly Challenge #134).
+
+I might do this in Node and Python this week. We'll see.
+
 ### TASK #1 › Pandigital Numbers
 
 > Submitted by: Mohammad S Anwar  
