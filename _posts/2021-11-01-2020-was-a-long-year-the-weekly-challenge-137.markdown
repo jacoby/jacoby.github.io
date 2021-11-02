@@ -165,7 +165,7 @@ The difficulty is with size. Consider 79.
 - **7546** reversed is **6457**. Sum is **14003**.
 - **14003** reversed is **30041**. Sum is **44044**.
 
-Here, the we jump to two digits to five is five steps. We're instructed that, if we don't find it in 500, that's a _Lychrel humber_. So when we go down that rabbit hole, the integers can get big. So, let's use [Math::BigInt](https://metacpan.org/pod/Math::BigInt)!
+Here, the jump from two digits to five is five steps. We're instructed that, if we don't find it in 500, that's a _Lychrel humber_. So when we go down that rabbit hole, the integers can get big. So, let's use [Math::BigInt](https://metacpan.org/pod/Math::BigInt)!
 
 I almost _never_ have to deal with numbers bigger than the double float that all Perl numbers are by default. It's good to know that, when you catch a problem, you can grab BigInt or BigFloat, because Perl will treat long numbers as strings until you start doing short-number math on them.
 
