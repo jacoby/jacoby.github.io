@@ -136,4 +136,44 @@ Here's an abbreviated skill list in JSON. I feel I should explain that, with Cyb
 
 Right off, the `total_up` method code is not as I would want to be. I tried to do some arrow function fun, basically getting `s.value`, but I could not force it to work, instead getting `s.selectedIndex` and pulling that from the OPTION list. I'm not _happy_ with this solution, but I _am_ satisfied.
 
+### ETA
+
+I suppose I should hold off submitting before I'm done with it.
+
+The key, I believe, is to make an array out of the collection of elements, that, when you use `typeof`, says `object`. Once then, I use a bunch of arrow functions to get things down to the things I want (or zero), then make an all-index array, which I use to `map` and multiply the rest, then `reduce` to the sum.
+
+**Never give up! Never surrender!**
+
+```javascript
+        total_up() {
+          let tc = document.getElementById("totalCount");
+          let selects = document.getElementsByTagName("select");
+
+          // convert the selects obj to an array
+          let array = [];
+          for (let i of selects) {
+            array.push(i);
+          }
+          // array function to convert an array of elements
+          // to all set values
+          let values = array
+            .map((s) => s.value)
+            .map((s) => (s !== "" ? s : 0))
+            .map((s) => parseInt(s));
+          // array function to convert an array of elements
+          // to all set modifiers
+          let modifiers = array
+            .map((s) => s.getAttribute("mult"))
+            .map((s) => parseInt(s));
+          // array function to multiply value vs modifier
+          // and sum them
+          let result = new Array(array.length)
+            .fill()
+            .map((n, i) => i)
+            .map((i) => values[i] * modifiers[i])
+            .reduce((i, j) => i + j, 0);
+          tc.innerHTML = result;
+        },
+```
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
