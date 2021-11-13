@@ -52,7 +52,7 @@ sub poorly_trusted_code_from_elsewhere () {
 
 (`if (1){ ,,, ; exit}` is a convention I use in my `test` files, where I work to see if I can do the code thing I'm thinking about, not actually solving the problem, and because there can be dozens of things I'm poking at, I put them in this simple if statement and exit out, occasionally turning it to `if (0)` and certainly stopping things at the end of the block.)
 
-So, rather than actually stand up an untrustworthy server, I'm mockig it with `poorly_trusted_code_from_elsewhere`, and having it return a command that ... well, we use shadow passwords, so passing `/etc/passwd` isn't the horror it was in the 1990s, but still, don't.
+So, rather than actually stand up an untrustworthy server, I'm mocking it with `poorly_trusted_code_from_elsewhere`, and having it return a command that ... well, we use shadow passwords, so passing `/etc/passwd` isn't the horror it was in the 1990s, but still, don't.
 
 Then we have a for loop that handles all the commands, in this case `say`ing them rather than running them, because I don't _really_ want to get the source code to [Perl.com](https://www.perl.com/).
 
