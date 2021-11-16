@@ -39,7 +39,7 @@ var jortSort = function( array ) {
 };
 ```
 
-JortSort _does the work_ or sorting, but simply tells you if you did it right or not. It steadfastly avoids being helpful. It, to me, is like replacing [Stack Overflow](https://stackoverflow.com/) with a small JS function. I've seen many SO users I'd love to see replced with small JS functions.
+JortSort _does the work_ of sorting, but simply tells you if you did it right or not. It steadfastly avoids being helpful. It, to me, is like replacing [Stack Overflow](https://stackoverflow.com/) with a small JS function. I've seen many SO users I'd love to see replced with small JS functions.
 
 Again, I _love_ Jenn Schiffer.
 
