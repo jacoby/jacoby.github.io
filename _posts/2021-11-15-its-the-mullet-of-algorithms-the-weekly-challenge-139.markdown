@@ -116,7 +116,7 @@ The Wikipedia article gives us the first few, with a link to the page on the Onl
 
 The lowest Long Prime is _7_. Taken to 200 digits, that's `0.14285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714285714`, and we can clearly see the six-digit repetitions (`142857`). And it's the six-digit repetitions we're looking for: _3_ has a one-digit repetition, which is also a 2-digit repetition, but the one-digit rep comes first, so it isn't good enough to be a Long Prime.
 
-Problem is, `1/7 == 0.142857142857143`, which covers us for _7_, but when we get longer, we need to deal with bigger floats.
+Problem is, `1/7 == 0.142857142857143`, using default Perl variables, which covers us for _7_, but when we get longer, we need to deal with bigger floats.
 
 [We need Big Floats](https://metacpan.org/pod/Math::BigFloat).
 
