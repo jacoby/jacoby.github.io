@@ -27,7 +27,7 @@ It's toward the end of _Hitchhiker's Guide to the Galaxy_, where the Mice are ex
 > "It could always be replaced," said Benjy reasonably, "if you think it's important."  
 > "Yes, an electronic brain," said Frankie, "a simple one would suffice."  
 > "A simple one!" wailed Arthur.
-> "Yeah," said Zaphod with a sudden evil grin, "you'd just have to program it to say _What?_ and _I don't understand_ and _Where's the tea?_ Who'd know the difference?"
+> "Yeah," said Zaphod with a sudden evil grin, "you'd just have to program it to say **What?** and **I don't understand** and **Where's the tea?** Who'd know the difference?"
 
 I mean, there's engaging or replacing balance and motor functions, but sure.
 
