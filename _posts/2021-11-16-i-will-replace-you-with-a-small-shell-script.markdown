@@ -14,7 +14,7 @@ At least, I _recall_ it being on Thinkgeek, but my initial poking in the [Intern
 
 That line has frustrated me for a while, because I recalled it, but I couldn't remember where from. I recalled it, or something close, being said by Zaphod to Arthur. And last night, I found it. (It's been decades since I've read it, so eh?)
 
-It's toward the end of _Hitchhiker's Guide to the Galaxy_, where the Mice are explaining to Arthur that he's part of the great computer tasked with finding the Question to Life, The Earth and Everything, so the Question should be within him:
+It's toward the end of _Hitchhiker's Guide to the Galaxy_, where the Mice are explaining to Arthur that he's part of the great computer tasked with finding the Question to Life, The Universe and Everything, so the Question should be within him:
 
 > "No, no", said Frankie, "it's the brain we want to buy."  
 > "What!"  
@@ -22,9 +22,9 @@ It's toward the end of _Hitchhiker's Guide to the Galaxy_, where the Mice are ex
 > "I thought you said you could just read his brain electronically," protested Ford.  
 > "Oh yes," said Frankie, "but we'd have to get it out first. It's got to be prepared."  
 > "Treated," said Benjy.  
-> "Diced".  
+> "Diced."  
 > "Thank you", shouted Arthur, tipping up his chair and backing away from the table in horror.  
-> "It could always be replaced," said Benjy reasonably, "if you think it's iimportant."  
+> "It could always be replaced," said Benjy reasonably, "if you think it's important."  
 > "Yes, an electronic brain," said Frankie, "a simple one would suffice."  
 > "A simple one!" wailed Arthur.
 > "Yeah," said Zaphod with a sudden evil grin, "you'd just have to program it to say _What?_ and _I don't understand_ and _Where's the tea?_ Who'd know the difference?"
