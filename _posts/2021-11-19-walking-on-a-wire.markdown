@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""Walking on a Wire""
+title:  '"Walking on a Wire"'
 author: "Dave Jacoby"
 date:   "2021-11-19 15:39:30 -0500"
 categories: ""
