@@ -6,7 +6,9 @@ date: "2021-12-29 14:52:07 -0500"
 categories: ""
 ---
 
-<img src="https://jacoby.github.io/images/analog_clock.png"> <small>Clock is mine. Earthrise picture is from [Apollo 8 and NASA](https://apod.nasa.gov/apod/ap181224.html).</small>
+<img src="https://jacoby.github.io/images/analog_clock.png">
+
+<small>Clock is mine. Earthrise picture is from [Apollo 8 and NASA](https://apod.nasa.gov/apod/ap181224.html).</small>
 
 Making analog clocks with computers is one of my favorite things. Back in the days of CGI, I learned how to make an image in Perl, then
 
