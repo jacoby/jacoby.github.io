@@ -101,8 +101,6 @@ Ever wonder why we define a circle as being 360 degrees? Because you have a wide
 
 But<sub>1</sub>, we don't want that, because with the orientation we're using, **0,0** is at the top left, not the bottom left. We can work around that, though.
 
-But<sub>2</sub>, we don't _really_ want that pure integer math, because we can do something clever. I'm writing this at 5:06pm, and if we _use_ that, feed `5.1` into the system instead of `5`, then as we get closer to the next hour, the hour hand _looks_ closer to the next hour, instead of making a 30° jump from, in this case, `5` to `6`. The 6° jumps for the minute hand
-
 But<sub>2</sub>, we don't _really_ want that pure integer math, because we can do something clever. I'm writing this at 5:06pm, and if we _use_ that, feed `5.1` into the system instead of `5`, then as we get closer to the next hour, the hour hand _looks_ closer to the next hour, instead of making a 30° jump from, in this case, `5` to `6`. The 6° jumps for the minute hand are smaller and less jarring, but we can smooth them out a bit as well. I'm refreshing on the second, not using fractional-second sleep, so that's as low as we can go.
 
 But<sub>3</sub>, we don't actually want _degrees_, we want [_radians!_](https://en.wikipedia.org/wiki/Radian) and can get them with `deg2rad` from [Math::Trig](https://metacpan.org/pod/Math::Trig).
