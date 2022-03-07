@@ -8,8 +8,6 @@ categories: ""
 
 We're now at [Weekly Challege #155](https://theweeklychallenge.org/blog/perl-weekly-challenge-155/). **[155](<https://en.wikipedia.org/wiki/155_(number)>)** is the product of the primes **5** and **31**, making it a **compound** number. I feel I _must_ have heard _compound_ as a term for not-prime numbers, but I don't actually recall seeing it. It is also [deficient](https://en.wikipedia.org/wiki/Deficient_number) and [odious](https://en.wikipedia.org/wiki/Odious_number), which sounds a _lot_ like mathematicians scouring through a dictionary to find names for new number sets.
 
-![](https://jacoby.github.io/images/sunflower_smaller.jpg)
-
 ### TASK #2 › Pisano Period
 
 > Submitted by: Mohammad S Anwar  
