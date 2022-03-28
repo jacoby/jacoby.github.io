@@ -52,7 +52,7 @@ sub is_prime ($n) {
 ```
 
 ```text
-$ ./ch-1.pl 
+$ ./ch-1.pl
 2, 3, 5, 7, 11, 23, 29, 41, 43, 47, 61, 67, 83, 89
 ```
 
@@ -112,9 +112,5 @@ sub is_prime ($n) {
 $ ./ch-2.pl
 7, 19, 37, 61, 127, 271, 331, 397, 547, 631, 919
 ```
-
-### Fix?
-
-For some reason, this file is not getting my Github Pages to update.
 
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
