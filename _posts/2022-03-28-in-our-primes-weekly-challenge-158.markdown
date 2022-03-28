@@ -113,4 +113,8 @@ $ ./ch-2.pl
 7, 19, 37, 61, 127, 271, 331, 397, 547, 631, 919
 ```
 
+### Fix?
+
+For some reason, this file is not getting my Github Pages to update.
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Twitter](https://twitter.com/jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
