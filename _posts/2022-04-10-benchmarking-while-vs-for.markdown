@@ -38,7 +38,7 @@ for my $i ( @array ) {
 `while`, however, is built for when the size of the problem set is dynamic and unset. If you want to start now and keep going until it's over, that's when you pull out `while`.
 
 ```perl
-while ( #array ) {
+while ( @array ) {
     shift @array;
 }
 ```
