@@ -6,6 +6,10 @@ date: "2022-05-09 10:08:29 -0400"
 categories: ""
 ---
 
+It's the _real_ [Weekly Challenge #164](https://theweeklychallenge.org/blog/perl-weekly-challenge-164/)! I was tired so I didn't proofread myself last week. Sorry for that!
+
+[164](https://en.wikipedia.org/wiki/164_(number)) is 4 * 41, so not prime, but it is, in base 10, the smallest number that can be expressed as a concatenation of two squares in two different ways: as 1 concatenate 64 or 16 concatenate 4.
+
 ### Task 1: Prime Palindrome
 
 > Submitted by: Mohammad S Anwar  
