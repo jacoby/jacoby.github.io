@@ -6,6 +6,8 @@ date: "2022-05-12 09:42:41 -0400"
 categories: ""
 ---
 
+![Windows Terminal Is Cool, Actually](https://jacoby.github.io/images/windows_terminal_is_cool.jpg)
+
 [I presented on the subject of Windows Terminals](https://www.meetup.com/hacklafayette/events/284841221/) to [HackLafayette/Purdue Perl Mongers](https://www.meetup.com/hacklafayette/) on May 11. Here is a rough retelling of what I presented.
 
 (I might release the video, but I _so_ don't want to watch myself present.)
@@ -26,7 +28,11 @@ And then came [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/win
 
 It was just that the terminal sucked. I was _okay_, I guess, but I definitely had Unicode issues, beyond the usual _"Your language predated Unicode and isn't optimized for expanded character sets"_ issues.
 
+(When I tried to demonstrate my issues with Unicode, however, I was demonstrating from my Terminal-having machine, with [Cascadia Code](https://jacoby.github.io/images/windows_terminal_is_cool.jpg), which kinda comes with Windows Terminal, so :shrug:)
+
 ### In Comes Windows Terminal
+
+
 
 ### Shells and Remote Connections, Oh My!
 
