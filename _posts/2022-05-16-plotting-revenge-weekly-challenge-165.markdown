@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Plotting Revenge:: Weekly Challenge #165"
+title: "Plotting Revenge: Weekly Challenge #165"
 author: "Dave Jacoby"
 date: "2022-05-16 16:22:06 -0400"
 categories: ""
