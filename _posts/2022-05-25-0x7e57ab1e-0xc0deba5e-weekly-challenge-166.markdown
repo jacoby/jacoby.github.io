@@ -18,7 +18,7 @@ But that plot is not what they were used for.
 
 _What were they used for, Dave?_
 
-I'm glad you asked me that. They were used because **(log<sub>x</sub>A + log<sub>x</sub>B)<sup>x</sup> = A \* B**, which turns multiplying large numbers into adding smaller numbers, plus looking up the numbers in a [log table](https://en.wikipedia.org/wiki/Mathematical_table#Tables_of_logarithms).
+I'm glad you asked me that. They were used because **x<sup>log<sub>x</sub>A + log<sub>x</sub>B</sup> = A \* B**, which turns multiplying large numbers into adding smaller numbers, plus looking up the numbers in a [log table](https://en.wikipedia.org/wiki/Mathematical_table#Tables_of_logarithms).
 
 Of course, we don't have to do that anymore. We've taught rocks to sing, and so we can just multiply large numbers without error, so if we know this, it's something half-remembered from a history of science course.
 
