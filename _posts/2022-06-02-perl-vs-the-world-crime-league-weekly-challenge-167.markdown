@@ -6,7 +6,7 @@ date: "2022-06-02 18:01:05 -0400"
 categories: ""
 ---
 
-Welcome to [Weekly Challenge #167](https://theweeklychallenge.org/blog/perl-weekly-challenge-167/) [167])(https://en.wikipedia.org/wiki/167_(number)) is a **safe prime**. If there's a prime number _p_ where _2p + 1_ is also prime, then _p_ is a **Sophie Germain prime** and _2p + 1_ is a safe prime, so _83_ is the Sophie Germain prime to 167.
+Welcome to [Weekly Challenge #167](https://theweeklychallenge.org/blog/perl-weekly-challenge-167/) [167](https://en.wikipedia.org/wiki/167_(number)) is a **safe prime**. If there's a prime number _p_ where _2p + 1_ is also prime, then _p_ is a **Sophie Germain prime** and _2p + 1_ is a safe prime, so _83_ is the Sophie Germain prime to 167.
 
 ### Task 1: Circular Prime
 
