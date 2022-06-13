@@ -6,7 +6,7 @@ date: "2022-06-08 09:51:47 -0400"
 categories: ""
 ---
 
-This is [Weekly Challenge $168](https://theweeklychallenge.org/blog/perl-weekly-challenge-168/). [168]() is **2 _ 2 _ 2 _ 3 _ 7**. Discounting 1 and itself, 168 is divisible by **2, 3, 4, 6, 7, 8, 12, 14, 21, 24, 28, 42, 56, and 84**. If you sum those numbers, you get **311**, which is greater than itself, which makes it an [Abundant Number](https://en.wikipedia.org/wiki/Abundant_number).
+This is [Weekly Challenge $168](https://theweeklychallenge.org/blog/perl-weekly-challenge-168/). [168](https://en.wikipedia.org/wiki/168) is **2 * 2 * 2 * 3 * 7**. Discounting 1 and itself, 168 is divisible by **2, 3, 4, 6, 7, 8, 12, 14, 21, 24, 28, 42, 56, and 84**. If you sum those numbers, you get **311**, which is greater than itself, which makes it an [Abundant Number](https://en.wikipedia.org/wiki/Abundant_number).
 
 ### Task 1: Perrin Prime
 
@@ -72,8 +72,7 @@ They give the example of **10** in the task and on Wikipedia, but it's not forma
 - The factors of **10** are `[2,5]`, so we concatenate and get **25**
 - The factors of **25** are `[5,5]`, so we concatenate and get **55**
 - The factors of **55** are `[5,11]`, so we concatenate and get **511**
-- The factors of **511** are `[7,73]`, so we concatenate and get
-  **773**
+- The factors of **511** are `[7,73]`, so we concatenate and get **773**
 - **773** is prime
 
 For many numbers, it's that easy or easier. The home prime for **8**, however, is **3331113965338635107**. 19 digits. I've been running my solution against 8 for over a day, and so far, I'm just at **3347911118189**, whose factors are `[11, 613, 496501723]`. I _wanted_ to run it until it finishes or crashes before I blogged, but I don't think my computer will finish it before that point.
