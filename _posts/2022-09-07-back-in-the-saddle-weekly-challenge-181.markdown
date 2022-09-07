@@ -6,7 +6,11 @@ date: "2022-09-07 11:27:13 -0400"
 categories: ""
 ---
 
-It's [Challenge #181](https://theweeklychallenge.org/blog/perl-weekly-challenge-181/)! I took a few off, and when I got back into meeting the challenge, I didn't write about it. I'll tell you straight out that my head was elsewhere, but beyond fighting off a cough that just would not go away (I'm fine now, and it wasn't any of the bugs going around)
+It's [Challenge #181](https://theweeklychallenge.org/blog/perl-weekly-challenge-181/)! I took a few off, and when I got back into meeting the challenge, I didn't write about it. I'll tell you straight out that my head was elsewhere, but beyond fighting off a cough that just would not go away (I'm fine now, and it wasn't any of the bugs going around), I was fine. 
+
+I'm still early in a new job, and there's a lot of learning the new systems, so I just didn't want to be challenged as much. I'm feeling more comfortable in my position now, and I'll try to solve and blog the newer challenges.
+
+I make no promises, however.
 
 ### Task 1: Sentence Order
 
