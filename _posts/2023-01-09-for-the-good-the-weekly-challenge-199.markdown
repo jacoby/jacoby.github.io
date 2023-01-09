@@ -6,6 +6,11 @@ date: "2023-01-09 10:37:29 -0500"
 categories: ""
 ---
 
+Welcome to my answers to [The Weekly Challenge #199](https://theweeklychallenge.org/blog/perl-weekly-challenge-199/). [
+It is a prime number and the fourth part of a prime quadruplet: 191, 193, 197, 199.](https://en.wikipedia.org/wiki/199_(number))
+
+It also reminds me of Y2K Perl story. Perl timestamps show the year in terms of 1900, so it was common to code things like `$year = '19' . $y`. In 1999, this worked. In Y2K, `$y` would be `100`, and that would be `19100`. This was a common enough problem that the year's Yet Another Perl Conference was called [YAPC 19100](https://yapc.org/America/previous-years/19100/).
+
 ### Task 1: Good Pairs
 
 > Submitted by: Mohammad S Anwar  
@@ -132,19 +137,15 @@ sub good_triplets ( $x, $y, $z, @array ) {
             }
         }
     }
-
-    say join ' ', $x, $y, $z, '|', @array;
     return $out;
 }
 ```
 
 ```text
   jacoby  Bishop  ~  win  199  $  ./ch-2.pl
-7 2 3 | 3 0 1 1 9 7
     Input:  @array = (3,0,1,1,9,7) and $x = 7, $y = 2, $z = 3
     Output: 4
 
-0 0 1 | 1 1 2 2 3
     Input:  @array = (1,1,2,2,3) and $x = 0, $y = 0, $z = 1
     Output: 0
 
