@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Mastodon Test"
+title: "Mastodon Test"
 author: "Dave Jacoby"
-date:   "2023-01-12 10:57:57 -0500"
+date: "2023-01-12 10:57:57 -0500"
 categories: ""
 ---
 
@@ -106,7 +106,4 @@ __DATA__
 post_dir: /path/to/blog/repo
 ```
 
-
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Mastodon](https://mastodon.xyz/@jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
-
-
