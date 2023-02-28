@@ -12,6 +12,6 @@ Dave Jacoby is a developer. He an organizer in technical groups such as [HackLaf
 
 [logo]: https://jacoby.github.io/images/fav.png
 [1]: http://hacklafayette.com/
-[2]: https://purdue.pl/
+[2]: https://purdue.pm/
 [3]: https://metacpan.org/pod/Expect
 [4]: https://jacoby.github.io/feed
