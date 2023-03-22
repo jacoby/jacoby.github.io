@@ -6,7 +6,7 @@ date: "2023-03-20 12:01:43 -0400"
 categories: ""
 ---
 
-Welcome to [Weekly Chgallenge #209](https://theweeklychallenge.org/blog/perl-weekly-challenge-209/). I can't do another HTTP.cats pic because [209 is not an assigned HTTP response code](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), but it is [the area code for a huge part of central California](https://www.allareacodes.com/209), including Calaveras county, made famous by Mark Twain and ["
+Welcome to [Weekly Challenge #209](https://theweeklychallenge.org/blog/perl-weekly-challenge-209/). I can't do another HTTP.cats pic because [209 is not an assigned HTTP response code](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), but it is [the area code for a huge part of central California](https://www.allareacodes.com/209), including Calaveras county, made famous by Mark Twain and ["
 The Celebrated Jumping Frog of Calaveras County"](https://en.wikipedia.org/wiki/The_Celebrated_Jumping_Frog_of_Calaveras_County).
 
 I was _so_ tempted to title this something like "The Jumping Camel of Calaveras County", but I didn't.
