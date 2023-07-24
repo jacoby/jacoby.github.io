@@ -131,7 +131,7 @@ Output: 1
 
 Just as you don't just write your own date manipulation code, you don't just write your own Roman numeral converter. By convention, **9** would be **IX**, but it would make all the sense to me to continue on from 8 and write it **VIIII**, so wha?
 
-Thankfully, we have [Roman](https://metacpan.org/pod/Roman), which gives us `arabic()` to convert a Roman numeral to a number we can use, and `Roman()` which converts it back in uppercase format. Using `roman()` would give us **ix** for 9 instead of **IX**.
+Thankfully, we have [Roman](https://metacpan.org/pod/Roman), which gives us `arabic()` to convert a Roman numeral to a number we can use, and `Roman()` which converts it back in uppercase format. Using `roman()` would give us **ix** for 9 instead of **IX**. (Roman is not a Core module. Thankfully, we don't need to handle Roman numerals all that often. Still, you should know.)
 
 I split, convert and eval here. If it wasn't input I'm happy with, I would do value testing and a dispatch table or something, because I don't want to just throw any code into `eval`. Stay safe, kids!
 
