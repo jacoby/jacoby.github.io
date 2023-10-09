@@ -83,7 +83,7 @@ This looked like a job for iteration.
 
 That happens too.
 
-There's a function, `munge` (because why waste creativity on function names?) that does exactly the above, in a while loop. We again use `map` to get the munge value for each integer, and then sort on it, and `map` again to remove it. It's a numberical version of the [Schwartzian Transform](https://jacoby.github.io/javascript/2018/11/07/schwartzian-transforms-in-javascript.html). 
+There's a function, `munge` (because why waste creativity on function names?) that does exactly the above, in a while loop. We again use `map` to get the munge value for each integer, and then sort on it, and `map` again to remove it. It's a numberical version of the [Schwartzian Transform](https://jacoby.github.io/javascript/2018/11/07/schwartzian-transforms-in-javascript.html).
 
 #### Show Me The Code
 
