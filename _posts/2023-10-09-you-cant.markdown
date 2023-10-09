@@ -1,0 +1,145 @@
+---
+layout: post
+title:  "You Can't Touch This!"
+author: "Dave Jacoby"
+date:   "2023-10-09 14:39:29 -0400"
+categories: ""
+---
+
+Welcome to [Weekly Challenge #238!](https://theweeklychallenge.org/blog/perl-weekly-challenge-238/)  
+
+**238** is an [Untouchable Number](https://en.wikipedia.org/wiki/Untouchable_number), meaning that it cannot be expressed as the sum of all the proper divisors of any positive integer, not that [it wears baggy silk pants and samples Rick James](https://genius.com/Mc-hammer-u-cant-touch-this-lyrics), or [that it goes after bootleggers in Chicago](https://www.imdb.com/title/tt0094226/).
+
+### Task 1: Running Sum
+>
+>Submitted by: Mohammad S Anwar  
+>You are given an array of integers.  
+>  
+>Write a script to return the running sum of the given array. The running sum can be calculated as `sum[i] = num[0] + num[1] + …. + num[i]`.  
+
+#### Let's Talk About This
+
+I like `map`. `@new_array = map { whatever } @array` creates a new array where the new value is whatever is in the code block, working on each old value. Very useful. Very fun. In this case, we have an outside variable, add each value to it, and send that to the new array.
+
+#### Show Me The Code
+
+```perl
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use experimental qw{ say postderef signatures state };
+
+my @examples = (
+
+    [ 1, 2,  3, 4, 5 ],
+    [ 1, 1,  1, 1, 1 ],
+    [ 0, -1, 1, 2 ],
+);
+
+for my $e (@examples) {
+    my @output = running_sum( $e->@* );
+    my $input  = join ', ', $e->@*;
+    my $output = join ', ', @output;
+    say <<~"END";
+    Input:  \@int = ($input)
+    Output: ($output)
+    END
+}
+
+sub running_sum (@int) {
+    my $c      = 0;
+    my @output = map { $c += $_; $c } @int;
+    return @output;
+}
+```
+
+```text
+$ ./ch-1.pl 
+Input:  @int = (1, 2, 3, 4, 5)
+Output: (1, 3, 6, 10, 15)
+
+Input:  @int = (1, 1, 1, 1, 1)
+Output: (1, 2, 3, 4, 5)
+
+Input:  @int = (0, -1, 1, 2)
+Output: (0, -1, 0, 2)
+```
+
+### Task 2: Persistence Sort
+>
+>Submitted by: Mohammad S Anwar
+>You are given an array of positive integers.
+>
+>Write a script to sort the given array in increasing order with respect to the count of steps required to obtain a single-digit number by multiplying its digits recursively for each array element. If any two numbers have the same count of steps, then print the smaller number first.
+
+#### Let's Talk About This
+
+I could imagine this being a recursive solution. Pass a depth and a number. If the number's greater than 9 (making it double digits), that number is split and added, with the depth iterated and everything sent up a level. If not, return the depth.
+
+But this...
+
+This looked like a job for iteration.
+
+That happens too.
+
+There's a function, `munge` (because why waste creativity on function names?) that does exactly the above, in a while loop. We again use `map` to get the munge value for each integer, and then sort on it, and `map` again to remove it. It's a numberical version of the [Schwartzian Transform](https://jacoby.github.io/javascript/2018/11/07/schwartzian-transforms-in-javascript.html). 
+
+#### Show Me The Code
+
+```perl
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use experimental qw{ say postderef signatures state };
+
+use Algorithm::Permute;
+use List::Util qw{ product };
+
+my @examples = (
+
+    [ 15, 99, 1,  34 ],
+    [ 50, 25, 33, 22 ],
+);
+
+for my $e (@examples) {
+    my @int    = $e->@*;
+    my $int    = join ', ', @int;
+    my @output = persistence_sort(@int);
+    my $output = join ', ', @output;
+    say <<~"END";
+    Input:  \@int = ($int)
+    Output: ($output)
+    END
+}
+
+sub persistence_sort (@nums) {
+    my @output =
+        map  { $_->[0] }
+        sort { $a->[1] <=> $b->[1] }
+        map  { [ $_, munge($_) ] } sort @nums;
+    return @output;
+}
+
+sub munge ($i) {
+    my $c = 0;
+    while (1) {
+        return $c if $i < 10;
+        $i = product split //, $i;
+        $c++;
+    }
+    return -1; # just in case
+}
+```
+
+```text
+$ ./ch-2.pl 
+Input:  @int = (15, 99, 1, 34)
+Output: (1, 15, 34, 99)
+
+Input:  @int = (50, 25, 33, 22)
+Output: (22, 33, 50, 25)
+```
+
+#### If you have any questions or comments, I would be glad to hear it. Ask me on [Mastodon](https://mastodon.xyz/@jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
