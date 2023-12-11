@@ -9,11 +9,11 @@ categories: ""
 It is now time for [Weekly Challenge #247](https://theweeklychallenge.org/blog/perl-weekly-challenge-247/) **247** is the product of **13** and **19**, making it a [brillant number](https://www.alpertron.com.ar/BRILLIANT.HTM).
 
 ### Task 1: Secret Santa
->
-> Submitted by: Andreas Voegele
-> Secret Santa is a Christmas tradition in which members of a group are randomly assigned a person to whom they give a gift.
->
-> You are given a list of names. Write a script that tries to team persons from different families.
+
+> Submitted by: Andreas Voegele  
+> Secret Santa is a Christmas tradition in which members of a group are randomly assigned a person to whom they give a gift.  
+>  
+> You are given a list of names. Write a script that tries to team persons from different families.  
 
 #### Let's Talk About This
 
@@ -139,7 +139,7 @@ Output:
 ```
 
 ### Task 2: Most Frequent Letter Pair
->
+
 > Submitted by: Jorg Sommrey
 > You are given a string S of lower case letters 'a'..'z'.
 >
