@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Partidges and Pair Trees: Weekly Challenge #247"
+title:  "Partridges and Pair Trees: Weekly Challenge #247"
 author: "Dave Jacoby"
 date:   "2023-12-11 14:57:32 -0500"
 categories: ""
