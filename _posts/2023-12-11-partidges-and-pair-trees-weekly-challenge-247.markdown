@@ -140,7 +140,7 @@ Output:
 
 ### Task 2: Most Frequent Letter Pair
 
-> Submitted by: Jorg Sommrey
+> Submitted by: Jorg Sommrey  
 > You are given a string S of lower case letters 'a'..'z'.
 >
 > Write a script that finds the pair of consecutive letters in S that appears most frequently. If there is more than one such pair, chose the one that is the lexicographically first.
