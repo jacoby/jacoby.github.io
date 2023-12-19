@@ -99,7 +99,7 @@ Matrices are *fun*, aren't they?
 
 First step for me is to create a function to display the array, so I can see what's happening. in short, `say join "\n", map { join ', ', $_->@* } $matrix->@*`, assuming arrayrefs, but to get output like the examples, it takes a little bit more than that.
 
-Beyond that, we're talking the sum (or `sum` from [List::Util](https://metacpan.org/pod/List::Util)) of four numbers. That's the ones in the current location (`x,y`), in the same column and next row (`x,y+1`), in the same row and next column (`x+1,y`), and in both the next column and row (`x+1,y+1`). Because the last row and column don't have a next, the generated matrix will be smaller by one in each direction. 
+Beyond that, we're talking the sum (or `sum` from [List::Util](https://metacpan.org/pod/List::Util)) of four numbers. That's the ones in the current location (`x,y`), in the same column and next row (`x,y+1`), in the same row and next column (`x+1,y`), and in both the next column and row (`x+1,y+1`). Because the last row and column don't have a next, the generated matrix will be smaller by one in each direction.
 
 #### Show Me The Code
 
