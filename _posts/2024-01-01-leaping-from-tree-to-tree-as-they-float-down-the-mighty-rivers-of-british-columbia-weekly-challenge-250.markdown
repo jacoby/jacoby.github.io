@@ -6,7 +6,7 @@ date:   "2024-01-01 17:02:55 -0500"
 categories: ""
 ---
 
-Here we are at [Weekly Challenge #250!](https://theweeklychallenge.org/blog/perl-weekly-challenge-250/) **250** is **2 * 5<sup>3</sup>**, and has the same digits as prime factors. It is also the area code for the Canadian Province of [British Columbia](https://en.wikipedia.org/wiki/Area_code_250), and when I saw that, I knew the title had to come from Monty Python...
+Happy New Year to those who celebrate! Here we are at [Weekly Challenge #250!](https://theweeklychallenge.org/blog/perl-weekly-challenge-250/) **250** is **2 * 5<sup>3</sup>**, and has the same digits as prime factors. It is also the area code for the Canadian Province of [British Columbia](https://en.wikipedia.org/wiki/Area_code_250), and when I saw that, I knew the title had to come from Monty Python...
 
 > All right ... I confess I haven't cut your hair ... I hate cutting hair. I have this terrible un-un-uncontrollable fear whenever I see hair. When I was a kid I used to hate the sight of hair being cut. My mother said I was a fool. She said the only way to cure it was to become a barber. So I spent five ghastly years at the Hairdressers' Training Centre at Totnes. Can you imagine what it's like cutting the same head for five years? I didn't want to be a barber anyway. I wanted to be a lumberjack. **Leaping from tree to tree as they float down the mighty rivers of British Columbia!** The giant redwood, the larch, the fir, the mighty scots pine. The smell of fresh-cut timber! The crash of mighty trees! With my best girlie by my side! We'd sing ... sing ... sing.
 
