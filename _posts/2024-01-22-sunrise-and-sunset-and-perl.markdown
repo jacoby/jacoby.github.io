@@ -20,7 +20,7 @@ And I used DarkSky's weather API to determine the weather based on that location
 
 Not that the location changed much, because this code basically always ran from an office in a subbasement.
 
-And, if you have sunrise and sunset, it stands to reason that [Solar Noon](https://en.wikipedia.org/wiki/Solar_time) would be the time that's halfway between the two. Where I am, I am an hour drive or so from the border between Eastern and Central time, and there's some wiggle, but by and large, our solar noon occurs at 1pm during the winter, because of location in the time zome, and 2pm in the summer, because Daylight Saving Time. People complain about how early the sun sets in winter, and how late it rises, but DST does nothing about that, and just about every change is people trying to legislate away the reality of being on a ball of mud with a 23-degree axial tilt.
+And, if you have sunrise and sunset, it stands to reason that [Solar Noon](https://en.wikipedia.org/wiki/Solar_time) would be the time that's halfway between the two. Where I am, I am an hour drive or so from the border between Eastern and Central time, and there's some wiggle, but by and large, our solar noon occurs at 1pm during the winter, because of location in the time zone, and 2pm in the summer, because Daylight Saving Time. People complain about how early the sun sets in winter, and how late it rises, but DST does nothing about that, and just about every change is people trying to legislate away the reality of being on a ball of mud with a 23-degree axial tilt.
 
 But anyway, given a location and a day, you can determine when sunrise and sunset are. I use [DateTime::Event::Sunrise](https://metacpan.org/pod/DateTime::Event::Sunrise).
 
