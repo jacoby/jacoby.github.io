@@ -112,4 +112,8 @@ There's an extension I find powerful called [RainbowCSV](https://marketplace.vis
 
 Not related to extensions, but VS Code is a Git client, so you can use it to connect to GitHub or Bitbucket directly, without the use of command-line Git tools or GitHub desktop. Most of the time, when I add to this blog, I write the markdown using the built-in Markdown Preview and commit and push from within VS Code. They've recently added [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens). I've barely touched it, but it seems like a useful tool for working with a large, long-lived repository with multiple contributors.
 
+## End 
+
+There is more to say about VS Code, about the formatters/linters and syntax highlighters that exist for most languages, extensions that allow you to treat VS Code like vim, debuggers and the like. Ultimately, the best thing about VS Code is the community, which creates tools to make it easier to do the things you need to do.
+
 #### If you have any questions or comments, I would be glad to hear it. Ask me on [Mastodon](https://mastodon.xyz/@jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
