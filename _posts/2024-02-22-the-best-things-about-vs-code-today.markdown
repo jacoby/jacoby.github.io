@@ -98,7 +98,7 @@ Also, within each context setting, you can specify things by language. Below is 
 }
 ```
 
-These examples show mostly the font family, font size and default formatting engine for each language, but with Python, there's `editor.formatOnType`, which formats the text while you write it. There are also options for `formatOnSave` and `formatOnPaste`, so that
+These examples show mostly the font family, font size and default formatting engine for each language, but with Python, there's `editor.formatOnType`, which formats the text while you write it. There are also options for `formatOnSave` and `formatOnPaste`, which start the formatting on other events.
 
 So, VS Code can behave differently based on workspace, on environment, on profile and on language.
 
