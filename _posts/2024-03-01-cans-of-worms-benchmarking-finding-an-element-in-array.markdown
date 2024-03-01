@@ -206,8 +206,14 @@ use experimental qw{ say signatures state fc };
 use Benchmark  qw{ :all };
 use List::Util qw{ first };
 
-for my $count (qw{ 400 4000 }) {
-    for my $array (qw{ 1000 10000 100000 }) {
+# originally wrote this to switch between
+# different iteration counts and different
+# array sizes, but the sweet spot for 
+# learing is 400 iterations and an array of
+# 10,000 elements. 
+
+for my $count (qw{ 400 }) {
+    for my $array (qw{ 10000 }) {
         for my $comp (qw{ 5 50 500 }) {
             say <<~"END";
                 ========================
