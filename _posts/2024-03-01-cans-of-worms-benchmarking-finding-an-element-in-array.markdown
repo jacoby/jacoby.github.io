@@ -120,6 +120,8 @@ The larger the list you're working with, the better it is to keep track of list 
 
 But data size explodes, so planning ahead might be smart, making **Hash** a valid choice for small arrays and the best choice for bigger ones.
 
+Which vindicates my choices, which feels good.
+
 ## Code and Data
 
 ### Data
@@ -208,9 +210,9 @@ use List::Util qw{ first };
 
 # originally wrote this to switch between
 # different iteration counts and different
-# array sizes, but the sweet spot for 
+# array sizes, but the sweet spot for
 # learing is 400 iterations and an array of
-# 10,000 elements. 
+# 10,000 elements.
 
 for my $count (qw{ 400 }) {
     for my $array (qw{ 10000 }) {
