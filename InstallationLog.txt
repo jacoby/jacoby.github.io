@@ -1,0 +1,6 @@
+************************************* Invoked: Tue Mar 5 14:11:04 2024
+[0] Arguments: C:\Users\jacob\AppData\Local\Temp\msys2-x86_64-20221028.exe
+[17] Operations sanity check succeeded.
+[18] Warning: Cannot create lock file "C:\Users\jacob\AppData\Local\Temp\msys2-x86_64-202210281234865.lock": The process cannot access the file because it is being used by another process.
+ (0x00000020)
+[77] UnableToStart : Unable to start installer : Another msys2-x86_64-20221028 instance is already running. Wait until it finishes, close it, or restart your system.
