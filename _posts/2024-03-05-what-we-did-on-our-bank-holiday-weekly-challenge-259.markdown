@@ -28,7 +28,7 @@ I don't have much to say about numbers today, but the title, relating to [_What 
 
 So, we're working with [DateTime](https://metacpan.org/pod/DateTime). The formatting is [ISO8601](https://en.wikipedia.org/wiki/ISO_8601).
 
-Three days into the future would be easy. `$dt->add( days => 3 )`. But that wouldn't look for weekends (`$dt->day_of_week >= 6`) or a bank holiday (`any { $_ eq $dt->ymd } @bank_holidays `)<sup>[note](#note)</sup>, using yet another function from [List::Util](https://metacpan.org/pod/List::Util).
+Three days into the future would be easy. `$dt->add( days => 3 )`. But that wouldn't look for weekends (`$dt->day_of_week >= 6`) or a bank holiday (`any { $_ eq $dt->ymd } @bank_holidays `)<sup>See below</sup>, using yet another function from [List::Util](https://metacpan.org/pod/List::Util).
 
 So, `while` loop, `next` if weekend, `next` if bank holiday, and keep count otherwise.
 
@@ -327,7 +327,7 @@ Output:
 }
 ```
 
-### Notes <a name="note"></a>
+### Notes
 
 [I have recently been thinking about the best way to find if an element is in an array.](https://jacoby.github.io/2024/03/01/cans-of-worms-benchmarking-finding-an-element-in-array.html) I do often use `my %list = map { $_ => 1 } @list` on occasion, and that's demonstrably faster, but yeah, now you have an array and a hash, and that's gonna take up memory, so I'm trying to normalize on. I mean, if you have the memory and need the speed, and you're going to do it a _lot_, keep that in your back pocket.
 
