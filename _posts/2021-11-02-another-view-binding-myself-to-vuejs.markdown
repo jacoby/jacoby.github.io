@@ -20,7 +20,7 @@ The examples I'm seeing set it up so that you can change a form value and see it
 <!-- Handling User Input- https://vuejs.org/v2/guide/ -->
 
 <div id="app-6">
-  <p>{{ message }}</p>
+  <p>\{\{ message }}</p>
   <input v-model="message" />
 </div>
 ```
