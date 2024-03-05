@@ -132,11 +132,11 @@ Output: 2019-11-06
 
 > It should be able to parse the following edge cases too:
 >
-> {%`  youtube title="Title \"quoted\" done" %}`
+> \{\%`  youtube title="Title \"quoted\" done" %}`
 >
 > and
 >
-> `{%  youtube title="Title with escaped backslash \\" %}`
+> `\{\%  youtube title="Title with escaped backslash \\" %}`
 
 #### Let's Talk About it
 
@@ -190,12 +190,12 @@ my $json = JSON->new->pretty->canonical;
 
 my @examples = (
 
-    '{%  youtube title="Title with escaped backslash \\" %}',
-    '{%  id   field1="value1"    field2="value2"  field3=42 %}',
-    '{%  jacoby language1="perl" language2="javascript" hobby="guitar" %}',
-    '{%  hansolo ship="falcon"    friend="wookie"  love="leia" %}',
-    '{%  linkedin jobs="multiple words in one line" %}',
-    '{%  youtube answer=42       title="Title \"quoted\" done" %}',
+    '\{\%  youtube title="Title with escaped backslash \\" %}',
+    '\{\%  id   field1="value1"    field2="value2"  field3=42 %}',
+    '\{\%  jacoby language1="perl" language2="javascript" hobby="guitar" %}',
+    '\{\%  hansolo ship="falcon"    friend="wookie"  love="leia" %}',
+    '\{\%  linkedin jobs="multiple words in one line" %}',
+    '\{\%  youtube answer=42       title="Title \"quoted\" done" %}',
 );
 
 for my $example (@examples) {
@@ -254,7 +254,7 @@ sub line_parse ($line) {
 
 ```txt
 $ ./ch-2.pl
-Input:  $line = '{%  youtube title="Title with escaped backslash \" %}'
+Input:  $line = '\{\%  youtube title="Title with escaped backslash \" %}'
 
 Output:
     {
@@ -265,7 +265,7 @@ Output:
 }
 
 
-Input:  $line = '{%  id   field1="value1"    field2="value2"  field3=42 %}'
+Input:  $line = '\{\%  id   field1="value1"    field2="value2"  field3=42 %}'
 
 Output:
     {
@@ -278,7 +278,7 @@ Output:
 }
 
 
-Input:  $line = '{%  jacoby language1="perl" language2="javascript" hobby="guitar" %}'
+Input:  $line = '\{\%  jacoby language1="perl" language2="javascript" hobby="guitar" %}'
 
 Output:
     {
@@ -291,7 +291,7 @@ Output:
 }
 
 
-Input:  $line = '{%  hansolo ship="falcon"    friend="wookie"  love="leia" %}'
+Input:  $line = '\{\%  hansolo ship="falcon"    friend="wookie"  love="leia" %}'
 
 Output:
     {
@@ -304,7 +304,7 @@ Output:
 }
 
 
-Input:  $line = '{%  linkedin jobs="multiple words in one line" %}'
+Input:  $line = '\{\%  linkedin jobs="multiple words in one line" %}'
 
 Output:
     {
@@ -315,7 +315,7 @@ Output:
 }
 
 
-Input:  $line = '{%  youtube answer=42       title="Title \"quoted\" done" %}'
+Input:  $line = '\{\%  youtube answer=42       title="Title \"quoted\" done" %}'
 
 Output:
     {
