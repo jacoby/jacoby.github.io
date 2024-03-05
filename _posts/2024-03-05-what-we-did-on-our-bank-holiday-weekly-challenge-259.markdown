@@ -107,7 +107,7 @@ Output: 2019-11-06
 > Submitted by: Gabor Szabo  
 > You are given a line like below:
 >
-> `{%  id   field1="value1"    field2="value2"  field3=42 %}`
+> `\{\%  id   field1="value1"    field2="value2"  field3=42 \%\}`
 >
 > Where
 >
