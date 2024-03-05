@@ -70,10 +70,10 @@ Here's an abbreviated skill list in JSON. I feel I should explain that, with Cyb
           </dl>
         </div>
         <div v-for="(value1,name1) in all">
-          <h3>{{ name1.toUpperCase() }}</h3>
+          <h3>\{\{ name1.toUpperCase() }}</h3>
           <dl v-for="(value2,name2) in value1">
             <dt>
-              <b>{{ value2.name }} ({{ value2.value }})</b>
+              <b>\{\{ value2.name }} (\{\{ value2.value }})</b>
             </dt>
             <dd>
               <select v-bind:mult="value2.value" @change="total_up">
