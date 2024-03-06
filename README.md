@@ -1,5 +1,6 @@
-# [jacoby.github.io](https://jacoby.github.io)
+# [jacoby.github.io](https://jacoby.github.io/)
 
-This is a GitHub Pages site, using Jekyll, to test how this works and perhaps use
-my GP page as a main web page.
+## Due to issues, also [jacoby-lpwk.onrender.com](https://jacoby-lpwk.onrender.com/)
+
+This is a ~~GitHub Pages~~ Github Actions (when I get it fixed) and [Render](https://render.com/)-hosted site, using Jekyll. Tested, used for seven years, and failing on a conversion.
 
