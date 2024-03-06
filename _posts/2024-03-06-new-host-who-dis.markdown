@@ -14,7 +14,7 @@ Ultimately, the problem seems to be that the SCSS munger is looking for a file t
 
 But I want to be able to add new things to my blog.
 
-My friend Chris pointed me to [Render](https://render.com/), so I tried it. I first put up a HTML/CSS/JS tool I wrote a while ago that scratched my guitarist itches, [Guitr](https://guitr.netlify.app/). Yes, I came up with this idea when Flickr was fairly new and hip, and I need to rethink the UI and add a few adds on it to start getting gear money.
+My friend Chris pointed me to [Render](https://render.com/), which, honestly, is the first I ever heard of it, which makes me think I don't have my finger on the pulse of the internet. I tried it. I first put up a HTML/CSS/JS tool I wrote a while ago that scratched my guitarist itches, [Guitr](https://guitr.netlify.app/). Yes, I came up with this idea when Flickr was fairly new and hip, and I need to rethink the UI and add a few adds on it to start getting gear money.
 
 Anyway, once I was happy with it, I decided to try to create a second home for this blog, and wouldn't you know it, It was easy.
 
