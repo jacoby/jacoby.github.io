@@ -140,17 +140,16 @@ sub target_array ($obj) {
     my @indices = $obj->{indices}->@*;
     my @target;
     for my $k ( 0 .. $#source ) {
-        my $s = $source[$k];
-        my $i = $indices[$k];
-        if ( defined $target[$i] ) {
-            splice( @target, $i, 1, $s, $target[$i] );
-        }
-        else {
-            splice( @target, $i, 1, $s );
-        }
+        my $s     = $source[$k];
+        my $i     = $indices[$k];
+        my @input = ($s);
+        push @input, $target[$i]
+            if defined $target[$i];
+        splice( @target, $i, 1, @input );
     }
     return @target;
 }
+
 ```
 
 ```text
