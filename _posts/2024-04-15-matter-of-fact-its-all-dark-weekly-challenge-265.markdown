@@ -6,6 +6,8 @@ date: "2024-04-15 17:34:01 -0400"
 categories: ""
 ---
 
+And now I solve **[Perl Weekly Challenge #265!](https://theweeklychallenge.org/blog/perl-weekly-challenge-265/)!!**
+
 ### Task 1: 33% Appearance
 
 > Submitted by: Mohammad Sajid Anwar  
