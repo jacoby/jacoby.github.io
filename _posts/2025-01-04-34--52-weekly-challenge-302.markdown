@@ -1,0 +1,279 @@
+---
+layout: post
+title: "3^4 * 5*2: Weekly Challenge #302"
+author: "Dave Jacoby"
+date: "2025-01-04 15:03:50 -0500"
+categories: ""
+---
+
+Here we are at [_**Weekly Challenge #302!**_](https://theweeklychallenge.org/blog/perl-weekly-challenge-302/) It's the first challenge of the new year!
+
+### Task 1: Ones and Zeroes
+
+> Submitted by: Mohammad Sajid Anwar  
+> You are given an array of binary strings, `@str`, and two integers, `$x` and `$y`.
+>
+> Write a script to return the size of the largest subset of `@str` such that there are at most `$x` 0’s and `$y` 1’s in the subset.
+>
+> > A set _m_ is a subset of _n_ if all elements of _m_ are also elements of _n_.
+
+#### Let's Talk About It
+
+Again, we go with permutations, but there's a size factor we normally don't use. Given the set `[a, b, c]`, we'd get permutations of the same size, `[a, c, b]` and so on, but instead, we might want `[a]` and `[b]` and `[c]`, or `[a, b]` and `[a, c]` and `[b, c]`.
+
+Then we join them, and since we're representing the binary numbers as strings, that's simple. I'll credit Python's `zero = variable.count("0")` as being easier than `my $zero = () = $variable =~ /0/g`. This uses the **Saturn Operator** ([it has another name](https://metacpan.org/pod/perlsecret#Goatse)) to take the list results from a regular expression (in this case) and turn it into the count of the matches.
+
+Anyway, we get a count of `0`s and `1`s, compare it to the desired numbers, store the list length (what we fed into the permutation creator) and return the lowest value that was a hit.
+
+#### Show Me The Code!
+
+```perl
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use experimental qw{ say state postderef signatures };
+
+use Algorithm::Permute;
+
+my @examples = (
+
+    {
+        x   => 5,
+        y   => 3,
+        str => [ "10", "0001", "111001", "1", "0" ],
+    },
+    {
+        x   => 1,
+        y   => 1,
+        str => [ "10", "1", "0" ],
+    },
+);
+
+for my $example (@examples) {
+    my $x      = $example->{x};
+    my $y      = $example->{y};
+    my $str    = join ', ', map { qq{"$_"} } $example->{str}->@*;
+    my $output = ones_and_zeros($example);
+    say <<"END";
+    Input:  \@str = ($str)
+            \$x = $x
+            \$y = $y
+    Output: $output
+END
+}
+
+sub ones_and_zeros($example) {
+    my $x   = $example->{x};
+    my $y   = $example->{y};
+    my @str = $example->{str}->@*;
+    my $l   = scalar @str;
+    my @output;
+    for my $n ( reverse 1 .. $l ) {
+        my @str = $example->{str}->@*;
+        my $p   = Algorithm::Permute->new( \@str, $n );
+        while ( my @p = $p->next() ) {
+            my $pp = join ' ', @p;
+            my $z  = () = $pp =~ /0/g;
+            my $o  = () = $pp =~ /1/g;
+            push @output, scalar @p if $y == $o && $x == $z;
+        }
+    }
+    return ( sort { $b <=> $a } @output)[0];
+}
+
+```
+
+```python
+#!/usr/bin/python3
+
+from itertools import permutations
+
+
+def main():
+    examples = [
+        {
+            "x": 5,
+            "y": 3,
+            "str": ["10", "0001", "111001", "1", "0"],
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "str": ["10", "1", "0"],
+        },
+    ]
+    for e in examples:
+        x = e["x"]
+        y = e["y"]
+        str = e["str"]
+        output = ones_and_zeros(e)
+        print(f"    Input:  str = {str}")
+        print(f"            x   = {x}")
+        print(f"            y   = {y}")
+        print(f"    Output: {output}")
+        print("")
+
+
+def ones_and_zeros(e):
+    x = e["x"]
+    y = e["y"]
+    str = e["str"]
+    l = 1 + len(str)
+    o = []
+    sizes = [*range(1, l)]
+    sizes.reverse()
+    for s in sizes:
+        str1 = e["str"]
+        ps = permutations(str1, s)
+        for p in ps:
+            pstr = "".join(x for x in p)
+            cx = pstr.count("0")
+            cy = pstr.count("1")
+            if cx == x and cy == y:
+                o.append(s)
+    return o[0]
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+```text
+$ ./ch-1.pl ; ./ch-1.py
+    Input:  @str = ("10", "0001", "111001", "1", "0")
+            $x = 5
+            $y = 3
+    Output: 4
+
+    Input:  @str = ("10", "1", "0")
+            $x = 1
+            $y = 1
+    Output: 2
+
+    Input:  str = ['10', '0001', '111001', '1', '0']
+            x   = 5
+            y   = 3
+    Output: 4
+
+    Input:  str = ['10', '1', '0']
+            x   = 1
+            y   = 1
+    Output: 2
+```
+
+### Task 2: Step by Step
+
+> Submitted by: Mohammad Sajid Anwar  
+> You are given an array of integers, `@ints`.
+>
+> Write a script to find the minimum positive start value such that step by step sum is never less than one.
+
+#### Let's Talk About It
+
+Python doesn't have named loops, so I use `if` statements and flag variables to control flow.
+
+For both, we go through a range of values, low to high, and go through the array, starting again when we see a negative output and getting out when we get the lowest successful value.
+
+#### Show Me The Code!
+
+```perl
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use experimental qw{ say state postderef signatures };
+
+my @examples = (
+
+    [ -3, 2, -3, 4, 2 ],
+    [ 1,  2 ],
+    [ 1,  -2, -3 ],
+);
+
+for my $example (@examples) {
+    my $ints   = join ', ', $example->@*;
+    my $output = step_by_step( $example->@* );
+    say <<"END";
+    Input:  \@ints = ($ints)
+    Output: $output
+END
+}
+
+sub step_by_step (@array) {
+    my $max = 20;
+    my $v;
+OUTER: for my $i ( 1 .. $max ) {
+        my $n = $i;
+        for my $v (@array) {
+            $n += $v;
+            next OUTER if $n < 1;
+        }
+        $v = $i;
+        last ;
+    }
+    return $v;
+}
+```
+
+```python
+#!/usr/bin/python3
+
+
+def main():
+    examples = [
+        [-3, 2, -3, 4, 2],
+        [1, 2],
+        [1, -2, -3],
+    ]
+    for e in examples:
+        output = step_by_step(e)
+        print(f"    Input:  string = {e}")
+        print(f"    Output: {output}")
+        print("")
+
+
+def step_by_step(ints):
+    max = 20
+    o = -1
+    for i in [*range(1, max)]:
+        n = i
+        flag1 = 1
+        for v in ints:
+            if flag1:
+                n += v
+                if n < 1:
+                    flag1 = 0
+        if flag1:
+            if o == -1:
+                o = i
+    return o
+
+
+if __name__ == "__main__":
+    main()
+```
+
+```text
+$ ./ch-2.pl; ./ch-2.py 
+    Input:  @ints = (-3, 2, -3, 4, 2)
+    Output: 5
+
+    Input:  @ints = (1, 2)
+    Output: 1
+
+    Input:  @ints = (1, -2, -3)
+    Output: 5
+
+    Input:  string = [-3, 2, -3, 4, 2]
+    Output: 5
+
+    Input:  string = [1, 2]
+    Output: 1
+
+    Input:  string = [1, -2, -3]
+    Output: 5
+```
+
+#### If you have any questions or comments, I would be glad to hear it. Ask me on [Mastodon](https://mastodon.xyz/@jacobydave) or [make an issue on my blog repo.](https://github.com/jacoby/jacoby.github.io)
